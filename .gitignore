@@ -3,7 +3,9 @@
 *.log
 *.pyc
 *.swp
+*.tmp
 .DS_Store
+Thumbs.db
 .atom/
 .buildlog/
 .history
@@ -27,9 +29,15 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.idea/
+.packages
+pubspec.lock
 .pub-cache/
 .pub/
 /build/
+
+# Build output
+build/
 
 # Symbolication related
 app.*.symbols
@@ -41,3 +49,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# More miscellany
+assets/config.json
+.vscode/
+*.iml
+
+# Firebase
+firebase.json
+.firebase/
+.firebase-hosting/
+firebase_options.dart
+
+# Node.js dependencies
+node_modules/
