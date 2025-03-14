@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'models/dex_entry.dart';
 import 'models/region.dart';
@@ -40,16 +41,7 @@ class _CollectionState extends State<Collection> {
             children: <Widget>[
               SizedBox(height: appBarHeight + 10),
               _regionHeader(Region.kanto),
-              GridView.count(
-                padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                primary: false,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                crossAxisCount: 10,
-                children: _testGrid()
-              ),
+              _regionGrid(Region.kanto)
             ],
           ),
           _appBar()
@@ -160,6 +152,19 @@ class _CollectionState extends State<Collection> {
     );
   }
 
+  Widget _regionGrid(Region region) {
+    return GridView.count(
+      padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
+      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      primary: false,
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
+      crossAxisCount: 10,
+      children: _regionTiles(region)
+    );
+  }
+
   Widget _regionHeader(Region region) {
     return Container(
       padding: EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
@@ -210,9 +215,70 @@ class _CollectionState extends State<Collection> {
     return tiles;
   }
 
-  Widget _regionGrid() {
-    final tiles = [];
-    return Container();
+  List<Widget> _regionTiles(Region region) {
+    return List.generate(region.dexSize - region.dexFirst + 1, (index) {
+      int dexIndex = region.dexFirst - 1 + index;
+      return FutureBuilder<String?>(
+        future: getImageUrl(widget.fullDex[dexIndex].forms[0].imageAssetM), // Load image URL asynchronously
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return _loadingTile(); // Show a loading indicator
+          } else if (snapshot.hasError || snapshot.data == null) {
+            return _fallbackTile(dexIndex); // Show fallback if image fails to load
+          } else {
+            return _imageTile(snapshot.data!); // Show loaded image
+          }
+        },
+      );
+    });
+  }
+
+  Widget _imageTile(String imageUrl) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(),
+        borderRadius: BorderRadius.circular(10)
+      ),
+      child: Image.network(imageUrl)
+    );
+  }
+
+  Widget _loadingTile() {
+    return Container(
+      decoration: BoxDecoration(
+        color: accentColourLight,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Center(
+        child: CircularProgressIndicator(
+          color: accentColourLight
+        )
+      ),
+    );
+  }
+
+  Widget _fallbackTile(int index) {
+    return Container(
+      decoration: BoxDecoration(
+        color: accentColourLight,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Center(
+        child: Text(
+          '${index + 1}',
+          style: TextStyle(fontSize: screenWidth / 50, color: mainColour),
+        ),
+      ),
+    );
+  }
+}
+
+Future<String?> getImageUrl(String path) async {
+  try {
+    final storageRef = FirebaseStorage.instance.ref().child('bulbasaur.png?alt=media&token=08e35136-246c-47d8-a74e-95c601a5c6d2');
+    return await storageRef.getDownloadURL();
+  } on FirebaseException catch (_) {
+    return null; // Return null if the file doesn't exist
   }
 }
 

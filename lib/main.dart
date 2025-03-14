@@ -47,7 +47,11 @@ class MainAppState extends State<MainApp> {
     if (isLoading) {
       return const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: CircularProgressIndicator()
+        home: Scaffold(
+          body: Center(
+            child: CircularProgressIndicator()
+          )
+        )
       );
     }
     return MaterialApp(
@@ -59,7 +63,7 @@ class MainAppState extends State<MainApp> {
   }
 
   Future<void> _loadDexDB() async {
-    const dataPath = 'assets/dex.json';
+    const dataPath = 'dex.json';
     final loadedDB = DexDB.initializeFromJson(await rootBundle.loadString(dataPath));
     setState(() {
       _dexDB = loadedDB;

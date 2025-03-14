@@ -35,10 +35,10 @@
                 "height": 70,
                 "weight": 6.9,
                 "entry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
-                "image asset m": "assets/bulbasaur.png",
-                "image asset f": "assets/bulbasaur.png",
-                "image asset m shiny": "assets/bulbasaur_shiny.png",
-                "image asset f shiny": "assets/bulbasaur_shiny.png"
+                "image asset m": "bulbasaur.png",
+                "image asset f": "bulbasaur.png",
+                "image asset m shiny": "bulbasaur_shiny.png",
+                "image asset f shiny": "bulbasaur_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -86,10 +86,10 @@
                 "height": 100,
                 "weight": 13,
                 "entry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
-                "image asset m": "assets/ivysaur.png",
-                "image asset f": "assets/ivysaur.png",
-                "image asset m shiny": "assets/ivysaur_shiny.png",
-                "image asset f shiny": "assets/ivysaur_shiny.png"
+                "image asset m": "ivysaur.png",
+                "image asset f": "ivysaur.png",
+                "image asset m shiny": "ivysaur_shiny.png",
+                "image asset f shiny": "ivysaur_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -131,10 +131,10 @@
                 "height": 200,
                 "weight": 100,
                 "entry": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
-                "image asset m": "assets/venusaur_m.png",
-                "image asset f": "assets/venusaur_f.png",
-                "image asset m shiny": "assets/venusaur_m_shiny.png",
-                "image asset f shiny": "assets/venusaur_f_shiny.png"
+                "image asset m": "venusaur_m.png",
+                "image asset f": "venusaur_f.png",
+                "image asset m shiny": "venusaur_m_shiny.png",
+                "image asset f shiny": "venusaur_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -182,10 +182,10 @@
                 "height": 60,
                 "weight": 8.5,
                 "entry": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
-                "image asset m": "assets/charmander.png",
-                "image asset f": "assets/charmander.png",
-                "image asset m shiny": "assets/charmander_shiny.png",
-                "image asset f shiny": "assets/charmander_shiny.png"
+                "image asset m": "charmander.png",
+                "image asset f": "charmander.png",
+                "image asset m shiny": "charmander_shiny.png",
+                "image asset f shiny": "charmander_shiny.png"
             }
         ],
         "gimmick forms": [],
