@@ -199,22 +199,6 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  List<Widget> _testGrid() {
-    List<Widget> tiles = [];
-    for (int i = 0; i < 151; i++) {
-      tiles.add(
-        Container(
-          decoration: BoxDecoration(
-            color: accentColourLight,
-            borderRadius: BorderRadius.circular(10)
-          ),
-          child: Center(child: Text('${i+1}', style: TextStyle(fontSize: screenWidth / 50, color: mainColour)))
-        )
-      );
-    }
-    return tiles;
-  }
-
   List<Widget> _regionTiles(Region region) {
     return List.generate(region.dexSize - region.dexFirst + 1, (index) {
       int dexIndex = region.dexFirst - 1 + index;
@@ -275,18 +259,9 @@ class _CollectionState extends State<Collection> {
 
 Future<String?> getImageUrl(String path) async {
   try {
-    final storageRef = FirebaseStorage.instance.ref().child('bulbasaur.png');
+    final storageRef = FirebaseStorage.instance.ref().child(path);
     return await storageRef.getDownloadURL();
   } on FirebaseException catch (_) {
-    return null; // Return null if the file doesn't exist
+    return null;  // Return null if the file doesn't exist
   }
-}
-
-
-class CustomScrollBehavior extends MaterialScrollBehavior {
-  @override
-  Set<PointerDeviceKind> get dragDevices => {
-    PointerDeviceKind.touch,
-    PointerDeviceKind.mouse,
-  };
 }
