@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Make pre-build script executable
+        run: chmod +x ./scripts/pre-build.sh
+
+      - name: Make post-build script executable
+        run: chmod +x ./scripts/post-build.sh
+
       - name: Backup custom index.html before build
         run: ./scripts/pre-build.sh
 
