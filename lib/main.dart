@@ -1,11 +1,14 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';  // Add this import
 import 'package:pokellection/collection.dart';
 
 void main() async {
-  await dotenv.load(); // Load environment variables
-  print('help: ${dotenv.env['FIREBASE_API_KEY']}');
+  if (!kReleaseMode) {
+    await dotenv.load();
+  }
+  
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Firebase with the loaded environment variables
