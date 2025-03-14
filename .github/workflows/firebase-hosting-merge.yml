@@ -28,7 +28,7 @@ jobs:
           flutter-version: '3.22.2'
 
       - name: Install dependencies
-        run: flutter clean && flutter pub get
+        run: flutter pub get
         
       - name: Build web
         run: flutter build web
