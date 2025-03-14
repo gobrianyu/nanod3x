@@ -13,9 +13,13 @@ class _CollectionState extends State<Collection> {
   bool darkMode = false;
   Color mainColour = Colors.white;
   Color invertColour = Colors.black;
+  double screenSize = 0;
 
   @override
   void initState() {
+    if (mounted) {
+      screenSize = MediaQuery.of(context).size.width;
+    }
     super.initState();
   }
 
@@ -72,7 +76,7 @@ class _CollectionState extends State<Collection> {
             color: Colors.black12,
             borderRadius: BorderRadius.all(Radius.circular(10))
           ),
-          child: Center(child: Text('${i+1}', style: TextStyle(fontSize: MediaQuery.of(context).size.width / 50)))
+          child: Center(child: Text('${i+1}', style: TextStyle(fontSize: screenSize / 50)))
         )
       );
     }
