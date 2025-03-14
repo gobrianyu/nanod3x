@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:pokellection/collection.dart';
+import 'package:flutter/services.dart';
+
+import 'collection.dart';
+import 'models/dex_db.dart';
 
 void main() async {
 
@@ -22,16 +25,45 @@ void main() async {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({super.key});
 
   @override
+  MainAppState createState() => MainAppState();
+}
+
+class MainAppState extends State<MainApp> {
+  late final DexDB _dexDB;
+  bool isLoading = true;
+
+  @override
+  void initState() {
+    _loadDexDB();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    if (isLoading) {
+      return const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: CircularProgressIndicator()
+      );
+    }
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Collection(),
+        body: Collection(_dexDB.all),
       ),
     );
+  }
+
+  Future<void> _loadDexDB() async {
+    const dataPath = 'assets/dex.json';
+    final loadedDB = DexDB.initializeFromJson(await rootBundle.loadString(dataPath));
+    setState(() {
+      _dexDB = loadedDB;
+      isLoading = false;
+    });
   }
 }

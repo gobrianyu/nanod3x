@@ -1,11 +1,13 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'models/dex_entry.dart';
+import 'models/region.dart';
 
 class Collection extends StatefulWidget{
-  // final List<String> fullDex;
+  final List<DexEntry> fullDex;
 
-  const Collection(/*this.fullDex,*/ {super.key});
+  const Collection(this.fullDex, {super.key});
 
   @override
   State<Collection> createState() => _CollectionState();
@@ -37,7 +39,7 @@ class _CollectionState extends State<Collection> {
             primary: true,
             children: <Widget>[
               SizedBox(height: appBarHeight + 10),
-              _regionHeader('kanto'),
+              _regionHeader(Region.kanto),
               GridView.count(
                 padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
                 physics: const NeverScrollableScrollPhysics(),
@@ -158,7 +160,7 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  Widget _regionHeader(String region) {
+  Widget _regionHeader(Region region) {
     return Container(
       padding: EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
       margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: screenWidth / 10),
@@ -171,7 +173,7 @@ class _CollectionState extends State<Collection> {
         children: [
           Row(
             children: [
-              Text(region.toUpperCase()),
+              Text(region.name.toUpperCase()),
             ],
           ),
           Container(
@@ -181,7 +183,7 @@ class _CollectionState extends State<Collection> {
               borderRadius: BorderRadius.circular(100)
             ),
             child: Text(
-              '1/1025',
+              '1/${region.dexSize}',
               style: TextStyle(
                 color: mainColour
               ),
