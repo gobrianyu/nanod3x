@@ -55,6 +55,7 @@ assets/config.json
 .vscode/
 *.iml
 .env
+cors.json
 
 # Firebase
 .firebase/
