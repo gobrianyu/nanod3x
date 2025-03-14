@@ -30,19 +30,13 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Make pre-build script executable
-        run: chmod +x ./scripts/pre-build.sh
+      - name: Build web app
+        run: flutter clean && flutter build web
 
       - name: Make post-build script executable
         run: chmod +x ./scripts/post-build.sh
 
-      - name: Backup custom index.html before build
-        run: ./scripts/pre-build.sh
-
-      - name: Build web app
-        run: flutter clean && flutter build web
-
-      - name: Restore custom index.html after build
+      - name: Restore index.html after build
         run: ./scripts/post-build.sh
 
       # Deploy to Firebase Hosting
