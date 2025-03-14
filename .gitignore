@@ -56,7 +56,6 @@ assets/config.json
 *.iml
 
 # Firebase
-firebase.json
 .firebase/
 .firebase-hosting/
 firebase_options.dart
