@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Flutter Web App</title>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <!-- Firebase SDKs (optional, if needed in your project) -->
+    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
+    <!-- Add other Firebase SDKs as needed -->
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- Initialize Firebase (if using) -->
+    <script defer src="/__/firebase/init.js"></script>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+    <!-- Reference to the Flutter generated JS file -->
+    <script defer src="main.dart.js"></script>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      /* Additional styling can go here */
+    </style>
+  </head>
+  <body>
+    <!-- Your Flutter web app will be rendered here -->
+    <div id="flutter_container"></div>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>nano.d3x</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+    <script>
+      // This script initializes Flutter in the browser
+      window.addEventListener('load', function() {
+        if (window.flutterWebRenderer) {
+          window.flutterWebRenderer.setConfig({
+            // Adjust configurations if needed
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
