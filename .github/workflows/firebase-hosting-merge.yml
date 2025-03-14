@@ -29,6 +29,9 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+      
+      - name: Copy dex.json to Root
+        run: cp assets/dex.json dex.json
         
       - name: Build web
         run: flutter build web

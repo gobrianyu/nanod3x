@@ -275,7 +275,7 @@ class _CollectionState extends State<Collection> {
 
 Future<String?> getImageUrl(String path) async {
   try {
-    final storageRef = FirebaseStorage.instance.ref().child('bulbasaur.png?alt=media&token=08e35136-246c-47d8-a74e-95c601a5c6d2');
+    final storageRef = FirebaseStorage.instance.ref().child('bulbasaur.png');
     return await storageRef.getDownloadURL();
   } on FirebaseException catch (_) {
     return null; // Return null if the file doesn't exist

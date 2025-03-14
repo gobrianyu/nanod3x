@@ -63,7 +63,7 @@ class MainAppState extends State<MainApp> {
   }
 
   Future<void> _loadDexDB() async {
-    const dataPath = 'dex.json';
+    const dataPath = 'assets/dex.json';
     final loadedDB = DexDB.initializeFromJson(await rootBundle.loadString(dataPath));
     setState(() {
       _dexDB = loadedDB;
