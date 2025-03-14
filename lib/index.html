@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Flutter Web App</title>
+
+    <!-- Firebase SDKs (optional, if needed in your project) -->
+    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
+    <!-- Add other Firebase SDKs as needed -->
+
+    <!-- Initialize Firebase (if using) -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Reference to the Flutter generated JS file -->
+    <script defer src="main.dart.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      /* Additional styling can go here */
+    </style>
+  </head>
+  <body>
+    <!-- Your Flutter web app will be rendered here -->
+    <div id="flutter_container"></div>
+
+    <script>
+      // This script initializes Flutter in the browser
+      window.addEventListener('load', function() {
+        if (window.flutterWebRenderer) {
+          window.flutterWebRenderer.setConfig({
+            // Adjust configurations if needed
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
