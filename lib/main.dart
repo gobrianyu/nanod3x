@@ -5,7 +5,7 @@ import 'package:pokellection/collection.dart';
 
 void main() async {
   await dotenv.load(); // Load environment variables
-
+  print('help: ${dotenv.env['FIREBASE_API_KEY']}');
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Firebase with the loaded environment variables
