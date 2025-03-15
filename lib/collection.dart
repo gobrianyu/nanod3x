@@ -277,7 +277,7 @@ class _CollectionState extends State<Collection> {
     try {
       final storageRef = FirebaseStorage.instance.ref().child(path);
       String url = await storageRef.getDownloadURL();
-      completed.update(region, (val) => val++, ifAbsent: () => 1);
+      completed.update(region, (val) => val + 1, ifAbsent: () => 1);
       return url;
     } on FirebaseException catch (_) {
       return null;  // Return null if the file doesn't exist
