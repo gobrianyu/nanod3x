@@ -235,8 +235,8 @@
                 "entry": "Tough fights could excite this Pokémon. When excited, it may blow out bluish-white flames.",
                 "image asset m": "charmeleon.png",
                 "image asset f": "charmeleon.png",
-                "image asset m shiny": "charmeleon.png",
-                "image asset f shiny": "charmeleon.png"
+                "image asset m shiny": "charmeleon_shiny.png",
+                "image asset f shiny": "charmeleon_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -280,8 +280,8 @@
                 "entry": "When this Pokémon expels a blast of superhot fire, the red flame at the tip of its tails burns more intensely.",
                 "image asset m": "charizard.png",
                 "image asset f": "charizard.png",
-                "image asset m shiny": "charizard.png",
-                "image asset f shiny": "charizard.png"
+                "image asset m shiny": "charizard_shiny.png",
+                "image asset f shiny": "charizard_shiny.png"
             }
         ],
         "gimmick forms": [],

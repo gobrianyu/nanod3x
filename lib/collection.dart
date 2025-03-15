@@ -252,51 +252,6 @@ class _CollectionState extends State<Collection> {
     });
   }
 
-  Widget _imageTile(String imageUrl, VoidCallback onTap) {
-    return MouseRegion(
-      onEnter: (_) => setState(() => _hoveredImage = imageUrl),
-      onExit: (_) => setState(() => _hoveredImage = null),
-      child: GestureDetector(
-        onTap: onTap,
-        child: AnimatedContainer(
-          duration: Duration(milliseconds: 200),
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: _hoveredImage == imageUrl ? accentColourDark : accentColourLight,
-              width: _hoveredImage == imageUrl ? 2 : 1, // Thicker border on hover
-            ),
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: _hoveredImage == imageUrl
-                ? [BoxShadow(color: Colors.black26, blurRadius: 5, spreadRadius: 2)]
-                : [],
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: MouseRegion(
-              onEnter: (_) => setState(() {
-                _hoveredImage = imageUrl;
-              }),
-              onExit: (_) => setState(() {
-                _hoveredImage = null;
-              }),
-              child: AnimatedScale(
-                scale: _hoveredImage == imageUrl ? 1.1 : 1.0, // Scale up slightly on hover
-                duration: Duration(milliseconds: 150), // Duration of the scale animation
-                child: CachedNetworkImage(
-                  imageUrl: imageUrl,
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-
   Widget _loadingTile() {
     return Container(
       decoration: BoxDecoration(
@@ -371,13 +326,14 @@ class _HoverImageTileState extends State<HoverImageTile> {
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 100),
           decoration: BoxDecoration(
+            color: Colors.white,
             border: Border.all(
               color: _isHovered ? Colors.black45 : Colors.black12,
               width: _isHovered ? 3 : 1,
             ),
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
-                ? [BoxShadow(color: Colors.black26, blurRadius: 5, spreadRadius: 2)]
+                ? [BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
                 : [],
           ),
           child: ClipRRect(
