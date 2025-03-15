@@ -48,8 +48,11 @@ class MainAppState extends State<MainApp> {
       return const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          backgroundColor: Colors.white,
           body: Center(
-            child: CircularProgressIndicator()
+            child: CircularProgressIndicator(
+              color: Colors.black12
+            )
           )
         )
       );

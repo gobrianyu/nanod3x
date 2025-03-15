@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'models/dex_entry.dart';
@@ -24,11 +25,20 @@ class _CollectionState extends State<Collection> {
   final double appBarHeight = 130;
   double screenWidth = 100;
 
-  Map<Region, int> completed = {};
-  int totalComplete = 0;
+  String? _hoveredImage;
 
   Map<String, String?> imageCache = {};
 
+  Map<Region, int> completed = {};
+  int totalComplete = 0;
+  final totalFinale = 1025;
+
+  final regions = [
+    Region.kanto,
+    Region.johto,
+    Region.hoenn,
+    Region.sinnoh,
+  ];
 
   @override
   void initState() {
@@ -39,19 +49,7 @@ class _CollectionState extends State<Collection> {
   }
 
   void initCompletionMap() {
-    completed = {
-      Region.kanto: 0,
-      Region.johto: 0,
-      Region.hoenn: 0,
-      Region.sinnoh: 0,
-      Region.unova: 0,
-      Region.kalos: 0,
-      Region.alola: 0,
-      Region.galar: 0,
-      Region.hisui: 0,
-      Region.paldea: 0,
-      Region.unknown: 0,
-    };
+    completed = { for (var region in regions) region : 0 };
   }
 
   @override
@@ -65,8 +63,19 @@ class _CollectionState extends State<Collection> {
             primary: true,
             children: <Widget>[
               SizedBox(height: appBarHeight + 10),
-              _regionHeader(Region.kanto),
-              _regionGrid(Region.kanto)
+              ...regions.map((region) => Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _regionHeader(region),
+                  _regionGrid(region)
+                ],
+              )),
+              _regionHeader(Region.unova),
+              _regionHeader(Region.alola),
+              _regionHeader(Region.unknown),
+              _regionHeader(Region.galar),
+              _regionHeader(Region.hisui),
+              _regionHeader(Region.paldea),
             ],
           ),
           _appBar()
@@ -146,7 +155,7 @@ class _CollectionState extends State<Collection> {
                           borderRadius: BorderRadius.circular(100)
                         ),
                         child: Text(
-                          '$totalComplete/1025',
+                          '$totalComplete/$totalFinale',
                           style: TextStyle(
                             color: mainColour
                           ),
@@ -225,7 +234,7 @@ class _CollectionState extends State<Collection> {
   }
 
   List<Widget> _regionTiles(Region region) {
-    return List.generate(region.dexSize - region.dexFirst + 1, (index) {
+    return List.generate(region.dexSize, (index) {
       int dexIndex = region.dexFirst - 1 + index;
       String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
       return FutureBuilder<String?>(
@@ -236,22 +245,57 @@ class _CollectionState extends State<Collection> {
           } else if (snapshot.hasError || snapshot.data == null) {
             return _fallbackTile(dexIndex); // Show fallback if image fails to load
           } else {
-            return _imageTile(snapshot.data!); // Show loaded image
+            return HoverImageTile(imageUrl: snapshot.data!, onTap: () {}); // Show loaded image
           }
         },
       );
     });
   }
 
-  Widget _imageTile(String imageUrl) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border.all(),
-        borderRadius: BorderRadius.circular(10)
+  Widget _imageTile(String imageUrl, VoidCallback onTap) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hoveredImage = imageUrl),
+      onExit: (_) => setState(() => _hoveredImage = null),
+      child: GestureDetector(
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 200),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: _hoveredImage == imageUrl ? accentColourDark : accentColourLight,
+              width: _hoveredImage == imageUrl ? 2 : 1, // Thicker border on hover
+            ),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: _hoveredImage == imageUrl
+                ? [BoxShadow(color: Colors.black26, blurRadius: 5, spreadRadius: 2)]
+                : [],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: MouseRegion(
+              onEnter: (_) => setState(() {
+                _hoveredImage = imageUrl;
+              }),
+              onExit: (_) => setState(() {
+                _hoveredImage = null;
+              }),
+              child: AnimatedScale(
+                scale: _hoveredImage == imageUrl ? 1.1 : 1.0, // Scale up slightly on hover
+                duration: Duration(milliseconds: 150), // Duration of the scale animation
+                child: CachedNetworkImage(
+                  imageUrl: imageUrl,
+                  placeholder: (context, url) => CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
-      child: Image.network(imageUrl)
     );
   }
+
 
   Widget _loadingTile() {
     return Container(
@@ -299,5 +343,56 @@ class _CollectionState extends State<Collection> {
     } on FirebaseException catch (_) {
       return null;  // Return null if the file doesn't exist
     }
+  }
+}
+
+
+class HoverImageTile extends StatefulWidget {
+  final String imageUrl;
+  final VoidCallback onTap;
+
+  HoverImageTile({required this.imageUrl, required this.onTap, Key? key}) : super(key: key);
+
+  @override
+  _HoverImageTileState createState() => _HoverImageTileState();
+}
+
+class _HoverImageTileState extends State<HoverImageTile> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 100),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: _isHovered ? Colors.black45 : Colors.black12,
+              width: _isHovered ? 3 : 1,
+            ),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: _isHovered
+                ? [BoxShadow(color: Colors.black26, blurRadius: 5, spreadRadius: 2)]
+                : [],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: AnimatedScale(
+              scale: _isHovered ? 1.1 : 1.0, // Slightly scale the image on hover
+              duration: const Duration(milliseconds: 150),
+              child: CachedNetworkImage(
+                imageUrl: widget.imageUrl,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
