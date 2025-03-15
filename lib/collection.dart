@@ -23,10 +23,27 @@ class _CollectionState extends State<Collection> {
   Color solidAccentColourLight = Color.fromARGB(255, 240, 240, 240);
   final double appBarHeight = 130;
   double screenWidth = 100;
+  Map<Region, int> completed = {};
+
 
   @override
   void initState() {
+    initCompletionMap();
     super.initState();
+  }
+
+  void initCompletionMap() {
+    completed[Region.kanto] = 0;
+    completed[Region.johto] = 0;
+    completed[Region.hoenn] = 0;
+    completed[Region.sinnoh] = 0;
+    completed[Region.unova] = 0;
+    completed[Region.kalos] = 0;
+    completed[Region.alola] = 0;
+    completed[Region.galar] = 0;
+    completed[Region.hisui] = 0;
+    completed[Region.paldea] = 0;
+    completed[Region.unknown] = 0;
   }
 
   @override
@@ -188,7 +205,7 @@ class _CollectionState extends State<Collection> {
               borderRadius: BorderRadius.circular(100)
             ),
             child: Text(
-              '1/${region.dexSize}',
+              '${completed[region]}/${region.dexSize}',
               style: TextStyle(
                 color: mainColour
               ),
@@ -203,7 +220,7 @@ class _CollectionState extends State<Collection> {
     return List.generate(region.dexSize - region.dexFirst + 1, (index) {
       int dexIndex = region.dexFirst - 1 + index;
       return FutureBuilder<String?>(
-        future: getImageUrl(widget.fullDex[dexIndex].forms[0].imageAssetM), // Load image URL asynchronously
+        future: getImageUrl(widget.fullDex[dexIndex].forms[0].imageAssetM, region), // Load image URL asynchronously
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return _loadingTile(); // Show a loading indicator
@@ -255,13 +272,15 @@ class _CollectionState extends State<Collection> {
       ),
     );
   }
-}
 
-Future<String?> getImageUrl(String path) async {
-  try {
-    final storageRef = FirebaseStorage.instance.ref().child(path);
-    return await storageRef.getDownloadURL();
-  } on FirebaseException catch (_) {
-    return null;  // Return null if the file doesn't exist
+  Future<String?> getImageUrl(String path, Region region) async {
+    try {
+      final storageRef = FirebaseStorage.instance.ref().child(path);
+      String url = await storageRef.getDownloadURL();
+      completed.update(region, (val) => val++, ifAbsent: () => 1);
+      return url;
+    } on FirebaseException catch (_) {
+      return null;  // Return null if the file doesn't exist
+    }
   }
 }
