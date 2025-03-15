@@ -16,16 +16,16 @@ class Collection extends StatefulWidget{
 }
 
 class _CollectionState extends State<Collection> {
+  final ScrollController _scrollController = ScrollController();
+
   bool darkMode = false;
   Color mainColour = Colors.white;
   Color invertColour = Colors.black;
   Color accentColourLight = Colors.black12;
   Color accentColourDark = Colors.black45;
-  Color solidAccentColourLight = Color.fromARGB(255, 240, 240, 240);
+  Color solidAccentColourLight = const Color.fromARGB(255, 240, 240, 240);
   final double appBarHeight = 130;
   double screenWidth = 100;
-
-  String? _hoveredImage;
 
   Map<String, String?> imageCache = {};
 
@@ -59,24 +59,29 @@ class _CollectionState extends State<Collection> {
       backgroundColor: mainColour,
       body: Stack(
         children: [
-          ListView(
-            primary: true,
-            children: <Widget>[
-              SizedBox(height: appBarHeight + 10),
-              ...regions.map((region) => Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _regionHeader(region),
-                  _regionGrid(region)
-                ],
-              )),
-              _regionHeader(Region.unova),
-              _regionHeader(Region.alola),
-              _regionHeader(Region.unknown),
-              _regionHeader(Region.galar),
-              _regionHeader(Region.hisui),
-              _regionHeader(Region.paldea),
-            ],
+          Scrollbar(
+            controller: _scrollController,
+            child: ListView(
+              controller: _scrollController,
+              shrinkWrap: true,
+              primary: false,
+              children: <Widget>[
+                SizedBox(height: appBarHeight + 10),
+                ...regions.map((region) => Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _regionHeader(region),
+                    _regionGrid(region)
+                  ],
+                )),
+                _regionHeader(Region.unova),
+                _regionHeader(Region.alola),
+                _regionHeader(Region.unknown),
+                _regionHeader(Region.galar),
+                _regionHeader(Region.hisui),
+                _regionHeader(Region.paldea),
+              ],
+            ),
           ),
           _appBar()
         ],
@@ -91,16 +96,16 @@ class _CollectionState extends State<Collection> {
       right: 0,
       child: Container(
         margin: EdgeInsets.only(left: screenWidth / 10 - 15, right: screenWidth / 10 - 15),
-        padding: EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 5),
+        padding: const EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 5),
         width: double.infinity,
         height: appBarHeight,
         decoration: BoxDecoration(
           color: solidAccentColourLight,
-          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15))
+          borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15))
         ),
         child: Column(
           children: [
-            Expanded(
+            const Expanded(
               flex: 2,
               child: Row(
                 children: [
@@ -116,10 +121,10 @@ class _CollectionState extends State<Collection> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Search...',
-                        hintStyle: const TextStyle(
+                        hintStyle: TextStyle(
                           fontSize: 15,
                         ),
-                        border: const OutlineInputBorder(
+                        border: OutlineInputBorder(
                           borderSide: BorderSide()
                         ),
                         suffixIcon: Icon(Icons.search)
@@ -134,8 +139,8 @@ class _CollectionState extends State<Collection> {
               child: SizedBox(
                 width: double.infinity,
                 child: Container(
-                  padding: EdgeInsets.only(left: 15, right: 15),
-                  margin: EdgeInsets.only(top: 10, bottom: 10),
+                  padding: const EdgeInsets.only(left: 15, right: 15),
+                  margin: const EdgeInsets.only(top: 10, bottom: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: accentColourLight
@@ -143,13 +148,13 @@ class _CollectionState extends State<Collection> {
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Text('COMPLETE COLLECTION'),
                         ],
                       ),
                       Container(
-                        padding: EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
+                        padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
                         decoration: BoxDecoration(
                           color: accentColourDark,
                           borderRadius: BorderRadius.circular(100)
@@ -176,7 +181,7 @@ class _CollectionState extends State<Collection> {
     return AspectRatio(
       aspectRatio: 2,
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: accentColourLight,
           borderRadius: BorderRadius.circular(10)
@@ -187,21 +192,27 @@ class _CollectionState extends State<Collection> {
   }
 
   Widget _regionGrid(Region region) {
-    return GridView.count(
-      padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      primary: false,
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      crossAxisCount: 10,
-      children: _regionTiles(region)
+    double rowCount = (region.dexSize / 10).ceil().toDouble();
+    double tileHeight = screenWidth * 4 / 5 / 10;
+
+    return SizedBox(
+      height: rowCount * tileHeight + (rowCount - 1) * 10 + 40,
+      child: GridView.count(
+        padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
+        physics: const NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        primary: false,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+        crossAxisCount: 10,
+        children: _regionTiles(region)
+      ),
     );
   }
 
   Widget _regionHeader(Region region) {
     return Container(
-      padding: EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
+      padding: const EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
       margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: screenWidth / 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -216,7 +227,7 @@ class _CollectionState extends State<Collection> {
             ],
           ),
           Container(
-            padding: EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
             decoration: BoxDecoration(
               color: accentColourDark,
               borderRadius: BorderRadius.circular(100)
@@ -233,24 +244,50 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  List<Widget> _regionTiles(Region region) {
-    return List.generate(region.dexSize, (index) {
-      int dexIndex = region.dexFirst - 1 + index;
-      String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
-      return FutureBuilder<String?>(
-        future: getImageUrl(imageAssetLocation, region), // Load image URL asynchronously
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return _loadingTile(); // Show a loading indicator
-          } else if (snapshot.hasError || snapshot.data == null) {
-            return _fallbackTile(dexIndex); // Show fallback if image fails to load
-          } else {
-            return HoverImageTile(imageUrl: snapshot.data!, onTap: () {}); // Show loaded image
-          }
-        },
-      );
-    });
-  }
+  // List<Widget> _regionTiles(Region region) {
+  //   return List.generate(region.dexSize, (index) {
+  //     int dexIndex = region.dexFirst - 1 + index;
+  //     String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
+  //     return FutureBuilder<String?>(
+  //       future: getImageUrl(imageAssetLocation, region), // Load image URL asynchronously
+  //       builder: (context, snapshot) {
+  //         if (snapshot.connectionState == ConnectionState.waiting) {
+  //           return _loadingTile(); // Show a loading indicator
+  //         } else if (snapshot.hasError || snapshot.data == null) {
+  //           return _fallbackTile(dexIndex); // Show fallback if image fails to load
+  //         } else {
+  //           return HoverImageTile(imageUrl: snapshot.data!, onTap: () {}); // Show loaded image
+  //         }
+  //       },
+  //     );
+  //   });
+  // }
+
+final _imageCacheManager = _ImageCacheManager(); // Store globally or in the widget state
+
+List<Widget> _regionTiles(Region region) {
+  return List.generate(region.dexSize, (index) {
+    int dexIndex = region.dexFirst - 1 + index;
+    String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
+
+    return ValueListenableBuilder<String?>(
+      valueListenable: _imageCacheManager.getNotifier(
+        dexIndex, imageAssetLocation, region, getImageUrl
+      ),
+      builder: (context, imageUrl, child) {
+        if (imageUrl == null) {
+          return _loadingTile(); // Show loading only while fetching
+        } else if (imageUrl == 'error') {
+          return _fallbackTile(dexIndex); // Show fallback if fetching fails
+        } else {
+          return HoverImageTile(imageUrl: imageUrl, onTap: () {}); // Show valid image
+        }
+      },
+    );
+  });
+}
+
+
 
   Widget _loadingTile() {
     return Container(
@@ -282,23 +319,25 @@ class _CollectionState extends State<Collection> {
   }
 
   Future<String?> getImageUrl(String path, Region region) async {
-    if (imageCache.containsKey(path)) {
-      return imageCache[path];
+    if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
+      return imageCache[path]; // Return cached URL if available
     }
-    imageCache[path] = null;
+
+    imageCache[path] = null; // Indicate it's still loading
+
     try {
       final storageRef = FirebaseStorage.instance.ref().child(path);
       String url = await storageRef.getDownloadURL();
-      imageCache[path] = url;
-      setState(() {
-        completed.update(region, (val) => val + 1, ifAbsent: () => 1);
-        totalComplete++;
-      });
+
+      imageCache[path] = url; // Store the fetched URL
       return url;
     } on FirebaseException catch (_) {
-      return null;  // Return null if the file doesn't exist
+      imageCache[path] = 'error'; // Explicitly mark as failed
+      print('error:$path');
+      return 'error';
     }
   }
+
 }
 
 
@@ -333,7 +372,7 @@ class _HoverImageTileState extends State<HoverImageTile> {
             ),
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
-                ? [BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
+                ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
                 : [],
           ),
           child: ClipRRect(
@@ -350,5 +389,24 @@ class _HoverImageTileState extends State<HoverImageTile> {
         ),
       ),
     );
+  }
+}
+
+
+
+class _ImageCacheManager {
+  final Map<int, ValueNotifier<String?>> imageUrlNotifiers = {};
+
+  ValueNotifier<String?> getNotifier(int dexIndex, String path, Region region, Future<String?> Function(String, Region) fetchUrl) {
+    if (!imageUrlNotifiers.containsKey(dexIndex)) {
+      final notifier = ValueNotifier<String?>(null);
+      imageUrlNotifiers[dexIndex] = notifier;
+
+      fetchUrl(path, region).then((url) {
+        notifier.value = url; // Update notifier instead of calling setState
+      });
+
+    }
+    return imageUrlNotifiers[dexIndex]!;
   }
 }
