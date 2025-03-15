@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'models/dex_entry.dart';
+import 'models/dex_entry.dart' as dex;
 import 'models/region.dart';
 
 class Collection extends StatefulWidget{
-  final List<DexEntry> fullDex;
+  final List<dex.DexEntry> fullDex;
 
   const Collection(this.fullDex, {super.key});
 
@@ -19,6 +19,7 @@ class _CollectionState extends State<Collection> {
   final ScrollController _scrollController = ScrollController();
 
   bool darkMode = false;
+  bool shinyToggle = false;
   Color mainColour = Colors.white;
   Color invertColour = Colors.black;
   Color accentColourLight = Colors.black12;
@@ -28,6 +29,7 @@ class _CollectionState extends State<Collection> {
   double screenWidth = 100;
 
   Map<String, String?> imageCache = {};
+  Map<String, String?> shinyCache = {};
 
   Map<Region, int> completed = {};
   int totalComplete = 0;
@@ -148,9 +150,11 @@ class _CollectionState extends State<Collection> {
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      const Row(
+                      Row(
                         children: [
-                          Text('COMPLETE COLLECTION'),
+                          const Text('COMPLETE COLLECTION'),
+                          const Spacer(),
+                          _shinyToggleButton()
                         ],
                       ),
                       Container(
@@ -172,6 +176,27 @@ class _CollectionState extends State<Collection> {
               ),
             )
           ],
+        ),
+      )
+    );
+  }
+
+  Widget _shinyToggleButton() {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          setState(() => shinyToggle = !shinyToggle);
+        },
+        child: Container(
+          decoration: BoxDecoration(
+            border: Border.all()
+          ),
+          child: Row(
+            children: [
+              Text(shinyToggle ? 'Classic' : 'Shiny')
+            ],
+          )
         ),
       )
     );
@@ -268,7 +293,8 @@ final _imageCacheManager = _ImageCacheManager(); // Store globally or in the wid
 List<Widget> _regionTiles(Region region) {
   return List.generate(region.dexSize, (index) {
     int dexIndex = region.dexFirst - 1 + index;
-    String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
+    dex.Form form = widget.fullDex[dexIndex].forms[0];
+    String imageAssetLocation = shinyToggle ? form.imageAssetMShiny : form.imageAssetM;
 
     return ValueListenableBuilder<String?>(
       valueListenable: _imageCacheManager.getNotifier(
@@ -319,24 +345,25 @@ List<Widget> _regionTiles(Region region) {
   }
 
   Future<String?> getImageUrl(String path, Region region) async {
-    if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
-      return imageCache[path]; // Return cached URL if available
+    Map<String, String?> currCache = shinyToggle ? shinyCache : imageCache; 
+    if (currCache.containsKey(path) && currCache[path] != 'error' && currCache[path] != null) {
+      return currCache[path];  // Return cached URL if available
     }
 
-    imageCache[path] = null; // Indicate it's still loading
+    currCache[path] = null;  // Indicate it's still loading
 
     try {
       final storageRef = FirebaseStorage.instance.ref().child(path);
       String url = await storageRef.getDownloadURL();
 
-      imageCache[path] = url; // Store the fetched URL
+      currCache[path] = url; // Store the fetched URL
       setState(() {
         totalComplete++;
         completed.update(region, (val) => val + 1, ifAbsent:() => 1);
       });
       return url;
     } on FirebaseException catch (_) {
-      imageCache[path] = 'error'; // Explicitly mark as failed
+      currCache[path] = 'error'; // Explicitly mark as failed
       return 'error';
     }
   }
@@ -371,7 +398,7 @@ class _HoverImageTileState extends State<HoverImageTile> {
             color: Colors.white,
             border: Border.all(
               color: _isHovered ? Colors.black45 : Colors.black12,
-              width: _isHovered ? 3 : 1,
+              width: _isHovered ? 2 : 1,
             ),
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
