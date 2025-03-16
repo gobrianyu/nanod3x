@@ -76,12 +76,6 @@ class _CollectionState extends State<Collection> {
                     _regionGrid(region)
                   ],
                 )),
-                _regionHeader(Region.unova),
-                _regionHeader(Region.alola),
-                _regionHeader(Region.unknown),
-                _regionHeader(Region.galar),
-                _regionHeader(Region.hisui),
-                _regionHeader(Region.paldea),
               ],
             ),
           ),
@@ -217,21 +211,15 @@ class _CollectionState extends State<Collection> {
   }
 
   Widget _regionGrid(Region region) {
-    double rowCount = (region.dexSize / 10).ceil().toDouble();
-    double tileHeight = screenWidth * 4 / 5 / 10;
-
-    return SizedBox(
-      height: rowCount * tileHeight + (rowCount - 1) * 10 + 40,
-      child: GridView.count(
-        padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
-        physics: const NeverScrollableScrollPhysics(),
-        shrinkWrap: true,
-        primary: false,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        crossAxisCount: 10,
-        children: _regionTiles(region)
-      ),
+    return GridView.count(
+      padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
+      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      primary: false,
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
+      crossAxisCount: 10,
+      children: _regionTiles(region)
     );
   }
 
@@ -288,30 +276,31 @@ class _CollectionState extends State<Collection> {
   //   });
   // }
 
-final _imageCacheManager = _ImageCacheManager(); // Store globally or in the widget state
+  final _imageCacheManager = _ImageCacheManager(); // Store globally or in the widget state
 
-List<Widget> _regionTiles(Region region) {
-  return List.generate(region.dexSize, (index) {
-    int dexIndex = region.dexFirst - 1 + index;
-    dex.Form form = widget.fullDex[dexIndex].forms[0];
-    String imageAssetLocation = shinyToggle ? form.imageAssetMShiny : form.imageAssetM;
+  List<Widget> _regionTiles(Region region) {
+    return List.generate(region.dexSize, (index) {
+      int dexIndex = region.dexFirst - 1 + index;
+      dex.Form form = widget.fullDex[dexIndex].forms[0];
+      String imageAssetLocation = shinyToggle ? form.imageAssetMShiny : form.imageAssetM;
 
-    return ValueListenableBuilder<String?>(
-      valueListenable: _imageCacheManager.getNotifier(
-        dexIndex, imageAssetLocation, region, getImageUrl
-      ),
-      builder: (context, imageUrl, child) {
-        if (imageUrl == null) {
-          return _loadingTile(); // Show loading only while fetching
-        } else if (imageUrl == 'error') {
-          return _fallbackTile(dexIndex); // Show fallback if fetching fails
-        } else {
-          return HoverImageTile(imageUrl: imageUrl, onTap: () {}); // Show valid image
-        }
-      },
-    );
-  });
-}
+      return ValueListenableBuilder<String?>( // Use imageAssetLocation as the key
+        valueListenable: _imageCacheManager.getNotifier(
+          imageAssetLocation, region, getImageUrl
+        ),
+        builder: (context, imageUrl, child) {
+          if (imageUrl == null) {
+            return _loadingTile(); // Show loading only while fetching
+          } else if (imageUrl == 'error') {
+            return _fallbackTile(dexIndex); // Show fallback if fetching fails
+          } else {
+            return HoverImageTile(imageUrl: imageUrl, onTap: () {}); // Show valid image
+          }
+        },
+      );
+    });
+  }
+
 
 
 
@@ -345,25 +334,24 @@ List<Widget> _regionTiles(Region region) {
   }
 
   Future<String?> getImageUrl(String path, Region region) async {
-    Map<String, String?> currCache = shinyToggle ? shinyCache : imageCache; 
-    if (currCache.containsKey(path) && currCache[path] != 'error' && currCache[path] != null) {
-      return currCache[path];  // Return cached URL if available
+    if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
+      return imageCache[path];  // Return cached URL if available
     }
 
-    currCache[path] = null;  // Indicate it's still loading
+    imageCache[path] = null;  // Indicate it's still loading
 
     try {
       final storageRef = FirebaseStorage.instance.ref().child(path);
       String url = await storageRef.getDownloadURL();
 
-      currCache[path] = url; // Store the fetched URL
+      imageCache[path] = url; // Store the fetched URL
       setState(() {
         totalComplete++;
         completed.update(region, (val) => val + 1, ifAbsent:() => 1);
       });
       return url;
     } on FirebaseException catch (_) {
-      currCache[path] = 'error'; // Explicitly mark as failed
+      imageCache[path] = 'error'; // Explicitly mark as failed
       return 'error';
     }
   }
@@ -425,18 +413,17 @@ class _HoverImageTileState extends State<HoverImageTile> {
 
 
 class _ImageCacheManager {
-  final Map<int, ValueNotifier<String?>> imageUrlNotifiers = {};
+  final Map<String, ValueNotifier<String?>> imageUrlNotifiers = {};
 
-  ValueNotifier<String?> getNotifier(int dexIndex, String path, Region region, Future<String?> Function(String, Region) fetchUrl) {
-    if (!imageUrlNotifiers.containsKey(dexIndex)) {
+  ValueNotifier<String?> getNotifier(String path, Region region, Future<String?> Function(String, Region) fetchUrl) {
+    if (!imageUrlNotifiers.containsKey(path)) {
       final notifier = ValueNotifier<String?>(null);
-      imageUrlNotifiers[dexIndex] = notifier;
+      imageUrlNotifiers[path] = notifier;
 
       fetchUrl(path, region).then((url) {
         notifier.value = url; // Update notifier instead of calling setState
       });
-
     }
-    return imageUrlNotifiers[dexIndex]!;
+    return imageUrlNotifiers[path]!;
   }
 }
