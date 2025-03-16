@@ -345,10 +345,12 @@ class _CollectionState extends State<Collection> {
       String url = await storageRef.getDownloadURL();
 
       imageCache[path] = url; // Store the fetched URL
-      setState(() {
-        totalComplete++;
-        completed.update(region, (val) => val + 1, ifAbsent:() => 1);
-      });
+      if (!shinyToggle) {
+        setState(() {
+          totalComplete++;
+          completed.update(region, (val) => val + 1, ifAbsent:() => 1);
+        });
+      }
       return url;
     } on FirebaseException catch (_) {
       imageCache[path] = 'error'; // Explicitly mark as failed
