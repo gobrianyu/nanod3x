@@ -175,26 +175,41 @@ class _CollectionState extends State<Collection> {
     );
   }
 
+  bool _isShinyButtonHovered = false;
+
   Widget _shinyToggleButton() {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _isShinyButtonHovered = true),
+      onExit: (_) => setState(() => _isShinyButtonHovered = false),
       child: GestureDetector(
         onTap: () {
           setState(() => shinyToggle = !shinyToggle);
         },
         child: Container(
+          padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
           decoration: BoxDecoration(
-            border: Border.all()
+            border: Border.all(),
+            borderRadius: BorderRadius.circular(100),
+            color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
           ),
           child: Row(
             children: [
-              Text(shinyToggle ? 'Classic' : 'Shiny')
+              Icon(shinyToggle ? Icons.draw : Icons.auto_awesome, size: 15),
+              SizedBox(width: 5),
+              Text(
+                shinyToggle ? 'Classic' : 'Shiny',
+                style: TextStyle(
+                  color: invertColour,
+                ),
+              ),
             ],
-          )
+          ),
         ),
-      )
+      ),
     );
   }
+
 
   Widget _regionFilterButton(String region) {
     return AspectRatio(
