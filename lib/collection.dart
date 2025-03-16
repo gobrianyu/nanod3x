@@ -20,11 +20,12 @@ class _CollectionState extends State<Collection> {
 
   bool darkMode = false;
   bool shinyToggle = false;
-  Color mainColour = Colors.white;
-  Color invertColour = Colors.black;
-  Color accentColourLight = Colors.black12;
-  Color accentColourDark = Colors.black45;
-  Color solidAccentColourLight = const Color.fromARGB(255, 240, 240, 240);
+  Color get mainColour => darkMode ? Colors.black : Colors.white;
+  Color get invertColour => darkMode ? Color.fromARGB(255, 225, 229, 240) : Colors.black;
+  Color get accentColourLight => darkMode ? Colors.black12 : Colors.black12;
+  Color get accentColourDark => darkMode ? Colors.black45 : Colors.black45;
+  Color get solidAccentColourLight => darkMode ? const Color.fromARGB(255, 20, 20, 20) : const Color.fromARGB(255, 240, 240, 240);
+
   final double appBarHeight = 130;
   double screenWidth = 100;
 
@@ -101,7 +102,7 @@ class _CollectionState extends State<Collection> {
         ),
         child: Column(
           children: [
-            const Expanded(
+            Expanded(
               flex: 2,
               child: Row(
                 children: [
@@ -109,11 +110,12 @@ class _CollectionState extends State<Collection> {
                     'NANO.D3X PROGRESS',
                     style: TextStyle(
                       fontSize: 20,
-                      fontWeight: FontWeight.bold
+                      fontWeight: FontWeight.bold,
+                      color: invertColour
                     )
                   ),
-                  Spacer(),
-                  Expanded(
+                  const Spacer(),
+                  const Expanded(
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Search...',
@@ -146,9 +148,15 @@ class _CollectionState extends State<Collection> {
                     children: [
                       Row(
                         children: [
-                          const Text('COMPLETE COLLECTION'),
+                          Text(
+                            'COMPLETE COLLECTION',
+                            style: TextStyle(
+                              color: invertColour
+                            )
+                          ),
                           const Spacer(),
-                          _shinyToggleButton()
+                          _shinyToggleButton(),
+                          _darkModeButton()
                         ],
                       ),
                       Container(
@@ -160,7 +168,7 @@ class _CollectionState extends State<Collection> {
                         child: Text(
                           '$totalComplete/$totalFinale',
                           style: TextStyle(
-                            color: mainColour
+                            color: Colors.white
                           ),
                         )
                       )
@@ -176,7 +184,6 @@ class _CollectionState extends State<Collection> {
   }
 
   bool _isShinyButtonHovered = false;
-
   Widget _shinyToggleButton() {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
@@ -189,16 +196,59 @@ class _CollectionState extends State<Collection> {
         child: Container(
           padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
           decoration: BoxDecoration(
-            border: Border.all(),
+            border: Border.all(color: invertColour),
             borderRadius: BorderRadius.circular(100),
             color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
           ),
           child: Row(
             children: [
-              Icon(shinyToggle ? Icons.draw : Icons.auto_awesome, size: 15),
-              SizedBox(width: 5),
+              Icon(
+                shinyToggle ? Icons.draw : Icons.auto_awesome,
+                size: 15,
+                color: invertColour
+              ),
+              const SizedBox(width: 5),
               Text(
                 shinyToggle ? 'Classic' : 'Shiny',
+                style: TextStyle(
+                  color: invertColour,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  bool _isDarkModeButtonHovered = false;
+  Widget _darkModeButton() {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _isDarkModeButtonHovered = true),
+      onExit: (_) => setState(() => _isDarkModeButtonHovered = false),
+      child: GestureDetector(
+        onTap: () {
+          setState(() => darkMode = !darkMode);
+        },
+        child: Container(
+          margin: EdgeInsets.only(left: 10),
+          padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+          decoration: BoxDecoration(
+            border: Border.all(color: invertColour),
+            borderRadius: BorderRadius.circular(100),
+            color: _isDarkModeButtonHovered ? accentColourLight : Colors.transparent,
+          ),
+          child: Row(
+            children: [
+              Icon(
+                darkMode ? Icons.light_mode : Icons.dark_mode,
+                size: 15,
+                color: invertColour
+              ),
+              SizedBox(width: 5),
+              Text(
+                darkMode ? 'Light' : 'Dark',
                 style: TextStyle(
                   color: invertColour,
                 ),
@@ -244,14 +294,19 @@ class _CollectionState extends State<Collection> {
       margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: screenWidth / 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: accentColourLight
+        color: solidAccentColourLight
       ),
       child: Stack(
         alignment: Alignment.center,
         children: [
           Row(
             children: [
-              Text(region.name.toUpperCase()),
+              Text(
+                region.name.toUpperCase(),
+                style: TextStyle(
+                  color: invertColour
+                )
+              ),
             ],
           ),
           Container(
@@ -263,7 +318,7 @@ class _CollectionState extends State<Collection> {
             child: Text(
               '${completed[region]}/${region.dexSize}',
               style: TextStyle(
-                color: mainColour
+                color: Colors.white
               ),
             )
           )
@@ -322,7 +377,7 @@ class _CollectionState extends State<Collection> {
   Widget _loadingTile() {
     return Container(
       decoration: BoxDecoration(
-        color: accentColourLight,
+        color: solidAccentColourLight,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
@@ -336,13 +391,13 @@ class _CollectionState extends State<Collection> {
   Widget _fallbackTile(int index) {
     return Container(
       decoration: BoxDecoration(
-        color: accentColourLight,
+        color: solidAccentColourLight,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
         child: Text(
           '${index + 1}',
-          style: TextStyle(fontSize: screenWidth / 50, color: mainColour),
+          style: TextStyle(fontSize: screenWidth / 50, color: Colors.white),
         ),
       ),
     );
