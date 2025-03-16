@@ -382,8 +382,8 @@
                 "entry": "When tapped on its head, this Pokémon will pull it in, but its tail will stick out a little bit.",
                 "image asset m": "wartortle.png",
                 "image asset f": "wartortle.png",
-                "image asset m shiny": "wartortle.png",
-                "image asset f shiny": "wartortle.png"
+                "image asset m shiny": "wartortle_shiny.png",
+                "image asset f shiny": "wartortle_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -427,8 +427,8 @@
                 "entry": "Once it takes aim at its enemy, it blasts out water with even more force than a fire hose.",
                 "image asset m": "blastoise.png",
                 "image asset f": "blastoise.png",
-                "image asset m shiny": "blastoise.png",
-                "image asset f shiny": "blastoise.png"
+                "image asset m shiny": "blastoise_shiny.png",
+                "image asset f shiny": "blastoise_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -574,8 +574,8 @@
                 "entry": "Its wings, covered with poisonous powder, repel water. This allows it to fly in the rain.",
                 "image asset m": "butterfree_m.png",
                 "image asset f": "butterfree_f.png",
-                "image asset m shiny": "butterfree_m.png",
-                "image asset f shiny": "butterfree_f.png"
+                "image asset m shiny": "butterfree_m_shiny.png",
+                "image asset f shiny": "butterfree_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -721,8 +721,8 @@
                 "entry": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
                 "image asset m": "beedrill.png",
                 "image asset f": "beedrill.png",
-                "image asset m shiny": "beedrill.png",
-                "image asset f shiny": "beedrill.png"
+                "image asset m shiny": "beedrill_shiny.png",
+                "image asset f shiny": "beedrill_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -823,8 +823,8 @@
                 "entry": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
                 "image asset m": "pidgeotto.png",
                 "image asset f": "pidgeotto.png",
-                "image asset m shiny": "pidgeotto.png",
-                "image asset f shiny": "pidgeotto.png"
+                "image asset m shiny": "pidgeotto_shiny.png",
+                "image asset f shiny": "pidgeotto_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -919,8 +919,8 @@
                 "entry": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.",
                 "image asset m": "rattata.png",
                 "image asset f": "rattata.png",
-                "image asset m shiny": "rattata.png",
-                "image asset f shiny": "rattata.png"
+                "image asset m shiny": "rattata_shiny.png",
+                "image asset f shiny": "rattata_shiny.png"
             },
             {
                 "key": 19.01,
@@ -957,8 +957,8 @@
                 "entry": "It shows no interest in anything that isn't fresh. If you take it shopping with you, it will help you pick out ingredients.",
                 "image asset m": "rattata_a.png",
                 "image asset f": "rattata_a.png",
-                "image asset m shiny": "rattata_a.png",
-                "image asset f shiny": "rattata_a.png"
+                "image asset m shiny": "rattata_a_shiny.png",
+                "image asset f shiny": "rattata_a_shiny.png"
             }
         ],
         "gimmick forms": [],
