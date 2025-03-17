@@ -43,6 +43,11 @@ class _CollectionState extends State<Collection> {
     Region.sinnoh,
   ];
 
+  dex.DexEntry? selectedEntry; // Track selected entry
+  bool isPaneOpen = false; // Track panel visibility
+
+  double get paneWidth => (screenWidth * 0.8 - 90) * 0.4 + 30;
+
   @override
   void initState() {
     if (completed.isEmpty) {
@@ -80,8 +85,69 @@ class _CollectionState extends State<Collection> {
               ],
             ),
           ),
-          _appBar()
+          _appBar(),
+          _slidingPane(),
         ],
+      ),
+    );
+  }
+
+  Widget _slidingPane() {
+    return AnimatedPositioned(
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeInOut,
+      right: isPaneOpen ? screenWidth / 10 : -paneWidth, // Slide in/out
+      top: appBarHeight + 20,
+      bottom: 0,
+      width: paneWidth,
+      child: GestureDetector(
+        onTap: () {}, // Prevent taps from closing when interacting with pane
+        child: Container(
+          decoration: BoxDecoration(
+            color: solidAccentColourLight,
+            borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.2),
+                blurRadius: 10,
+                spreadRadius: 2,
+                offset: const Offset(-5, 0),
+              )
+            ],
+          ),
+          padding: const EdgeInsets.all(15),
+          child: selectedEntry != null
+              ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          selectedEntry!.forms[0].name,
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: invertColour),
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.close),
+                          onPressed: () => setState(() => isPaneOpen = false),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Expanded(
+                      child: CachedNetworkImage(
+                        imageUrl: imageCache[selectedEntry!.forms[0].imageAssetMShiny]!,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ],
+                )
+              : const SizedBox(),
+        ),
       ),
     );
   }
@@ -277,13 +343,13 @@ class _CollectionState extends State<Collection> {
 
   Widget _regionGrid(Region region) {
     return GridView.count(
-      padding: EdgeInsets.only(left: screenWidth / 10, right: screenWidth / 10, bottom: 40),
+      padding: EdgeInsets.only(left: screenWidth / 10, right: isPaneOpen ? screenWidth * 0.42 + 4.2 : screenWidth / 10, bottom: 40),
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       primary: false,
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
-      crossAxisCount: 10,
+      crossAxisCount: isPaneOpen ? 6 : 10,
       children: _regionTiles(region)
     );
   }
@@ -291,7 +357,7 @@ class _CollectionState extends State<Collection> {
   Widget _regionHeader(Region region) {
     return Container(
       padding: const EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
-      margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: screenWidth / 10),
+      margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: isPaneOpen ? screenWidth * 0.42 + 4.2 : screenWidth / 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: solidAccentColourLight
@@ -327,25 +393,6 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  // List<Widget> _regionTiles(Region region) {
-  //   return List.generate(region.dexSize, (index) {
-  //     int dexIndex = region.dexFirst - 1 + index;
-  //     String imageAssetLocation = widget.fullDex[dexIndex].forms[0].imageAssetM;
-  //     return FutureBuilder<String?>(
-  //       future: getImageUrl(imageAssetLocation, region), // Load image URL asynchronously
-  //       builder: (context, snapshot) {
-  //         if (snapshot.connectionState == ConnectionState.waiting) {
-  //           return _loadingTile(); // Show a loading indicator
-  //         } else if (snapshot.hasError || snapshot.data == null) {
-  //           return _fallbackTile(dexIndex); // Show fallback if image fails to load
-  //         } else {
-  //           return HoverImageTile(imageUrl: snapshot.data!, onTap: () {}); // Show loaded image
-  //         }
-  //       },
-  //     );
-  //   });
-  // }
-
   final _imageCacheManager = _ImageCacheManager(); // Store globally or in the widget state
 
   List<Widget> _regionTiles(Region region) {
@@ -364,7 +411,22 @@ class _CollectionState extends State<Collection> {
           } else if (imageUrl == 'error') {
             return _fallbackTile(dexIndex); // Show fallback if fetching fails
           } else {
-            return HoverImageTile(imageUrl: imageUrl, onTap: () {}); // Show valid image
+            return HoverImageTile(
+              imageUrl: imageUrl,
+              isDarkMode: darkMode,
+              onTap: () {
+                setState(() {
+                  dex.DexEntry newEntry = widget.fullDex[dexIndex];
+                  if (selectedEntry == newEntry) {
+                    selectedEntry = null;
+                    isPaneOpen = false;
+                  } else {
+                    selectedEntry = widget.fullDex[dexIndex];
+                    isPaneOpen = true;
+                  }
+                });
+              }
+            );
           }
         },
       );
@@ -403,7 +465,7 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  Future<String?> getImageUrl(String path, Region region) async {
+  Future<String?> getImageUrl(String path, Region region, {bool update = true}) async {
     if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
       return imageCache[path];  // Return cached URL if available
     }
@@ -433,9 +495,10 @@ class _CollectionState extends State<Collection> {
 
 class HoverImageTile extends StatefulWidget {
   final String imageUrl;
+  final bool isDarkMode;
   final VoidCallback onTap;
 
-  HoverImageTile({required this.imageUrl, required this.onTap, Key? key}) : super(key: key);
+  HoverImageTile({required this.imageUrl, required this.onTap, required this.isDarkMode, Key? key}) : super(key: key);
 
   @override
   _HoverImageTileState createState() => _HoverImageTileState();
@@ -462,7 +525,9 @@ class _HoverImageTileState extends State<HoverImageTile> {
             ),
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
-                ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
+                ? widget.isDarkMode
+                  ? [BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
+                  : [BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1)]
                 : [],
           ),
           child: ClipRRect(
