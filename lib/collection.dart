@@ -106,7 +106,9 @@ class _CollectionState extends State<Collection> {
           decoration: BoxDecoration(
             color: solidAccentColourLight,
             borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+              topLeft: Radius.circular(10), 
+              topRight: Radius.circular(10)
+            ),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.2),
@@ -121,15 +123,17 @@ class _CollectionState extends State<Collection> {
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // Title and Close Button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           selectedEntry!.forms[0].name,
                           style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: invertColour),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: invertColour
+                          ),
                         ),
                         IconButton(
                           icon: const Icon(Icons.close),
@@ -138,17 +142,36 @@ class _CollectionState extends State<Collection> {
                       ],
                     ),
                     const SizedBox(height: 10),
+                    
+                    // Image Section with Fallback
                     Expanded(
-                      child: CachedNetworkImage(
-                        imageUrl: imageCache[selectedEntry!.forms[0].imageAssetMShiny]!,
-                        fit: BoxFit.contain,
-                      ),
+                      child: imageCache.containsKey(selectedEntry!.forms[0].imageAssetMShiny)
+                          ? CachedNetworkImage(
+                              imageUrl: imageCache[selectedEntry!.forms[0].imageAssetMShiny]!,
+                              fit: BoxFit.contain,
+                              placeholder: (context, url) => 
+                                  const Center(child: CircularProgressIndicator()), // Loading state
+                              errorWidget: (context, url, error) => _paneFallback(), // Error case
+                            )
+                          : _paneFallback(), // If image key is missing
                     ),
                   ],
                 )
-              : const SizedBox(),
+              : _paneFallback(), // If `selectedEntry` is null
         ),
       ),
+    );
+  }
+
+  Widget _paneFallback() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Icon(Icons.image_not_supported, size: 50),
+        const SizedBox(height: 10),
+        Text('No image available.')
+      ]
     );
   }
 
