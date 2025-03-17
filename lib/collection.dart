@@ -142,24 +142,53 @@ class _CollectionState extends State<Collection> {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    
-                    // Image Section with Fallback
-                    Expanded(
-                      child: imageCache.containsKey(selectedEntry!.forms[0].imageAssetMShiny)
-                          ? CachedNetworkImage(
-                              imageUrl: imageCache[selectedEntry!.forms[0].imageAssetMShiny]!,
-                              fit: BoxFit.contain,
-                              placeholder: (context, url) => 
-                                  const Center(child: CircularProgressIndicator()), // Loading state
-                              errorWidget: (context, url, error) => _paneFallback(), // Error case
-                            )
-                          : _paneFallback(), // If image key is missing
-                    ),
+                    _paneContent(),
                   ],
                 )
               : _paneFallback(), // If `selectedEntry` is null
         ),
       ),
+    );
+  }
+
+  Widget _paneContent() {
+    if (selectedEntry == null) return _paneFallback();
+
+    String imageUrl = shinyToggle
+        ? selectedEntry!.forms[0].imageAssetMShiny
+        : selectedEntry!.forms[0].imageAssetM;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        FutureBuilder<Widget>(
+          future: _paneImage(imageUrl), // Fetch image asynchronously
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
+            } else if (snapshot.hasError) {
+              return _paneFallback(); // Show fallback if there's an error
+            } else {
+              return snapshot.data ?? _paneFallback(); // Display the loaded image
+            }
+          },
+        ),
+      ],
+    );
+  }
+
+
+  Future<Widget> _paneImage(String key) async {
+    String? url = await getImageUrl(key, selectedEntry!.forms[0].region);
+    if (url == null || url == 'error') {
+      return _paneFallback();
+    }
+    return CachedNetworkImage(
+      imageUrl: url,
+      fit: BoxFit.contain,
+      placeholder: (context, url) => 
+          Center(child: CircularProgressIndicator(color: accentColourLight)), // Loading state
+      errorWidget: (context, url, error) => _paneFallback(), // Error case
     );
   }
 
