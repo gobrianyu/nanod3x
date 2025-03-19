@@ -4352,8 +4352,8 @@
                 "entry": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
                 "image asset m": "ponyta.png",
                 "image asset f": "ponyta.png",
-                "image asset m shiny": "ponyta.png",
-                "image asset f shiny": "ponyta.png"
+                "image asset m shiny": "ponyta_shiny.png",
+                "image asset f shiny": "ponyta_shiny.png"
             },
             {
                 "key": 77.01,
