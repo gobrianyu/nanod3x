@@ -6243,10 +6243,10 @@
                 "height": 120,
                 "weight": 65.5,
                 "entry": "Its tongue, twice its body's length, moves around freely to catch prey. Its licks cause a tingling sensation.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "lickitung.png",
+                "image asset f": "lickitung.png",
+                "image asset m shiny": "lickitung_shiny.png",
+                "image asset f shiny": "lickitung_shiny.png"
             }
         ],
         "gimmick forms": [],
