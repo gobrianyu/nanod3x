@@ -6192,10 +6192,10 @@
                 "height": 140,
                 "weight": 50.2,
                 "entry": "Punches in corkscrew fashion. It can punch its way through a concrete wall like a drill.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "hitmonchan.png",
+                "image asset f": "hitmonchan.png",
+                "image asset m shiny": "hitmonchan_shiny.png",
+                "image asset f shiny": "hitmonchan_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6427,10 +6427,10 @@
                 "height": 100,
                 "weight": 115,
                 "entry": "A Pokémon with a one-track mind. Once it charges, it won't stop running until it falls asleep.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "rhyhorn.png",
+                "image asset f": "rhyhorn.png",
+                "image asset m shiny": "rhyhorn_shiny.png",
+                "image asset f shiny": "rhyhorn_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6478,10 +6478,10 @@
                 "height": 190,
                 "weight": 120,
                 "entry": "Its brain developed when it began walking on its hind legs. Its armor-like hide even repels molten lava.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "rhydon.png",
+                "image asset f": "rhydon.png",
+                "image asset m shiny": "rhydon_shiny.png",
+                "image asset f shiny": "rhydon_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6580,10 +6580,10 @@
                 "height": 100,
                 "weight": 35,
                 "entry": "Its identity is obscured by masses of thick blue vines. The vines are said to never stop growing.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "tangela.png",
+                "image asset f": "tangela.png",
+                "image asset m shiny": "tangela_shiny.png",
+                "image asset f shiny": "tangela_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6625,10 +6625,10 @@
                 "height": 220,
                 "weight": 80,
                 "entry": "If it is safe, the young gets out of the belly pouch to play. The adult keeps a close eye on the youngster.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "kangaskhan.png",
+                "image asset f": "kangaskhan.png",
+                "image asset m shiny": "kangaskhan_shiny.png",
+                "image asset f shiny": "kangaskhan_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6676,10 +6676,10 @@
                 "height": 40,
                 "weight": 8,
                 "entry": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "horsea.png",
+                "image asset f": "horsea.png",
+                "image asset m shiny": "horsea_shiny.png",
+                "image asset f shiny": "horsea_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6727,10 +6727,10 @@
                 "height": 120,
                 "weight": 25,
                 "entry": "Touching the back fin causes numbness. It hooks its tail to coral to stay in place while sleeping.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "seadra.png",
+                "image asset f": "seadra.png",
+                "image asset m shiny": "seadra_shiny.png",
+                "image asset f shiny": "seadra_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6778,10 +6778,10 @@
                 "height": 60,
                 "weight": 15,
                 "entry": "Spellbound by the length of its horn and the beauty of its fins, many strange Trainers raise Goldeen and nothing but Goldeen.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "goldeen.png",
+                "image asset f": "goldeen.png",
+                "image asset m shiny": "goldeen_shiny.png",
+                "image asset f shiny": "goldeen_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6823,10 +6823,10 @@
                 "height": 130,
                 "weight": 39,
                 "entry": "Trainers who are crazy for Seaking are divided into horn enthusiasts and fin enthusiasts. The two groups do not get along well.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "seaking.png",
+                "image asset f": "seaking.png",
+                "image asset m shiny": "seaking_shiny.png",
+                "image asset f shiny": "seaking_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6919,10 +6919,10 @@
                 "height": 110,
                 "weight": 80,
                 "entry": "When away from human eyes, its core is said to glow mysteriously in seven colors. This Pokémon may have come from outer space.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "starmie.png",
+                "image asset f": "starmie.png",
+                "image asset m shiny": "starmie_shiny.png",
+                "image asset f shiny": "starmie_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7058,10 +7058,10 @@
                 "height": 150,
                 "weight": 56,
                 "entry": "Leaps out of tall grass and slices prey with its scythes. The movement looks like that of a ninja.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "scyther.png",
+                "image asset f": "scyther.png",
+                "image asset m shiny": "scyther_shiny.png",
+                "image asset f shiny": "scyther_shiny.png"
             }
         ],
         "gimmick forms": [],
