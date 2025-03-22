@@ -1000,10 +1000,10 @@
                 "height": 70,
                 "weight": 18.5,
                 "entry": "Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "raticate.png",
+                "image asset f": "raticate.png",
+                "image asset m shiny": "raticate_shiny.png",
+                "image asset f shiny": "raticate_shiny.png"
             },
             {
                 "key": 20.01,
@@ -1083,10 +1083,10 @@
                 "height": 30,
                 "weight": 2,
                 "entry": "Inept at flying high. However, it can fly around very fast to protect its territory.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "spearow.png",
+                "image asset f": "spearow.png",
+                "image asset m shiny": "spearow_shiny.png",
+                "image asset f shiny": "spearow_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1128,10 +1128,10 @@
                 "height": 120,
                 "weight": 38,
                 "entry": "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "fearow.png",
+                "image asset f": "fearow.png",
+                "image asset m shiny": "fearow_shiny.png",
+                "image asset f shiny": "fearow_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1179,10 +1179,10 @@
                 "height": 200,
                 "weight": 6.9,
                 "entry": "The eggs of bird Pokémon are its favorite food. It swallows eggs whole, so sometimes an egg gets stuck, and Ekans faints.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "ekans.png",
+                "image asset f": "ekans.png",
+                "image asset m shiny": "ekans_shiny.png",
+                "image asset f shiny": "ekans_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1224,10 +1224,10 @@
                 "height": 350,
                 "weight": 65,
                 "entry": "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "arbok.png",
+                "image asset f": "arbok.png",
+                "image asset m shiny": "arbok_shiny.png",
+                "image asset f shiny": "arbok_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1325,10 +1325,10 @@
                 "height": 80,
                 "weight": 30,
                 "entry": "When electricity builds up inside its body, it becomes feisty. It also glows in the dark.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "raichu_m.png",
+                "image asset f": "raichu_f.png",
+                "image asset m shiny": "raichu_m_shiny.png",
+                "image asset f shiny": "raichu_f_shiny.png"
             },
             {
                 "key": 26.01,
@@ -7103,10 +7103,10 @@
                 "height": 140,
                 "weight": 40.6,
                 "entry": "Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "jynx.png",
+                "image asset f": "jynx.png",
+                "image asset m shiny": "jynx_shiny.png",
+                "image asset f shiny": "jynx_shiny.png"
             }
         ],
         "gimmick forms": [],
