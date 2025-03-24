@@ -6823,10 +6823,10 @@
                 "height": 130,
                 "weight": 39,
                 "entry": "Trainers who are crazy for Seaking are divided into horn enthusiasts and fin enthusiasts. The two groups do not get along well.",
-                "image asset m": "seaking.png",
-                "image asset f": "seaking.png",
-                "image asset m shiny": "seaking_shiny.png",
-                "image asset f shiny": "seaking_shiny.png"
+                "image asset m": "seaking_m.png",
+                "image asset f": "seaking_f.png",
+                "image asset m shiny": "seaking_m_shiny.png",
+                "image asset f shiny": "seaking_f_shiny.png"
             }
         ],
         "gimmick forms": [],
