@@ -917,10 +917,10 @@
                 "height": 30,
                 "weight": 3.5,
                 "entry": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.",
-                "image asset m": "rattata.png",
-                "image asset f": "rattata.png",
-                "image asset m shiny": "rattata_shiny.png",
-                "image asset f shiny": "rattata_shiny.png"
+                "image asset m": "rattata_m.png",
+                "image asset f": "rattata_f.png",
+                "image asset m shiny": "rattata_m_shiny.png",
+                "image asset f shiny": "rattata_f_shiny.png"
             },
             {
                 "key": 19.01,
@@ -1000,10 +1000,10 @@
                 "height": 70,
                 "weight": 18.5,
                 "entry": "Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.",
-                "image asset m": "raticate.png",
-                "image asset f": "raticate.png",
-                "image asset m shiny": "raticate_shiny.png",
-                "image asset f shiny": "raticate_shiny.png"
+                "image asset m": "raticate_m.png",
+                "image asset f": "raticate_f.png",
+                "image asset m shiny": "raticate_m_shiny.png",
+                "image asset f shiny": "raticate_f_shiny.png"
             },
             {
                 "key": 20.01,
@@ -1357,7 +1357,7 @@
                 "height": 70,
                 "weight": 21,
                 "entry": "It loves pancakes prepared with a secret Alolan recipe. Some wonder whether that recipe holds the key to this Pokémon's evolution.",
-                "image asset m": "charizard.png",
+                "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
                 "image asset f shiny": "unknown.png"
@@ -1574,10 +1574,10 @@
                 "height": 40,
                 "weight": 7,
                 "entry": "A mild-mannered Pokémon that does not like to fight. Beware-its small horn secretes venom.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "nidoran_f.png",
+                "image asset f": "nidoran_f.png",
+                "image asset m shiny": "nidoran_f_shiny.png",
+                "image asset f shiny": "nidoran_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1625,10 +1625,10 @@
                 "height": 80,
                 "weight": 20,
                 "entry": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "nidorina.png",
+                "image asset f": "nidorina.png",
+                "image asset m shiny": "nidorina_shiny.png",
+                "image asset f shiny": "nidorina_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1670,10 +1670,10 @@
                 "height": 130,
                 "weight": 60,
                 "entry": "Tough scales cover the sturdy body of this Pokémon. It appears that the scales grow in cycles.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "nidoqueen.png",
+                "image asset f": "nidoqueen.png",
+                "image asset m shiny": "nidoqueen_shiny.png",
+                "image asset f shiny": "nidoqueen_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1772,10 +1772,10 @@
                 "height": 90,
                 "weight": 19.5,
                 "entry": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "nidorino.png",
+                "image asset f": "nidorino.png",
+                "image asset m shiny": "nidorino_shiny.png",
+                "image asset f shiny": "nidorino_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1868,10 +1868,10 @@
                 "height": 60,
                 "weight": 7.5,
                 "entry": "On every night of a full moon, groups of this Pokémon come out to play. When dawn arrives, the tired Clefairy return to their quiet mountain retreats and go to sleep nestled up against each other.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "clefairy.png",
+                "image asset f": "clefairy.png",
+                "image asset m shiny": "clefairy_shiny.png",
+                "image asset f shiny": "clefairy_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -1913,10 +1913,10 @@
                 "height": 130,
                 "weight": 40,
                 "entry": "According to tradition, people who see a pair of Clefable skipping by can look forward to a happy marriage.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "clefable.png",
+                "image asset f": "clefable.png",
+                "image asset m shiny": "clefable_shiny.png",
+                "image asset f shiny": "clefable_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2049,8 +2049,8 @@
                 "entry": "According to an enduring legend, nine noble saints were united and reincarnated as this Pokémon.",
                 "image asset m": "ninetales.png",
                 "image asset f": "ninetales.png",
-                "image asset m shiny": "ninetales.png",
-                "image asset f shiny": "ninetales.png"
+                "image asset m shiny": "ninetales_shiny.png",
+                "image asset f shiny": "ninetales_shiny.png"
             },
             {
                 "key": 38.01,
@@ -2277,10 +2277,10 @@
                 "height": 160,
                 "weight": 55,
                 "entry": "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "golbat_m.png",
+                "image asset f": "golbat_f.png",
+                "image asset m shiny": "golbat_m_shiny.png",
+                "image asset f shiny": "golbat_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2429,10 +2429,10 @@
                 "height": 120,
                 "weight": 18.6,
                 "entry": "Flaps its broad flower petals to scatter its poisonous pollen. The flapping sound is very loud.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "vileplume_m.png",
+                "image asset f": "vileplume_f.png",
+                "image asset m shiny": "vileplume_m_shiny.png",
+                "image asset f shiny": "vileplume_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2480,10 +2480,10 @@
                 "height": 30,
                 "weight": 5.4,
                 "entry": "Mushrooms named tochukaso grow on its back. They grow along with the host Paras.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "paras.png",
+                "image asset f": "paras.png",
+                "image asset m shiny": "paras_shiny.png",
+                "image asset f shiny": "paras_shiny.png"
             }
         ],
         "gimmick forms": [],
