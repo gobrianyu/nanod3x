@@ -96,12 +96,12 @@ class _CollectionState extends State<Collection> {
     return AnimatedPositioned(
       duration: const Duration(milliseconds: 200),
       curve: Curves.easeInOut,
-      right: isPaneOpen ? screenWidth / 10 : -paneWidth, // Slide in/out
+      right: isPaneOpen ? screenWidth / 10 : -paneWidth,  // pos logic
       top: appBarHeight + 20,
       bottom: 0,
       width: paneWidth,
       child: GestureDetector(
-        onTap: () {}, // Prevent taps from closing when interacting with pane
+        onTap: () {/* prevents tapping from closing */},
         child: Container(
           decoration: BoxDecoration(
             color: solidAccentColourLight,
@@ -123,10 +123,18 @@ class _CollectionState extends State<Collection> {
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Title and Close Button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        Text(
+                          dexNumFormatted(selectedEntry!.dexNum),
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: invertColour
+                          ),
+                        ),
+                        SizedBox(width: 10),
                         Text(
                           selectedEntry!.forms[0].name,
                           style: TextStyle(
@@ -145,7 +153,7 @@ class _CollectionState extends State<Collection> {
                     _paneContent(),
                   ],
                 )
-              : _paneFallback(), // If `selectedEntry` is null
+              : _paneFallback(),
         ),
       ),
     );
@@ -183,12 +191,18 @@ class _CollectionState extends State<Collection> {
     if (url == null || url == 'error') {
       return _paneFallback();
     }
-    return CachedNetworkImage(
-      imageUrl: url,
-      fit: BoxFit.contain,
-      placeholder: (context, url) => 
-          Center(child: CircularProgressIndicator(color: accentColourLight)), // Loading state
-      errorWidget: (context, url, error) => _paneFallback(), // Error case
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10)
+      ),
+      child: CachedNetworkImage(
+        imageUrl: url,
+        fit: BoxFit.contain,
+        placeholder: (context, url) => 
+            Center(child: CircularProgressIndicator(color: accentColourLight)), // Loading state
+        errorWidget: (context, url, error) => _paneFallback(), // Error case
+      ),
     );
   }
 
@@ -614,5 +628,16 @@ class _ImageCacheManager {
       });
     }
     return imageUrlNotifiers[path]!;
+  }
+}
+
+
+String dexNumFormatted(int num) {
+  switch (num) {
+    case > 0 && < 10: return '000$num';
+    case > 10 && < 100: return '00$num';
+    case > 100 && < 1000: return '0$num';
+    case > 1000 && < 10000: return '$num';
+    default: return 'Error: invalid dex num';
   }
 }
