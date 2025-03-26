@@ -35,6 +35,7 @@ class _CollectionState extends State<Collection> {
   Map<Region, int> completed = {};
   int totalComplete = 0;
   final totalFinale = 1025;
+  final _paneAnimationTime = 200;
 
   final regions = [
     Region.kanto,
@@ -94,7 +95,7 @@ class _CollectionState extends State<Collection> {
 
   Widget _slidingPane() {
     return AnimatedPositioned(
-      duration: const Duration(milliseconds: 200),
+      duration: Duration(milliseconds: _paneAnimationTime),
       curve: Curves.easeInOut,
       right: isPaneOpen ? screenWidth / 10 : -paneWidth,  // pos logic
       top: appBarHeight + 20,
@@ -194,7 +195,7 @@ class _CollectionState extends State<Collection> {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(10)
+        borderRadius: BorderRadius.circular(15)
       ),
       child: CachedNetworkImage(
         imageUrl: url,
@@ -484,8 +485,10 @@ class _CollectionState extends State<Collection> {
                 setState(() {
                   dex.DexEntry newEntry = widget.fullDex[dexIndex];
                   if (selectedEntry == newEntry) {
-                    selectedEntry = null;
                     isPaneOpen = false;
+                    Future.delayed(Duration(milliseconds: _paneAnimationTime), () {
+                      selectedEntry = null;
+                    });
                   } else {
                     selectedEntry = widget.fullDex[dexIndex];
                     isPaneOpen = true;
