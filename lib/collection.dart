@@ -193,7 +193,7 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  Widget _nameHeaderButtons(double? ratio) { // TODO: hide buttons if entry still locked
+  Widget _nameHeaderButtons(double? ratio) {
     if (ratio != null && ratio == 0) {
       setState(() {
         _displayMale = false;
@@ -207,10 +207,10 @@ class _CollectionState extends State<Collection> {
       children: [
         (ratio != null && ratio != 0)
               ? _maleButton()
-              : SizedBox(),
+              : const SizedBox(),
         (ratio != null && ratio != 100)
               ? _femaleButton()
-              : SizedBox(),
+              : const SizedBox(),
       ],
     );
   }
@@ -228,7 +228,7 @@ class _CollectionState extends State<Collection> {
           shape: const CircleBorder(),
           backgroundColor: Colors.pink,
           minimumSize: const Size(0, 0),
-          padding: EdgeInsets.all(_displayMale? 3 : 6),
+          padding: EdgeInsets.all(_displayMale ? 3 : 6),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
         child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 15 : 20)
@@ -612,6 +612,7 @@ class _CollectionState extends State<Collection> {
           imageAssetLocation, region, (path, reg) => getImageUrl(dexIndex, path, reg)
         ),
         builder: (context, imageUrl, child) {
+          dex.DexEntry entry = widget.fullDex[dexIndex];
           if (imageUrl == null) {
             return _loadingTile(); // Show loading only while fetching
           } else if (imageUrl == 'error') {
@@ -620,10 +621,10 @@ class _CollectionState extends State<Collection> {
             return HoverImageTile(
               imageUrl: imageUrl,
               isDarkMode: darkMode,
+              isSelected: selectedEntry == entry,
               onTap: () {
                 setState(() {
-                  dex.DexEntry newEntry = widget.fullDex[dexIndex];
-                  if (selectedEntry == newEntry) {
+                  if (selectedEntry == entry) {
                     isPaneOpen = false;
                     Future.delayed(Duration(milliseconds: _paneAnimationTime), () {
                       selectedEntry = null;
@@ -706,8 +707,9 @@ class HoverImageTile extends StatefulWidget {
   final String imageUrl;
   final bool isDarkMode;
   final VoidCallback onTap;
+  final bool isSelected;
 
-  HoverImageTile({required this.imageUrl, required this.onTap, required this.isDarkMode, Key? key}) : super(key: key);
+  HoverImageTile({required this.imageUrl, required this.onTap, required this.isSelected, required this.isDarkMode, Key? key}) : super(key: key);
 
   @override
   _HoverImageTileState createState() => _HoverImageTileState();
@@ -729,8 +731,8 @@ class _HoverImageTileState extends State<HoverImageTile> {
           decoration: BoxDecoration(
             color: Colors.white,
             border: Border.all(
-              color: _isHovered ? Colors.black45 : Colors.black12,
-              width: _isHovered ? 2 : 1,
+              color: widget.isSelected ? Colors.black : _isHovered ? Colors.black45 : Colors.black12,
+              width: widget.isSelected ? 2 : _isHovered ? 2 : 1,
             ),
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
@@ -778,9 +780,9 @@ class _ImageCacheManager {
 String dexNumFormatted(int num) {
   switch (num) {
     case > 0 && < 10: return '000$num';
-    case > 10 && < 100: return '00$num';
-    case > 100 && < 1000: return '0$num';
-    case > 1000 && < 10000: return '$num';
+    case >= 10 && < 100: return '00$num';
+    case >= 100 && < 1000: return '0$num';
+    case >= 1000 && < 10000: return '$num';
     default: return 'Error: invalid dex num';
   }
 }
