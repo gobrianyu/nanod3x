@@ -104,6 +104,7 @@ class _CollectionState extends State<Collection> {
       child: GestureDetector(
         onTap: () {/* prevents tapping from closing */},
         child: Container(
+          alignment: Alignment.topCenter,
           decoration: BoxDecoration(
             color: solidAccentColourLight,
             borderRadius: const BorderRadius.only(
@@ -167,25 +168,27 @@ class _CollectionState extends State<Collection> {
         ? selectedEntry!.forms[0].imageAssetMShiny
         : selectedEntry!.forms[0].imageAssetM;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+    return ListView(
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(15)
-          ),
-          child: FutureBuilder<Widget>(
-            future: _paneImage(imageUrl), // Fetch image asynchronously
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
-              } else if (snapshot.hasError) {
-                return _paneFallback(); // Show fallback if there's an error
-              } else {
-                return snapshot.data ?? _paneFallback(); // Display the loaded image
-              }
-            },
+        AspectRatio(
+          aspectRatio: 1,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15)
+            ),
+            child: FutureBuilder<Widget>(
+              future: _paneImage(imageUrl), // Fetch image asynchronously
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
+                } else if (snapshot.hasError) {
+                  return _paneFallback(); // Show fallback if there's an error
+                } else {
+                  return snapshot.data ?? _paneFallback(); // Display the loaded image
+                }
+              },
+            ),
           ),
         ),
       ],
