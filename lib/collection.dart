@@ -36,6 +36,7 @@ class _CollectionState extends State<Collection> {
   int totalComplete = 0;
   final totalFinale = 1025;
   final _paneAnimationTime = 200;
+  bool _displayMale = true;
 
   final regions = [
     Region.kanto,
@@ -137,32 +138,143 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  Row _paneHeader() {
+  Widget _paneHeader() {
+    dex.DexEntry currEntry = selectedEntry!;
+    String dexNumAsString = dexNumFormatted(currEntry.dexNum);
+    bool genderKnown = currEntry.genderKnown;
+
+    return Container(
+      margin: const EdgeInsets.only(right: 10),
+      padding: const EdgeInsets.only(left: 10, right: 5),
+      decoration: BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 5),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Icon(Icons.circle, color: Colors.white, size: 30),
+                Icon(Icons.catching_pokemon, color: Colors.red, size: 30),
+                Icon(Icons.circle_outlined, color: Colors.black, size: 30),
+                Icon(Icons.circle_outlined, color: Colors.black, size: 32)
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: Text(
+              '#$dexNumAsString',
+              style: const TextStyle(
+                fontSize: 16,
+                color: Colors.white
+              )
+            ),
+          ),
+          Text(
+            currEntry.forms[0].name,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Colors.white
+            )
+          ),
+          currEntry.dexNum == 29 ? Icon(Icons.female, color: Colors.white, size: 18) : SizedBox(),
+          currEntry.dexNum == 32 ? Icon(Icons.male, color: Colors.white, size: 18) : SizedBox(),
+          const Spacer(),
+          if (genderKnown) _nameHeaderButtons(currEntry.genderRatio)
+        ]
+      ),
+      // child: Row(
+      //   children: [
+      //     Text(
+      //       dexNumFormatted(selectedEntry!.dexNum),
+      //       style: TextStyle(
+      //         fontSize: 20,
+      //         fontWeight: FontWeight.bold,
+      //         color: invertColour
+      //       ),
+      //     ),
+      //     SizedBox(width: 10),
+      //     Text(
+      //       selectedEntry!.forms[0].name,
+      //       style: TextStyle(
+      //         fontSize: 20,
+      //         fontWeight: FontWeight.bold,
+      //         color: invertColour
+      //       ),
+      //     ),
+      //     Spacer(),
+      //     IconButton(
+      //       icon: const Icon(Icons.close),
+      //       onPressed: () => setState(() => isPaneOpen = false),
+      //     ),
+      //   ],
+      // ),
+    );
+  }
+
+  Widget _nameHeaderButtons(double? ratio) { // TODO: hide buttons if entry still locked
+    if (ratio != null && ratio == 0) {
+      setState(() {
+        // _displayMale = false;
+      });
+    }
     return Row(
       children: [
-        Text(
-          dexNumFormatted(selectedEntry!.dexNum),
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: invertColour
-          ),
-        ),
-        SizedBox(width: 10),
-        Text(
-          selectedEntry!.forms[0].name,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: invertColour
-          ),
-        ),
-        Spacer(),
-        IconButton(
-          icon: const Icon(Icons.close),
-          onPressed: () => setState(() => isPaneOpen = false),
-        ),
+        (ratio != null && ratio != 0)
+              ? _maleButton()
+              : SizedBox(),
+        (ratio != null && ratio != 100)
+              ? _femaleButton()
+              : SizedBox(),
       ],
+    );
+  }
+
+  Widget _femaleButton() {
+    return SizedBox(
+      width: 35,
+      child: ElevatedButton(
+        onPressed: () {
+          setState(() {
+            _displayMale = false;
+          });
+        },
+        style: ElevatedButton.styleFrom(
+          shape: const CircleBorder(),
+          backgroundColor: Colors.pink,
+          minimumSize: const Size(0, 0),
+          padding: EdgeInsets.all(_displayMale? 3 : 6),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap
+        ),
+        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 15 : 20)
+      ),
+    );
+  }
+
+  Widget _maleButton() {
+    return SizedBox(
+      width: 35,
+      child: ElevatedButton(
+        onPressed: () {
+          setState(() {
+            _displayMale = true;
+          });
+        },
+        style: ElevatedButton.styleFrom(
+          shape: const CircleBorder(),
+          backgroundColor: Colors.blue,
+          minimumSize: const Size(0, 0),
+          padding: EdgeInsets.all(_displayMale? 6 : 3),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap
+        ),
+        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 20 : 15)
+      ),
     );
   }
 
