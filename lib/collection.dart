@@ -107,6 +107,7 @@ class _CollectionState extends State<Collection> {
         onTap: () {/* prevents tapping from closing */},
         child: Container(
           alignment: Alignment.topCenter,
+          padding: EdgeInsets.only(top: 15),
           decoration: BoxDecoration(
             color: solidAccentColourLight,
             borderRadius: const BorderRadius.only(
@@ -122,12 +123,11 @@ class _CollectionState extends State<Collection> {
               )
             ],
           ),
-          padding: const EdgeInsets.all(15),
           child: selectedEntry != null
               ? Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 40), // TODO: change from const to dynamic
+                      padding: const EdgeInsets.only(top: 40, left: 15, right: 15), // TODO: change from const to dynamic
                       child: _paneContent(),
                     ),
                     _paneHeader(),
@@ -190,32 +190,6 @@ class _CollectionState extends State<Collection> {
           if (genderKnown) _nameHeaderButtons(currEntry.genderRatio)
         ]
       ),
-      // child: Row(
-      //   children: [
-      //     Text(
-      //       dexNumFormatted(selectedEntry!.dexNum),
-      //       style: TextStyle(
-      //         fontSize: 20,
-      //         fontWeight: FontWeight.bold,
-      //         color: invertColour
-      //       ),
-      //     ),
-      //     SizedBox(width: 10),
-      //     Text(
-      //       selectedEntry!.forms[0].name,
-      //       style: TextStyle(
-      //         fontSize: 20,
-      //         fontWeight: FontWeight.bold,
-      //         color: invertColour
-      //       ),
-      //     ),
-      //     Spacer(),
-      //     IconButton(
-      //       icon: const Icon(Icons.close),
-      //       onPressed: () => setState(() => isPaneOpen = false),
-      //     ),
-      //   ],
-      // ),
     );
   }
 
@@ -223,6 +197,10 @@ class _CollectionState extends State<Collection> {
     if (ratio != null && ratio == 0) {
       setState(() {
         _displayMale = false;
+      });
+    } else if (ratio != null && ratio == 100) {
+      setState(() {
+        _displayMale = true;
       });
     }
     return Row(
