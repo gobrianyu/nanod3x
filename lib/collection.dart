@@ -627,7 +627,9 @@ class _CollectionState extends State<Collection> {
                   if (selectedEntry == entry) {
                     isPaneOpen = false;
                     Future.delayed(Duration(milliseconds: _paneAnimationTime), () {
-                      selectedEntry = null;
+                      setState(() {
+                        selectedEntry = null;
+                      });
                     });
                   } else {
                     selectedEntry = widget.fullDex[dexIndex];
