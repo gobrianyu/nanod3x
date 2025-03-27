@@ -122,43 +122,48 @@ class _CollectionState extends State<Collection> {
           ),
           padding: const EdgeInsets.all(15),
           child: selectedEntry != null
-              ? Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              ? Stack(
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          dexNumFormatted(selectedEntry!.dexNum),
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: invertColour
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          selectedEntry!.forms[0].name,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: invertColour
-                          ),
-                        ),
-                        Spacer(),
-                        IconButton(
-                          icon: const Icon(Icons.close),
-                          onPressed: () => setState(() => isPaneOpen = false),
-                        ),
-                      ],
+                    _paneHeader(),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 25), // TODO: change from const to dynamic
+                      child: _paneContent(),
                     ),
-                    const SizedBox(height: 10),
-                    _paneContent(),
                   ],
                 )
               : _paneFallback(),
         ),
       ),
     );
+  }
+
+  Row _paneHeader() {
+    return Row(
+                    children: [
+                      Text(
+                        dexNumFormatted(selectedEntry!.dexNum),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: invertColour
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        selectedEntry!.forms[0].name,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: invertColour
+                        ),
+                      ),
+                      Spacer(),
+                      IconButton(
+                        icon: const Icon(Icons.close),
+                        onPressed: () => setState(() => isPaneOpen = false),
+                      ),
+                    ],
+                  );
   }
 
   Widget _paneContent() {
