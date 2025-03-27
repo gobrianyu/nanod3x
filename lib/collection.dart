@@ -125,7 +125,6 @@ class _CollectionState extends State<Collection> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           dexNumFormatted(selectedEntry!.dexNum),
@@ -144,6 +143,7 @@ class _CollectionState extends State<Collection> {
                             color: invertColour
                           ),
                         ),
+                        Spacer(),
                         IconButton(
                           icon: const Icon(Icons.close),
                           onPressed: () => setState(() => isPaneOpen = false),
@@ -170,17 +170,23 @@ class _CollectionState extends State<Collection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        FutureBuilder<Widget>(
-          future: _paneImage(imageUrl), // Fetch image asynchronously
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
-            } else if (snapshot.hasError) {
-              return _paneFallback(); // Show fallback if there's an error
-            } else {
-              return snapshot.data ?? _paneFallback(); // Display the loaded image
-            }
-          },
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15)
+          ),
+          child: FutureBuilder<Widget>(
+            future: _paneImage(imageUrl), // Fetch image asynchronously
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
+              } else if (snapshot.hasError) {
+                return _paneFallback(); // Show fallback if there's an error
+              } else {
+                return snapshot.data ?? _paneFallback(); // Display the loaded image
+              }
+            },
+          ),
         ),
       ],
     );
@@ -192,18 +198,12 @@ class _CollectionState extends State<Collection> {
     if (url == null || url == 'error') {
       return _paneFallback();
     }
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15)
-      ),
-      child: CachedNetworkImage(
-        imageUrl: url,
-        fit: BoxFit.contain,
-        placeholder: (context, url) => 
-            Center(child: CircularProgressIndicator(color: accentColourLight)), // Loading state
-        errorWidget: (context, url, error) => _paneFallback(), // Error case
-      ),
+    return CachedNetworkImage(
+      imageUrl: url,
+      fit: BoxFit.contain,
+      placeholder: (context, url) => 
+          Center(child: CircularProgressIndicator(color: accentColourLight)), // Loading state
+      errorWidget: (context, url, error) => _paneFallback(), // Error case
     );
   }
 
