@@ -124,11 +124,11 @@ class _CollectionState extends State<Collection> {
           child: selectedEntry != null
               ? Stack(
                   children: [
-                    _paneHeader(),
                     Padding(
-                      padding: const EdgeInsets.only(top: 25), // TODO: change from const to dynamic
+                      padding: const EdgeInsets.only(top: 40), // TODO: change from const to dynamic
                       child: _paneContent(),
                     ),
+                    _paneHeader(),
                   ],
                 )
               : _paneFallback(),
@@ -139,31 +139,31 @@ class _CollectionState extends State<Collection> {
 
   Row _paneHeader() {
     return Row(
-                    children: [
-                      Text(
-                        dexNumFormatted(selectedEntry!.dexNum),
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: invertColour
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        selectedEntry!.forms[0].name,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: invertColour
-                        ),
-                      ),
-                      Spacer(),
-                      IconButton(
-                        icon: const Icon(Icons.close),
-                        onPressed: () => setState(() => isPaneOpen = false),
-                      ),
-                    ],
-                  );
+      children: [
+        Text(
+          dexNumFormatted(selectedEntry!.dexNum),
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: invertColour
+          ),
+        ),
+        SizedBox(width: 10),
+        Text(
+          selectedEntry!.forms[0].name,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: invertColour
+          ),
+        ),
+        Spacer(),
+        IconButton(
+          icon: const Icon(Icons.close),
+          onPressed: () => setState(() => isPaneOpen = false),
+        ),
+      ],
+    );
   }
 
   Widget _paneContent() {
