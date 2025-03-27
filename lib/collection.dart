@@ -318,79 +318,117 @@ class _CollectionState extends State<Collection> {
 
   bool _isShinyButtonHovered = false;
   Widget _shinyToggleButton() {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _isShinyButtonHovered = true),
-      onExit: (_) => setState(() => _isShinyButtonHovered = false),
-      child: GestureDetector(
-        onTap: () {
-          setState(() => shinyToggle = !shinyToggle);
-        },
-        child: Container(
-          padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
-          decoration: BoxDecoration(
-            border: Border.all(color: invertColour),
-            borderRadius: BorderRadius.circular(100),
-            color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
-          ),
-          child: Row(
-            children: [
-              Icon(
-                shinyToggle ? Icons.draw : Icons.auto_awesome,
-                size: 15,
-                color: invertColour
-              ),
-              const SizedBox(width: 5),
-              Text(
-                shinyToggle ? 'Classic' : 'Shiny',
-                style: TextStyle(
+    return StatefulBuilder(builder: (context, setLocalState) {
+      return MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onEnter: (_) => setLocalState(() => _isShinyButtonHovered = true),
+        onExit: (_) => setLocalState(() => _isShinyButtonHovered = false),
+        child: GestureDetector(
+          onTap: () {
+            setState(() => shinyToggle = !shinyToggle);
+          },
+          child: Container(
+            padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            decoration: BoxDecoration(
+              border: Border.all(color: invertColour),
+              borderRadius: BorderRadius.circular(100),
+              color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  shinyToggle ? Icons.draw : Icons.auto_awesome,
+                  size: 15,
                   color: invertColour,
                 ),
-              ),
-            ],
+                const SizedBox(width: 5),
+                Text(
+                  shinyToggle ? 'Classic' : 'Shiny',
+                  style: TextStyle(color: invertColour),
+                ),
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      );
+    });
   }
+  // Widget _shinyToggleButton() {
+  //   return MouseRegion(
+  //     cursor: SystemMouseCursors.click,
+  //     onEnter: (_) => setState(() => _isShinyButtonHovered = true),
+  //     onExit: (_) => setState(() => _isShinyButtonHovered = false),
+  //     child: GestureDetector(
+  //       onTap: () {
+  //         setState(() => shinyToggle = !shinyToggle);
+  //       },
+  //       child: Container(
+  //         padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+  //         decoration: BoxDecoration(
+  //           border: Border.all(color: invertColour),
+  //           borderRadius: BorderRadius.circular(100),
+  //           color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
+  //         ),
+  //         child: Row(
+  //           children: [
+  //             Icon(
+  //               shinyToggle ? Icons.draw : Icons.auto_awesome,
+  //               size: 15,
+  //               color: invertColour
+  //             ),
+  //             const SizedBox(width: 5),
+  //             Text(
+  //               shinyToggle ? 'Classic' : 'Shiny',
+  //               style: TextStyle(
+  //                 color: invertColour,
+  //               ),
+  //             ),
+  //           ],
+  //         ),
+  //       ),
+  //     ),
+  //   );
+  // }
 
   bool _isDarkModeButtonHovered = false;
   Widget _darkModeButton() {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _isDarkModeButtonHovered = true),
-      onExit: (_) => setState(() => _isDarkModeButtonHovered = false),
-      child: GestureDetector(
-        onTap: () {
-          setState(() => darkMode = !darkMode);
-        },
-        child: Container(
-          margin: EdgeInsets.only(left: 10),
-          padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
-          decoration: BoxDecoration(
-            border: Border.all(color: invertColour),
-            borderRadius: BorderRadius.circular(100),
-            color: _isDarkModeButtonHovered ? accentColourLight : Colors.transparent,
-          ),
-          child: Row(
-            children: [
-              Icon(
-                darkMode ? Icons.light_mode : Icons.dark_mode,
-                size: 15,
-                color: invertColour
-              ),
-              SizedBox(width: 5),
-              Text(
-                darkMode ? 'Light' : 'Dark',
-                style: TextStyle(
-                  color: invertColour,
+    return StatefulBuilder(builder: (context, setLocalState) {
+      return MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onEnter: (_) => setState(() => _isDarkModeButtonHovered = true),
+        onExit: (_) => setState(() => _isDarkModeButtonHovered = false),
+        child: GestureDetector(
+          onTap: () {
+            setState(() => darkMode = !darkMode);
+          },
+          child: Container(
+            margin: EdgeInsets.only(left: 10),
+            padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            decoration: BoxDecoration(
+              border: Border.all(color: invertColour),
+              borderRadius: BorderRadius.circular(100),
+              color: _isDarkModeButtonHovered ? accentColourLight : Colors.transparent,
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  darkMode ? Icons.light_mode : Icons.dark_mode,
+                  size: 15,
+                  color: invertColour
                 ),
-              ),
-            ],
+                SizedBox(width: 5),
+                Text(
+                  darkMode ? 'Light' : 'Dark',
+                  style: TextStyle(
+                    color: invertColour,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      );
+    });
   }
 
 
