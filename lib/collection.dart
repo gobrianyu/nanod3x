@@ -395,8 +395,8 @@ class _CollectionState extends State<Collection> {
     return StatefulBuilder(builder: (context, setLocalState) {
       return MouseRegion(
         cursor: SystemMouseCursors.click,
-        onEnter: (_) => setState(() => _isDarkModeButtonHovered = true),
-        onExit: (_) => setState(() => _isDarkModeButtonHovered = false),
+        onEnter: (_) => setLocalState(() => _isDarkModeButtonHovered = true),
+        onExit: (_) => setLocalState(() => _isDarkModeButtonHovered = false),
         child: GestureDetector(
           onTap: () {
             setState(() => darkMode = !darkMode);
