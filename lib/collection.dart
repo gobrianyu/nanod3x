@@ -33,6 +33,7 @@ class _CollectionState extends State<Collection> {
   Map<String, String?> shinyCache = {};
 
   Map<Region, int> completed = {};
+  List<int> loaded = [];
   int totalComplete = 0;
   final totalFinale = 1025;
   final _paneAnimationTime = 200;
@@ -221,7 +222,7 @@ class _CollectionState extends State<Collection> {
   Widget _nameHeaderButtons(double? ratio) { // TODO: hide buttons if entry still locked
     if (ratio != null && ratio == 0) {
       setState(() {
-        // _displayMale = false;
+        _displayMale = false;
       });
     }
     return Row(
@@ -280,10 +281,12 @@ class _CollectionState extends State<Collection> {
 
   Widget _paneContent() {
     if (selectedEntry == null) return _paneFallback();
+    int index = 0; // TODO: change
+    dex.Form initForm = selectedEntry!.forms[index];
 
     String imageUrl = shinyToggle
-        ? selectedEntry!.forms[0].imageAssetMShiny
-        : selectedEntry!.forms[0].imageAssetM;
+        ? (_displayMale ? initForm.imageAssetMShiny : initForm.imageAssetFShiny)
+        : (_displayMale ? initForm.imageAssetM : initForm.imageAssetF);
 
     return ListView(
       children: [
@@ -295,7 +298,7 @@ class _CollectionState extends State<Collection> {
               borderRadius: BorderRadius.circular(15)
             ),
             child: FutureBuilder<Widget>(
-              future: _paneImage(imageUrl), // Fetch image asynchronously
+              future: _paneImage(selectedEntry!.dexNum, imageUrl), // Fetch image asynchronously
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
@@ -313,8 +316,8 @@ class _CollectionState extends State<Collection> {
   }
 
 
-  Future<Widget> _paneImage(String key) async {
-    String? url = await getImageUrl(key, selectedEntry!.forms[0].region);
+  Future<Widget> _paneImage(int dexNum, String key) async {
+    String? url = await getImageUrl(dexNum, key, selectedEntry!.forms[0].region);
     if (url == null || url == 'error') {
       return _paneFallback();
     }
@@ -628,7 +631,7 @@ class _CollectionState extends State<Collection> {
 
       return ValueListenableBuilder<String?>( // Use imageAssetLocation as the key
         valueListenable: _imageCacheManager.getNotifier(
-          imageAssetLocation, region, getImageUrl
+          imageAssetLocation, region, (path, reg) => getImageUrl(dexIndex, path, reg)
         ),
         builder: (context, imageUrl, child) {
           if (imageUrl == null) {
@@ -692,7 +695,7 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  Future<String?> getImageUrl(String path, Region region, {bool update = true}) async {
+  Future<String?> getImageUrl(int dexNum, String path, Region region, {bool update = true}) async {
     if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
       return imageCache[path];  // Return cached URL if available
     }
@@ -704,9 +707,10 @@ class _CollectionState extends State<Collection> {
       String url = await storageRef.getDownloadURL();
 
       imageCache[path] = url; // Store the fetched URL
-      if (!shinyToggle) {
+      if (!loaded.contains(dexNum)) {
         setState(() {
           totalComplete++;
+          loaded.add(dexNum);
           completed.update(region, (val) => val + 1, ifAbsent:() => 1);
         });
       }
