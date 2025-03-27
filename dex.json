@@ -7489,8 +7489,8 @@
                 "entry": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times.",
                 "image asset m": "gyarados.png",
                 "image asset f": "gyarados.png",
-                "image asset m shiny": "gyarados_shiny.png",
-                "image asset f shiny": "gyarados_shiny.png"
+                "image asset m shiny": "gyarados_m_shiny.png",
+                "image asset f shiny": "gyarados_f_shiny.png"
             }
         ],
         "gimmick forms": [],
