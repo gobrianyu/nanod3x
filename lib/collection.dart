@@ -149,20 +149,23 @@ class _CollectionState extends State<Collection> {
       padding: const EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
       decoration: const BoxDecoration(
         color: Colors.black,
-        borderRadius: BorderRadius.only(topRight: Radius.circular(200), bottomRight: Radius.circular(200))
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(200), 
+          bottomRight: Radius.circular(200)
+        ),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 5),
+            padding: const EdgeInsets.only(right: 5),
             child: Stack(
               alignment: Alignment.center,
-              children: [
+              children: const [
                 Icon(Icons.circle, color: Colors.white, size: 40),
                 Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
                 Icon(Icons.circle_outlined, color: Colors.black, size: 40),
-                Icon(Icons.circle_outlined, color: Colors.black, size: 42)
+                Icon(Icons.circle_outlined, color: Colors.black, size: 42),
               ],
             ),
           ),
@@ -171,26 +174,32 @@ class _CollectionState extends State<Collection> {
             child: Text(
               '#$dexNumAsString',
               style: const TextStyle(
-                color: Colors.white
-              )
+                color: Colors.white,
+              ),
             ),
           ),
-          Text(
-            currEntry.forms[0].name,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              overflow: TextOverflow.ellipsis
-            )
+          Flexible(
+            child: Text(
+              currEntry.forms[0].name,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                overflow: TextOverflow.ellipsis
+              ),
+              maxLines: 1,
+            ),
           ),
-          currEntry.dexNum == 29 ? const Icon(Icons.female, color: Colors.white, size: 18) : const SizedBox(),
-          currEntry.dexNum == 32 ? const Icon(Icons.male, color: Colors.white, size: 18) : const SizedBox(),
+          if (currEntry.dexNum == 29) 
+            const Icon(Icons.female, color: Colors.white, size: 18),
+          if (currEntry.dexNum == 32) 
+            const Icon(Icons.male, color: Colors.white, size: 18),
           const Spacer(),
-          if (genderKnown) _nameHeaderButtons(currEntry.genderRatio)
-        ]
+          if (genderKnown) _nameHeaderButtons(currEntry.genderRatio),
+        ],
       ),
     );
   }
+
 
   Widget _nameHeaderButtons(double? ratio) {
     if (ratio != null && ratio == 0) {
