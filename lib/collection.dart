@@ -146,10 +146,10 @@ class _CollectionState extends State<Collection> {
 
     return Container(
       margin: const EdgeInsets.only(right: 10),
-      padding: const EdgeInsets.only(left: 10, right: 5, top: 10, bottom: 10),
+      padding: const EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
       decoration: const BoxDecoration(
         color: Colors.black,
-        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+        borderRadius: BorderRadius.only(topRight: Radius.circular(200), bottomRight: Radius.circular(200))
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -229,7 +229,7 @@ class _CollectionState extends State<Collection> {
           padding: EdgeInsets.all(_displayMale ? 3 : 6),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
-        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 29 : 23)
+        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 23 : 29)
       ),
     );
   }
