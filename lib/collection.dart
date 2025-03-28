@@ -274,7 +274,7 @@ class _CollectionState extends State<Collection> {
 
   Widget _paneTypes(List<MonType> types) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10, top: 5),
+      padding: const EdgeInsets.only(left: 10, top: 15),
       child: Row(
         children: types.map((type) => _typeContainer(type)).toList()
       ),
@@ -291,22 +291,21 @@ class _CollectionState extends State<Collection> {
           const Text('Base Stats', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
           const SizedBox(height: 8),
           _statLine('HP', stats.hp),
-          _statLine('Attack', stats.atk),
-          _statLine('Defense', stats.def),
-          _statLine('Sp. Atk', stats.spAtk),
-          _statLine('Sp. Def', stats.spDef),
-          _statLine('Speed', stats.speed)
+          _statLine('Atk', stats.atk),
+          _statLine('Def', stats.def),
+          _statLine('S.Atk', stats.spAtk),
+          _statLine('S.Def', stats.spDef),
+          _statLine('Spd', stats.speed)
         ]
       ),
     );
   }
 
   Widget _statLine(String statName, int amount) {
-    double maxWidth = MediaQuery.of(context).size.width - 140;
     return Row(
       children: [
         SizedBox(
-          width: 70,
+          width: 45,
           child: Text(
             statName
           )
@@ -320,23 +319,37 @@ class _CollectionState extends State<Collection> {
             ),
           )
         ),
-        Stack(
-          children: [
-            Container(
-              width: maxWidth / 255 * amount,
-              height: 10,
-              color: const Color.fromARGB(255, 39, 39, 39)
-            ),
-            Container(
-              width: maxWidth,
-              height: 10,
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: Container(
+              height: 12,
               decoration: BoxDecoration(
-                border: Border.all()
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(6)
               ),
-            )
-          ],
-        )
-      ]
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: amount,
+                    child: Container(
+                      height: 12,
+                      decoration: const BoxDecoration(
+                        color: Colors.black,
+                        border: Border(bottom: BorderSide(), top: BorderSide())
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 255 - amount,
+                    child: const SizedBox()
+                  )
+                ],
+              )
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -456,8 +469,9 @@ class _CollectionState extends State<Collection> {
           ),
         ),
         _paneTypes(initForm.type),
+        _flavourText(initForm.category, initForm.entry),
         _measurements(initForm.height, initForm.weight),
-        _flavourText(initForm.category, initForm.entry)
+        _stats(initForm.stats[0])
       ],
     );
   }
