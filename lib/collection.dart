@@ -226,7 +226,6 @@ class _CollectionState extends State<Collection> {
             });
           },
           child: Container(
-            alignment: Alignment.center,
             padding: EdgeInsets.all(_displayMale ? 3 : 6),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
@@ -247,11 +246,10 @@ class _CollectionState extends State<Collection> {
         child: GestureDetector(
           onTap: () {
             setState(() {
-              _displayMale = false;
+              _displayMale = true;
             });
           },
           child: Container(
-            alignment: Alignment.center,
             padding: EdgeInsets.all(_displayMale ? 6 : 3),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
