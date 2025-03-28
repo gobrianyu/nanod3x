@@ -144,69 +144,52 @@ class _CollectionState extends State<Collection> {
     String dexNumAsString = dexNumFormatted(currEntry.dexNum);
     bool genderKnown = currEntry.genderKnown;
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        double width = constraints.maxWidth;
-        double height = constraints.maxHeight;
-        double iconSize = width * 0.08; // Scale icon size based on width
-        double fontSize = width * 0.04; // Scale text size based on width
-
-        return Container(
-          margin: const EdgeInsets.only(right: 10),
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(20),
-              bottomRight: Radius.circular(20),
+    return Container(
+      margin: const EdgeInsets.only(right: 10),
+      padding: const EdgeInsets.only(left: 10, right: 5, top: 10, bottom: 10),
+      decoration: const BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20))
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 5),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Icon(Icons.circle, color: Colors.white, size: 40),
+                Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
+                Icon(Icons.circle_outlined, color: Colors.black, size: 40),
+                Icon(Icons.circle_outlined, color: Colors.black, size: 42)
+              ],
             ),
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 5),
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Icon(Icons.circle, color: Colors.white, size: iconSize),
-                    Icon(Icons.catching_pokemon, color: Colors.red, size: iconSize),
-                    Icon(Icons.circle_outlined, color: Colors.black, size: iconSize),
-                    Icon(Icons.circle_outlined, color: Colors.black, size: iconSize * 1.1)
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 10.0),
-                child: Text(
-                  '#$dexNumAsString',
-                  style: TextStyle(
-                    fontSize: fontSize,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              Text(
-                currEntry.forms[0].name,
-                style: TextStyle(
-                  fontSize: fontSize,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              if (currEntry.dexNum == 29)
-                Icon(Icons.female, color: Colors.white, size: iconSize * 0.6),
-              if (currEntry.dexNum == 32)
-                Icon(Icons.male, color: Colors.white, size: iconSize * 0.6),
-              const Spacer(),
-              if (genderKnown) _nameHeaderButtons(currEntry.genderRatio),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: Text(
+              '#$dexNumAsString',
+              style: const TextStyle(
+                color: Colors.white
+              )
+            ),
           ),
-        );
-      },
+          Text(
+            currEntry.forms[0].name,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white
+            )
+          ),
+          currEntry.dexNum == 29 ? const Icon(Icons.female, color: Colors.white, size: 18) : const SizedBox(),
+          currEntry.dexNum == 32 ? const Icon(Icons.male, color: Colors.white, size: 18) : const SizedBox(),
+          const Spacer(),
+          if (genderKnown) _nameHeaderButtons(currEntry.genderRatio)
+        ]
+      ),
     );
   }
-
 
   Widget _nameHeaderButtons(double? ratio) {
     if (ratio != null && ratio == 0) {
@@ -246,7 +229,7 @@ class _CollectionState extends State<Collection> {
           padding: EdgeInsets.all(_displayMale ? 3 : 6),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
-        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 15 : 20)
+        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 29 : 23)
       ),
     );
   }
@@ -267,7 +250,7 @@ class _CollectionState extends State<Collection> {
           padding: EdgeInsets.all(_displayMale? 6 : 3),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
-        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 20 : 15)
+        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 29 : 23)
       ),
     );
   }
