@@ -210,29 +210,37 @@ class _CollectionState extends State<Collection> {
 
   Widget _nameHeaderButtons(double? ratio) {
     if (ratio != null && ratio == 0) {
-      setState(() {
-        _displayMale = false;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        setState(() {
+          _displayMale = false;
+        });
       });
     } else if (ratio != null && ratio == 100) {
-      setState(() {
-        _displayMale = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        setState(() {
+          _displayMale = true;
+        });
       });
     }
-    return Row(
-      children: [
-        (ratio != null && ratio != 0)
-              ? _maleButton()
-              : const SizedBox(),
-        (ratio != null && ratio != 100)
-              ? _femaleButton()
-              : const SizedBox(),
-      ],
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        double buttonSize = constraints.maxWidth * 0.08; // Scale button width
+        double iconSize = buttonSize * 0.6; // Scale icon relative to button
+
+        return Row(
+          children: [
+            if (ratio != null && ratio != 0) _maleButton(buttonSize, iconSize),
+            if (ratio != null && ratio != 100) _femaleButton(buttonSize, iconSize),
+          ],
+        );
+      },
     );
   }
 
-  Widget _femaleButton() {
+  Widget _femaleButton(double buttonSize, double iconSize) {
     return SizedBox(
-      width: 35,
+      width: buttonSize,
       child: ElevatedButton(
         onPressed: () {
           setState(() {
@@ -243,17 +251,17 @@ class _CollectionState extends State<Collection> {
           shape: const CircleBorder(),
           backgroundColor: Colors.pink,
           minimumSize: const Size(0, 0),
-          padding: EdgeInsets.all(_displayMale ? 3 : 6),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap
+          padding: EdgeInsets.all(_displayMale ? buttonSize * 0.08 : buttonSize * 0.15),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
-        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 15 : 20)
+        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? iconSize * 0.75 : iconSize),
       ),
     );
   }
 
-  Widget _maleButton() {
+  Widget _maleButton(double buttonSize, double iconSize) {
     return SizedBox(
-      width: 35,
+      width: buttonSize,
       child: ElevatedButton(
         onPressed: () {
           setState(() {
@@ -264,13 +272,14 @@ class _CollectionState extends State<Collection> {
           shape: const CircleBorder(),
           backgroundColor: Colors.blue,
           minimumSize: const Size(0, 0),
-          padding: EdgeInsets.all(_displayMale? 6 : 3),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap
+          padding: EdgeInsets.all(_displayMale ? buttonSize * 0.15 : buttonSize * 0.08),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
-        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 20 : 15)
+        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? iconSize : iconSize * 0.75),
       ),
     );
   }
+
 
   Widget _paneContent() {
     if (selectedEntry == null) return _paneFallback();
