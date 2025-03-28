@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:pokellection/models/type.dart';
 import 'models/dex_entry.dart' as dex;
 import 'models/region.dart';
 
@@ -127,7 +128,7 @@ class _CollectionState extends State<Collection> {
               ? Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 40, left: 15, right: 15), // TODO: change from const to dynamic
+                      padding: const EdgeInsets.only(top: 60, left: 15, right: 15), // TODO: change from const to dynamic
                       child: _paneContent(),
                     ),
                     _paneHeader(),
@@ -178,7 +179,7 @@ class _CollectionState extends State<Collection> {
               ),
             ),
           ),
-          Flexible(
+          Expanded(
             child: Text(
               currEntry.forms[0].name,
               style: const TextStyle(
@@ -271,6 +272,157 @@ class _CollectionState extends State<Collection> {
     );
   }
 
+  Widget _paneTypes(List<MonType> types) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, top: 5),
+      child: Row(
+        children: types.map((type) => _typeContainer(type)).toList()
+      ),
+    );
+  }
+
+  Widget _stats(dex.Stats stats) {
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text('Base Stats', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          _statLine('HP', stats.hp),
+          _statLine('Attack', stats.atk),
+          _statLine('Defense', stats.def),
+          _statLine('Sp. Atk', stats.spAtk),
+          _statLine('Sp. Def', stats.spDef),
+          _statLine('Speed', stats.speed)
+        ]
+      ),
+    );
+  }
+
+  Widget _statLine(String statName, int amount) {
+    double maxWidth = MediaQuery.of(context).size.width - 140;
+    return Row(
+      children: [
+        SizedBox(
+          width: 70,
+          child: Text(
+            statName
+          )
+        ),
+        SizedBox(
+          width: 30,
+          child: Text(
+            '$amount',
+            style: const TextStyle(
+              fontWeight: FontWeight.w700
+            ),
+          )
+        ),
+        Stack(
+          children: [
+            Container(
+              width: maxWidth / 255 * amount,
+              height: 10,
+              color: const Color.fromARGB(255, 39, 39, 39)
+            ),
+            Container(
+              width: maxWidth,
+              height: 10,
+              decoration: BoxDecoration(
+                border: Border.all()
+              ),
+            )
+          ],
+        )
+      ]
+    );
+  }
+
+
+  Widget _typeContainer(MonType type) {
+    return Container(
+      width: 100,
+      height: 30,
+      alignment: Alignment.center,
+      margin: const EdgeInsets.only(left: 8),
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.all(Radius.circular(15)),
+        color: type.colour
+      ),
+      child: Text(
+        type.type,
+        style: const TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+      )
+    );
+  }
+
+  Widget _measurements(double height, double weight) {
+    return Container(
+      margin: const EdgeInsets.only(left: 20, right: 20, top: 15),
+      padding: const EdgeInsets.all(15),
+      decoration: const BoxDecoration(
+        border: Border(
+          top: BorderSide(),
+          bottom: BorderSide()
+        )
+      ),
+      child: Row(
+        children: [
+          const Spacer(),
+          const Icon(Icons.scale),
+          const SizedBox(width: 7),
+          Text(
+            '$weight kg'
+          ),
+          const Spacer(),
+          const Spacer(),
+          const Icon(Icons.straighten),
+          const SizedBox(width: 7),
+          Text(
+            '${height/100} m'
+          ),
+          const Spacer()
+        ]
+      ),
+    );
+  }
+
+  Widget _flavourText(String category, String entryText) {
+     return Container(
+      margin: const EdgeInsets.all(10),
+      padding: const EdgeInsets.only(top: 5, left: 6, right: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4, top: 15),
+            child: Text(
+              '$category Pokémon',
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)
+            ),
+          ),
+          const SizedBox(height: 10,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(child: const Icon(Icons.search)),
+              const SizedBox(width: 5),
+              Flexible(
+                child: Text(
+                  entryText,
+                  softWrap: true,
+                ),
+              ),
+            ],
+          )
+        ]
+       ),
+     );
+  }
+
   Widget _paneContent() {
     if (selectedEntry == null) return _paneFallback();
     int index = 0; // TODO: change
@@ -303,6 +455,9 @@ class _CollectionState extends State<Collection> {
             ),
           ),
         ),
+        _paneTypes(initForm.type),
+        _measurements(initForm.height, initForm.weight),
+        _flavourText(initForm.category, initForm.entry)
       ],
     );
   }
