@@ -217,42 +217,50 @@ class _CollectionState extends State<Collection> {
   Widget _femaleButton() {
     return SizedBox(
       width: 40,
-      child: ElevatedButton(
-        onPressed: () {
-          setState(() {
-            _displayMale = false;
-          });
-        },
-        style: ElevatedButton.styleFrom(
-          shape: const CircleBorder(),
-          backgroundColor: Colors.pink,
-          minimumSize: const Size(0, 0),
-          padding: EdgeInsets.all(_displayMale ? 3 : 6),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap
-        ),
-        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 20 : 28)
-      ),
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              _displayMale = false;
+            });
+          },
+          child: Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.all(_displayMale ? 3 : 6),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.pink,
+            ),
+            child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 20 : 28)
+          )
+        )
+      )
     );
   }
 
   Widget _maleButton() {
     return SizedBox(
       width: 40,
-      child: ElevatedButton(
-        onPressed: () {
-          setState(() {
-            _displayMale = true;
-          });
-        },
-        style: ElevatedButton.styleFrom(
-          shape: const CircleBorder(),
-          backgroundColor: Colors.blue,
-          minimumSize: const Size(0, 0),
-          padding: EdgeInsets.all(_displayMale? 6 : 3),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap
-        ),
-        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 28 : 20)
-      ),
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              _displayMale = false;
+            });
+          },
+          child: Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.all(_displayMale ? 6 : 3),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.blue,
+            ),
+            child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 28 : 20)
+          )
+        )
+      )
     );
   }
 
