@@ -179,7 +179,8 @@ class _CollectionState extends State<Collection> {
             currEntry.forms[0].name,
             style: const TextStyle(
               fontWeight: FontWeight.bold,
-              color: Colors.white
+              color: Colors.white,
+              overflow: TextOverflow.ellipsis
             )
           ),
           currEntry.dexNum == 29 ? const Icon(Icons.female, color: Colors.white, size: 18) : const SizedBox(),
@@ -215,7 +216,7 @@ class _CollectionState extends State<Collection> {
 
   Widget _femaleButton() {
     return SizedBox(
-      width: 35,
+      width: 40,
       child: ElevatedButton(
         onPressed: () {
           setState(() {
@@ -229,14 +230,14 @@ class _CollectionState extends State<Collection> {
           padding: EdgeInsets.all(_displayMale ? 3 : 6),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
-        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 23 : 29)
+        child: Icon(Icons.female, color: Colors.white, size: _displayMale ? 20 : 28)
       ),
     );
   }
 
   Widget _maleButton() {
     return SizedBox(
-      width: 35,
+      width: 40,
       child: ElevatedButton(
         onPressed: () {
           setState(() {
@@ -250,7 +251,7 @@ class _CollectionState extends State<Collection> {
           padding: EdgeInsets.all(_displayMale? 6 : 3),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap
         ),
-        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 29 : 23)
+        child: Icon(Icons.male, color: Colors.white, size: _displayMale ? 28 : 20)
       ),
     );
   }
