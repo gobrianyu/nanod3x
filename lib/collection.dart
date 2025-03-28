@@ -1,11 +1,11 @@
-import 'dart:ui';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:pokellection/models/type.dart';
 import 'models/dex_entry.dart' as dex;
 import 'models/region.dart';
+
+const copyrightText = 'This website is a fan-made project and is not affiliated with or endorsed by The Pokémon Company, Nintendo, or any related entities. All Pokémon names, logos, and trademarks are the property of their respective owners. The artwork featured on this site is fan-created and is presented solely as a portfolio, with no intention of profit. All rights to the fan art are held by the respective artists. No copyright infringement is intended.';
 
 class Collection extends StatefulWidget{
   final List<dex.DexEntry> fullDex;
@@ -26,6 +26,7 @@ class _CollectionState extends State<Collection> {
   Color get accentColourLight => darkMode ? Colors.black12 : Colors.black12;
   Color get accentColourDark => darkMode ? Colors.black45 : Colors.black45;
   Color get solidAccentColourLight => darkMode ? const Color.fromARGB(255, 20, 20, 20) : const Color.fromARGB(255, 240, 240, 240);
+  Color get solidAccentColourDark => darkMode ? const Color.fromARGB(255, 100, 100, 100) : const Color.fromARGB(255, 180, 180, 180);
 
   final double appBarHeight = 130;
   double screenWidth = 100;
@@ -86,6 +87,18 @@ class _CollectionState extends State<Collection> {
                     _regionGrid(region)
                   ],
                 )),
+                Padding(
+                  padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: screenWidth / 10 + 20, bottom: 5),
+                  child: Text(
+                    copyrightText,
+                    textAlign: TextAlign.center,
+                    softWrap: true,
+                    style: TextStyle(
+                      color: solidAccentColourDark,
+                      fontSize: 10,
+                    )
+                  ),
+                ),
               ],
             ),
           ),
@@ -120,7 +133,7 @@ class _CollectionState extends State<Collection> {
                 color: Colors.black.withOpacity(0.2),
                 blurRadius: 10,
                 spreadRadius: 2,
-                offset: const Offset(-5, 0),
+                offset: const Offset(5, 0),
               )
             ],
           ),
@@ -471,7 +484,8 @@ class _CollectionState extends State<Collection> {
         _paneTypes(initForm.type),
         _flavourText(initForm.category, initForm.entry),
         _measurements(initForm.height, initForm.weight),
-        _stats(initForm.stats[0])
+        _stats(initForm.stats[0]),
+        SizedBox(height: 40)
       ],
     );
   }
@@ -637,42 +651,6 @@ class _CollectionState extends State<Collection> {
       );
     });
   }
-  // Widget _shinyToggleButton() {
-  //   return MouseRegion(
-  //     cursor: SystemMouseCursors.click,
-  //     onEnter: (_) => setState(() => _isShinyButtonHovered = true),
-  //     onExit: (_) => setState(() => _isShinyButtonHovered = false),
-  //     child: GestureDetector(
-  //       onTap: () {
-  //         setState(() => shinyToggle = !shinyToggle);
-  //       },
-  //       child: Container(
-  //         padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
-  //         decoration: BoxDecoration(
-  //           border: Border.all(color: invertColour),
-  //           borderRadius: BorderRadius.circular(100),
-  //           color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
-  //         ),
-  //         child: Row(
-  //           children: [
-  //             Icon(
-  //               shinyToggle ? Icons.draw : Icons.auto_awesome,
-  //               size: 15,
-  //               color: invertColour
-  //             ),
-  //             const SizedBox(width: 5),
-  //             Text(
-  //               shinyToggle ? 'Classic' : 'Shiny',
-  //               style: TextStyle(
-  //                 color: invertColour,
-  //               ),
-  //             ),
-  //           ],
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 
   bool _isDarkModeButtonHovered = false;
   Widget _darkModeButton() {
