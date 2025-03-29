@@ -22,7 +22,7 @@ class _CollectionState extends State<Collection> {
   bool darkMode = false;
   bool shinyToggle = false;
   Color get mainColour => darkMode ? Colors.black : Colors.white;
-  Color get invertColour => darkMode ? Color.fromARGB(255, 225, 229, 240) : Colors.black;
+  Color get invertColour => darkMode ? const Color.fromARGB(255, 225, 229, 240) : Colors.black;
   Color get accentColourLight => darkMode ? Colors.black12 : Colors.black12;
   Color get accentColourDark => darkMode ? Colors.black45 : Colors.black45;
   Color get solidAccentColourLight => darkMode ? const Color.fromARGB(255, 20, 20, 20) : const Color.fromARGB(255, 240, 240, 240);
@@ -48,6 +48,8 @@ class _CollectionState extends State<Collection> {
     Region.sinnoh,
   ];
 
+  final TextEditingController _searchController = TextEditingController();
+
   dex.DexEntry? selectedEntry; // Track selected entry
   bool isPaneOpen = false; // Track panel visibility
 
@@ -58,7 +60,18 @@ class _CollectionState extends State<Collection> {
     if (completed.isEmpty) {
       initCompletionMap();
     }
+    _searchController.addListener(_onSearchChanged);
     super.initState();
+  }
+
+  void _onSearchChanged() {
+    setState(() {});
+  }
+
+  @override
+  void dispose() {
+    _searchController.removeListener(_onSearchChanged);
+    super.dispose();
   }
 
   void initCompletionMap() {
@@ -70,41 +83,44 @@ class _CollectionState extends State<Collection> {
     screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mainColour,
-      body: Stack(
-        children: [
-          Scrollbar(
-            controller: _scrollController,
-            child: ListView(
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: Stack(
+          children: [
+            Scrollbar(
               controller: _scrollController,
-              shrinkWrap: true,
-              primary: false,
-              children: <Widget>[
-                SizedBox(height: appBarHeight + 10),
-                ...regions.map((region) => Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _regionHeader(region),
-                    _regionGrid(region)
-                  ],
-                )),
-                Padding(
-                  padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: screenWidth / 10 + 20, bottom: 5),
-                  child: Text(
-                    copyrightText,
-                    textAlign: TextAlign.center,
-                    softWrap: true,
-                    style: TextStyle(
-                      color: solidAccentColourDark,
-                      fontSize: 10,
-                    )
+              child: ListView(
+                controller: _scrollController,
+                shrinkWrap: true,
+                primary: false,
+                children: <Widget>[
+                  SizedBox(height: appBarHeight + 10),
+                  ...regions.map((region) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _regionHeader(region),
+                      _regionGrid(region)
+                    ],
+                  )),
+                  Padding(
+                    padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: isPaneOpen ? screenWidth * 0.42 + 24.2 : screenWidth / 10 + 20, bottom: 5),
+                    child: Text(
+                      copyrightText,
+                      textAlign: TextAlign.center,
+                      softWrap: true,
+                      style: TextStyle(
+                        color: solidAccentColourDark,
+                        fontSize: 10,
+                      )
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          _appBar(),
-          _slidingPane(),
-        ],
+            _appBar(),
+            _slidingPane(),
+          ],
+        ),
       ),
     );
   }
@@ -121,7 +137,7 @@ class _CollectionState extends State<Collection> {
         onTap: () {/* prevents tapping from closing */},
         child: Container(
           alignment: Alignment.topCenter,
-          padding: EdgeInsets.only(top: 15),
+          padding: const EdgeInsets.only(top: 15),
           decoration: BoxDecoration(
             color: solidAccentColourLight,
             borderRadius: const BorderRadius.only(
@@ -133,7 +149,7 @@ class _CollectionState extends State<Collection> {
                 color: Colors.black.withOpacity(0.2),
                 blurRadius: 10,
                 spreadRadius: 2,
-                offset: const Offset(5, 0),
+                offset: const Offset(-2, 0),
               )
             ],
           ),
@@ -171,11 +187,11 @@ class _CollectionState extends State<Collection> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 5),
+          const Padding(
+            padding: EdgeInsets.only(right: 5),
             child: Stack(
               alignment: Alignment.center,
-              children: const [
+              children: [
                 Icon(Icons.circle, color: Colors.white, size: 40),
                 Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
                 Icon(Icons.circle_outlined, color: Colors.black, size: 40),
@@ -250,7 +266,7 @@ class _CollectionState extends State<Collection> {
           },
           child: Container(
             padding: EdgeInsets.all(_displayMale ? 3 : 6),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.pink,
             ),
@@ -274,7 +290,7 @@ class _CollectionState extends State<Collection> {
           },
           child: Container(
             padding: EdgeInsets.all(_displayMale ? 6 : 3),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.blue,
             ),
@@ -434,7 +450,7 @@ class _CollectionState extends State<Collection> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(child: const Icon(Icons.search)),
+              const Icon(Icons.search),
               const SizedBox(width: 5),
               Flexible(
                 child: Text(
@@ -485,7 +501,7 @@ class _CollectionState extends State<Collection> {
         _flavourText(initForm.category, initForm.entry),
         _measurements(initForm.height, initForm.weight),
         _stats(initForm.stats[0]),
-        SizedBox(height: 40)
+        const SizedBox(height: 40)
       ],
     );
   }
@@ -506,12 +522,12 @@ class _CollectionState extends State<Collection> {
   }
 
   Widget _paneFallback() {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Icon(Icons.image_not_supported, size: 50),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
         Text('No image available.')
       ]
     );
@@ -546,9 +562,10 @@ class _CollectionState extends State<Collection> {
                     )
                   ),
                   const Spacer(),
-                  const Expanded(
+                  Expanded(
                     child: TextField(
-                      decoration: InputDecoration(
+                      controller: _searchController,
+                      decoration: const InputDecoration(
                         hintText: 'Search...',
                         hintStyle: TextStyle(
                           fontSize: 15,
@@ -598,7 +615,7 @@ class _CollectionState extends State<Collection> {
                         ),
                         child: Text(
                           '$totalComplete/$totalFinale',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white
                           ),
                         )
@@ -626,7 +643,7 @@ class _CollectionState extends State<Collection> {
             setState(() => shinyToggle = !shinyToggle);
           },
           child: Container(
-            padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
             decoration: BoxDecoration(
               border: Border.all(color: invertColour),
               borderRadius: BorderRadius.circular(100),
@@ -664,8 +681,8 @@ class _CollectionState extends State<Collection> {
             setState(() => darkMode = !darkMode);
           },
           child: Container(
-            margin: EdgeInsets.only(left: 10),
-            padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            margin: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
             decoration: BoxDecoration(
               border: Border.all(color: invertColour),
               borderRadius: BorderRadius.circular(100),
@@ -678,7 +695,7 @@ class _CollectionState extends State<Collection> {
                   size: 15,
                   color: invertColour
                 ),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
                 Text(
                   darkMode ? 'Light' : 'Dark',
                   style: TextStyle(
@@ -750,7 +767,7 @@ class _CollectionState extends State<Collection> {
             ),
             child: Text(
               '${completed[region]}/${region.dexSize}',
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white
               ),
             )
@@ -760,24 +777,33 @@ class _CollectionState extends State<Collection> {
     );
   }
 
-  final _imageCacheManager = _ImageCacheManager(); // Store globally or in the widget state
+
+  final _imageCacheManager = _ImageCacheManager();
 
   List<Widget> _regionTiles(Region region) {
-    return List.generate(region.dexSize, (index) {
+    final filteredDexIndexes = List.generate(region.dexSize, (index) {
       int dexIndex = region.dexFirst - 1 + index;
       dex.Form form = widget.fullDex[dexIndex].forms[0];
+      if (_searchController.text.isNotEmpty && form.name.toLowerCase().contains(_searchController.text.toLowerCase())) {
+        return null;
+      }
+      return dexIndex;
+    }).where((index) => index != null).toList();
+
+    return filteredDexIndexes.map((dexIndex) {
+      dex.Form form = widget.fullDex[dexIndex!].forms[0];
       String imageAssetLocation = shinyToggle ? form.imageAssetMShiny : form.imageAssetM;
 
-      return ValueListenableBuilder<String?>( // Use imageAssetLocation as the key
+      return ValueListenableBuilder<String?>(
         valueListenable: _imageCacheManager.getNotifier(
-          imageAssetLocation, region, (path, reg) => getImageUrl(dexIndex, path, reg)
+          imageAssetLocation, region, (path, reg) => getImageUrl(dexIndex, path, reg),
         ),
         builder: (context, imageUrl, child) {
           dex.DexEntry entry = widget.fullDex[dexIndex];
           if (imageUrl == null) {
-            return _loadingTile(); // Show loading only while fetching
+            return _loadingTile();
           } else if (imageUrl == 'error') {
-            return _fallbackTile(dexIndex); // Show fallback if fetching fails
+            return _fallbackTile(dexIndex);
           } else {
             return HoverImageTile(
               imageUrl: imageUrl,
@@ -797,16 +823,13 @@ class _CollectionState extends State<Collection> {
                     isPaneOpen = true;
                   }
                 });
-              }
+              },
             );
           }
         },
       );
-    });
+    }).toList();
   }
-
-
-
 
   Widget _loadingTile() {
     return Container(
@@ -839,16 +862,16 @@ class _CollectionState extends State<Collection> {
 
   Future<String?> getImageUrl(int dexNum, String path, Region region, {bool update = true}) async {
     if (imageCache.containsKey(path) && imageCache[path] != 'error' && imageCache[path] != null) {
-      return imageCache[path];  // Return cached URL if available
+      return imageCache[path];  // return cached url if available
     }
 
-    imageCache[path] = null;  // Indicate it's still loading
+    imageCache[path] = null;  // state when still loading
 
     try {
       final storageRef = FirebaseStorage.instance.ref().child(path);
       String url = await storageRef.getDownloadURL();
 
-      imageCache[path] = url; // Store the fetched URL
+      imageCache[path] = url;  // store fetched url
       if (!loaded.contains(dexNum)) {
         setState(() {
           totalComplete++;
@@ -858,7 +881,7 @@ class _CollectionState extends State<Collection> {
       }
       return url;
     } on FirebaseException catch (_) {
-      imageCache[path] = 'error'; // Explicitly mark as failed
+      imageCache[path] = 'error';  // mark as failed
       return 'error';
     }
   }
@@ -872,13 +895,13 @@ class HoverImageTile extends StatefulWidget {
   final VoidCallback onTap;
   final bool isSelected;
 
-  HoverImageTile({required this.imageUrl, required this.onTap, required this.isSelected, required this.isDarkMode, Key? key}) : super(key: key);
+  const HoverImageTile({required this.imageUrl, required this.onTap, required this.isSelected, required this.isDarkMode, super.key});
 
   @override
-  _HoverImageTileState createState() => _HoverImageTileState();
+  HoverImageTileState createState() => HoverImageTileState();
 }
 
-class _HoverImageTileState extends State<HoverImageTile> {
+class HoverImageTileState extends State<HoverImageTile> {
   bool _isHovered = false;
 
   @override
@@ -900,8 +923,8 @@ class _HoverImageTileState extends State<HoverImageTile> {
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
                 ? widget.isDarkMode
-                  ? [BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
-                  : [BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1)]
+                  ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
+                  : [const BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1)]
                 : [],
           ),
           child: ClipRRect(
