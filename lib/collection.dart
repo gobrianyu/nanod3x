@@ -777,6 +777,10 @@ class _CollectionState extends State<Collection> {
     );
   }
 
+  bool _filterTile(dex.Form form) {
+    String query = _searchController.text.toLowerCase();
+    return form.name.toLowerCase().contains(query) || query == form.key.round().toString();
+  }
 
   final _imageCacheManager = _ImageCacheManager();
 
@@ -784,7 +788,7 @@ class _CollectionState extends State<Collection> {
     final filteredDexIndexes = List.generate(region.dexSize, (index) {
       int dexIndex = region.dexFirst - 1 + index;
       dex.Form form = widget.fullDex[dexIndex].forms[0];
-      if (_searchController.text.isNotEmpty && form.name.toLowerCase().contains(_searchController.text.toLowerCase())) {
+      if (_searchController.text.isNotEmpty && !_filterTile(form)) {
         return null;
       }
       return dexIndex;
