@@ -209,22 +209,26 @@ class _CollectionState extends State<Collection> {
             ),
           ),
           Expanded(
-            child: Text(
-              currEntry.forms[0].name,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                overflow: TextOverflow.ellipsis
-              ),
-              maxLines: 1,
+            child: Row(
+              children: [
+                Text(
+                  currEntry.forms[0].name,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    overflow: TextOverflow.ellipsis
+                  ),
+                  maxLines: 1,
+                ),
+                if (currEntry.dexNum == 29) 
+                  const Icon(Icons.female, color: Colors.white, size: 18),
+                if (currEntry.dexNum == 32) 
+                  const Icon(Icons.male, color: Colors.white, size: 18),
+                const Spacer(),
+                if (genderKnown) _nameHeaderButtons(currEntry.genderRatio),
+              ],
             ),
           ),
-          if (currEntry.dexNum == 29) 
-            const Icon(Icons.female, color: Colors.white, size: 18),
-          if (currEntry.dexNum == 32) 
-            const Icon(Icons.male, color: Colors.white, size: 18),
-          const Spacer(),
-          if (genderKnown) _nameHeaderButtons(currEntry.genderRatio),
         ],
       ),
     );
