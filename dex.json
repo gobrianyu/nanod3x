@@ -6778,10 +6778,10 @@
                 "height": 60,
                 "weight": 15,
                 "entry": "Spellbound by the length of its horn and the beauty of its fins, many strange Trainers raise Goldeen and nothing but Goldeen.",
-                "image asset m": "goldeen.png",
-                "image asset f": "goldeen.png",
-                "image asset m shiny": "goldeen_shiny.png",
-                "image asset f shiny": "goldeen_shiny.png"
+                "image asset m": "goldeen_m.png",
+                "image asset f": "goldeen_f.png",
+                "image asset m shiny": "goldeen_m_shiny.png",
+                "image asset f shiny": "goldeen_f_shiny.png"
             }
         ],
         "gimmick forms": [],
