@@ -321,7 +321,14 @@ class _CollectionState extends State<Collection> {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('Base Stats', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          Text(
+            'Base Stats',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+              color: invertColour
+            )
+          ),
           const SizedBox(height: 8),
           _statLine('HP', stats.hp),
           _statLine('Atk', stats.atk),
@@ -340,15 +347,17 @@ class _CollectionState extends State<Collection> {
         SizedBox(
           width: 45,
           child: Text(
-            statName
+            statName,
+            style: TextStyle(color: invertColour)
           )
         ),
         SizedBox(
           width: 30,
           child: Text(
             '$amount',
-            style: const TextStyle(
-              fontWeight: FontWeight.w700
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              color: invertColour
             ),
           )
         ),
@@ -358,7 +367,7 @@ class _CollectionState extends State<Collection> {
             child: Container(
               height: 12,
               decoration: BoxDecoration(
-                border: Border.all(),
+                border: Border.all(color: invertColour),
                 borderRadius: BorderRadius.circular(6)
               ),
               child: Row(
@@ -367,9 +376,9 @@ class _CollectionState extends State<Collection> {
                     flex: amount,
                     child: Container(
                       height: 12,
-                      decoration: const BoxDecoration(
-                        color: Colors.black,
-                        border: Border(bottom: BorderSide(), top: BorderSide())
+                      decoration: BoxDecoration(
+                        color: invertColour,
+                        border: const Border(bottom: BorderSide(), top: BorderSide())
                       ),
                     ),
                   ),
@@ -408,26 +417,32 @@ class _CollectionState extends State<Collection> {
     return Container(
       margin: const EdgeInsets.only(left: 20, right: 20, top: 15),
       padding: const EdgeInsets.all(15),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(),
-          bottom: BorderSide()
+          top: BorderSide(color: invertColour),
+          bottom: BorderSide(color: invertColour)
         )
       ),
       child: Row(
         children: [
           const Spacer(),
-          const Icon(Icons.scale),
+          Icon(Icons.scale, color: invertColour),
           const SizedBox(width: 7),
           Text(
-            '$weight kg'
+            '$weight kg',
+            style: TextStyle(
+              color: invertColour
+            )
           ),
           const Spacer(),
           const Spacer(),
-          const Icon(Icons.straighten),
+          Icon(Icons.straighten, color: invertColour),
           const SizedBox(width: 7),
           Text(
-            '${height/100} m'
+            '${height/100} m',
+            style: TextStyle(
+              color: invertColour
+            )
           ),
           const Spacer()
         ]
@@ -446,7 +461,11 @@ class _CollectionState extends State<Collection> {
             padding: const EdgeInsets.only(left: 4, top: 15),
             child: Text(
               '$category Pokémon',
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w900,
+                color: invertColour
+              )
             ),
           ),
           const SizedBox(height: 10,),
@@ -454,12 +473,15 @@ class _CollectionState extends State<Collection> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.search),
+              Icon(Icons.search, color: invertColour),
               const SizedBox(width: 5),
               Flexible(
                 child: Text(
                   entryText,
                   softWrap: true,
+                  style: TextStyle(
+                    color: invertColour
+                  )
                 ),
               ),
             ],
