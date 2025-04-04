@@ -2525,10 +2525,10 @@
                 "height": 100,
                 "weight": 29.5,
                 "entry": "The bug host is drained of energy by the mushrooms on its back. The mushroom appears to do all the thinking.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "parasect.png",
+                "image asset f": "parasect.png",
+                "image asset m shiny": "parasect_shiny.png",
+                "image asset f shiny": "parasect_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2576,10 +2576,10 @@
                 "height": 100,
                 "weight": 30,
                 "entry": "Its large eyes act as a radar. In a bright place, you can see that they are clusters of many tiny eyes.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "venonat.png",
+                "image asset f": "venonat.png",
+                "image asset m shiny": "venonat_shiny.png",
+                "image asset f shiny": "venonat_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2621,10 +2621,10 @@
                 "height": 150,
                 "weight": 12.5,
                 "entry": "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "venomoth.png",
+                "image asset f": "venomoth.png",
+                "image asset m shiny": "venomoth_shiny.png",
+                "image asset f shiny": "venomoth_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2755,10 +2755,10 @@
                 "height": 70,
                 "weight": 33.3,
                 "entry": "A team of triplets that can burrow to a depth of 60 miles. It's reported that this triggers an earthquake.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "dugtrio.png",
+                "image asset f": "dugtrio.png",
+                "image asset m shiny": "dugtrio_shiny.png",
+                "image asset f shiny": "dugtrio_shiny.png"
             },
             {
                 "key": 51.01,
@@ -2787,10 +2787,10 @@
                 "height": 70,
                 "weight": 66.6,
                 "entry": "They're referred to as triplets, but they're not identical-the metallic elements in their bodies differ slightly. The proof shows in their whiskers!",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "dugtrio_a.png",
+                "image asset f": "dugtrio_a.png",
+                "image asset m shiny": "dugtrio_a_shiny.png",
+                "image asset f shiny": "dugtrio_a_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -2959,10 +2959,10 @@
                 "height": 100,
                 "weight": 32,
                 "entry": "The gem in its forehead glows on its own! It walks with all the grace and elegance of a proud queen.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "persian.png",
+                "image asset f": "persian.png",
+                "image asset m shiny": "persian_shiny.png",
+                "image asset f shiny": "persian_shiny.png"
             },
             {
                 "key": 53.01,
@@ -3087,10 +3087,10 @@
                 "height": 170,
                 "weight": 76.6,
                 "entry": "Its long, slim limbs end in broad flippers. They are used for swimming gracefully in lakes.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "golduck.png",
+                "image asset f": "golduck.png",
+                "image asset m shiny": "golduck_shiny.png",
+                "image asset f shiny": "golduck_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3138,10 +3138,10 @@
                 "height": 50,
                 "weight": 28,
                 "entry": "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "mankey.png",
+                "image asset f": "mankey.png",
+                "image asset m shiny": "mankey_shiny.png",
+                "image asset f shiny": "mankey_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3240,10 +3240,10 @@
                 "height": 70,
                 "weight": 19,
                 "entry": "A Pokémon with a friendly nature. However, it will bark fiercely at anything invading its territory.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "growlithe.png",
+                "image asset f": "growlithe.png",
+                "image asset m shiny": "growlithe_shiny.png",
+                "image asset f shiny": "growlithe_shiny.png"
             },
             {
                 "key": 58.01,
@@ -3323,10 +3323,10 @@
                 "height": 190,
                 "weight": 155,
                 "entry": "A legendary Pokémon in the East. Many people are charmed by the grace and beauty of its running.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "arcanine.png",
+                "image asset f": "arcanine.png",
+                "image asset m shiny": "arcanine_shiny.png",
+                "image asset f shiny": "arcanine_shiny.png"
             },
             {
                 "key": 59.01,
@@ -3558,10 +3558,10 @@
                 "height": 90,
                 "weight": 19.5,
                 "entry": "Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "abra.png",
+                "image asset f": "abra.png",
+                "image asset m shiny": "abra_shiny.png",
+                "image asset f shiny": "abra_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3609,10 +3609,10 @@
                 "height": 130,
                 "weight": 56.5,
                 "entry": "Many odd things happen if this Pokémon is close by. For example, it makes clocks run backward.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "kadabra.png",
+                "image asset f": "kadabra.png",
+                "image asset m shiny": "kadabra_shiny.png",
+                "image asset f shiny": "kadabra_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3654,10 +3654,10 @@
                 "height": 150,
                 "weight": 48,
                 "entry": "If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "alakazam.png",
+                "image asset f": "alakazam.png",
+                "image asset m shiny": "alakazam_shiny.png",
+                "image asset f shiny": "alakazam_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3705,10 +3705,10 @@
                 "height": 80,
                 "weight": 19.5,
                 "entry": "Very powerful in spite of its small size. Its mastery of many types of martial arts makes it very tough.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "machop.png",
+                "image asset f": "machop.png",
+                "image asset m shiny": "machop_shiny.png",
+                "image asset f shiny": "machop_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3756,10 +3756,10 @@
                 "height": 150,
                 "weight": 70.5,
                 "entry": "The belt around its waist holds back its energy. Without it, this Pokémon would be unstoppable.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "machoke.png",
+                "image asset f": "machoke.png",
+                "image asset m shiny": "machoke_shiny.png",
+                "image asset f shiny": "machoke_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3801,10 +3801,10 @@
                 "height": 160,
                 "weight": 130,
                 "entry": "With four arms, it can attack and defend simultaneously. It's said to have mastered every martial art in the world.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "machamp.png",
+                "image asset f": "machamp.png",
+                "image asset m shiny": "machamp_shiny.png",
+                "image asset f shiny": "machamp_shiny.png"
             }
         ],
         "gimmick forms": [],
