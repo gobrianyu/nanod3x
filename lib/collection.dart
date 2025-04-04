@@ -118,7 +118,7 @@ class _CollectionState extends State<Collection> {
               ),
             ),
             _appBar(),
-            _slidingPane(),
+            RepaintBoundary(child: _slidingPane()),
           ],
         ),
       ),
