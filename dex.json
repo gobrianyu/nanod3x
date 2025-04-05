@@ -25570,10 +25570,10 @@
                 "height": 80,
                 "weight": 25.9,
                 "entry": "As a protective technique, it can completely freeze its fur to make its hairs stand like needles.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "glaceon.png",
+                "image asset f": "glaceon.png",
+                "image asset m shiny": "glaceon_shiny.png",
+                "image asset f shiny": "glaceon_shiny.png"
             }
         ],
         "gimmick forms": [],
