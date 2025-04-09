@@ -14945,10 +14945,10 @@
                 "height": 150,
                 "weight": 81.9,
                 "entry": "Extremely strong, it can change the landscape. It has an insolent nature that makes it not care about others.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "swampert.png",
+                "image asset f": "swampert.png",
+                "image asset m shiny": "swampert_shiny.png",
+                "image asset f shiny": "swampert_shiny.png"
             }
         ],
         "gimmick forms": [],
