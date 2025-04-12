@@ -33741,8 +33741,8 @@
             }
         ],
         "gimmick forms": [],
-        "experience group": 280,
-        "base experience yield": 330,
+        "experience group": "Medium Fast",
+        "base experience yield": 169,
         "minimum spawn level": 43,
         "gendered": false,
         "male:female ratio": null,
