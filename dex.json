@@ -27825,7 +27825,7 @@
         "dex number": 513,
         "forms": [
             {
-                "key": 531.0,
+                "key": 513.0,
                 "name": "Pansear",
                 "type": ["Fire"],
                 "category": "High Temp",
@@ -27836,7 +27836,7 @@
                     {
                         "next": [
                             {
-                                "key": 532.0,
+                                "key": 514.0,
                                 "level": null,
                                 "item": ["Fire Stone"]
                             }
@@ -30072,7 +30072,7 @@
                 "evolution": [
                     {
                         "next": [],
-                        "prev": 554.1
+                        "prev": 554.01
                     }
                 ],
                 "base stats": [
@@ -30104,7 +30104,7 @@
                 "evolution": [
                     {
                         "next": [],
-                        "prev": 554.0
+                        "prev": 554.01
                     }
                 ],
                 "base stats": [
@@ -31871,7 +31871,7 @@
                 "image asset f shiny": "unknown.png"
             },
             {
-                "key": 586.2,
+                "key": 586.02,
                 "name": "Sawsbuck",
                 "type": ["Normal", "Grass"],
                 "category": "Season",
@@ -33897,10 +33897,10 @@
         "flee rate": 7
     },
     {
-        "dex number": 628,
+        "dex number": 627,
         "forms": [
             {
-                "key": 628.0,
+                "key": 627.0,
                 "name": "Rufflet",
                 "type": ["Normal", "Flying"],
                 "category": "Eaglet",
