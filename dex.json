@@ -34948,6 +34948,70 @@
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
                 "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 646.01,
+                "name": "Kyurem",
+                "type": ["Dragon", "Ice"],
+                "category": "Boundary",
+                "region": "Unova",
+                "special form": "White Kyurem",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 125,
+                        "atk": 120,
+                        "def": 90,
+                        "sp.atk": 170,
+                        "sp.def": 100,
+                        "speed": 95
+                    }
+                ],
+                "height": 360,
+                "weight": 325,
+                "entry": "The sameness of Reshiram's and Kyurem's genes allowed Kyurem to absorb Reshiram. Kyurem can now use the power of both fire and ice. It has foreseen that a world of truth will arrive for people and Pokémon. It strives to protect that future.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 646.02,
+                "name": "Kyurem",
+                "type": ["Dragon", "Ice"],
+                "category": "Boundary",
+                "region": "Unova",
+                "special form": "Black Kyurem",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 125,
+                        "atk": 170,
+                        "def": 100,
+                        "sp.atk": 120,
+                        "sp.def": 90,
+                        "speed": 95
+                    }
+                ],
+                "height": 330,
+                "weight": 325,
+                "entry": "The sameness of Zekrom's and Kyurem's genes allowed Kyurem to absorb Zekrom. Kyurem can now use the power of both electricity and ice. It's said that this Pokémon battles in order to protect the ideal world that will exist in the future for people and Pokémon.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
             }
         ],
         "gimmick forms": [],
@@ -35280,6 +35344,5323 @@
         "gimmick forms": [],
         "experience group": "Slow",
         "base experience yield": 270,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 650,
+        "forms": [
+            {
+                "key": 650.0,
+                "name": "Chespin",
+                "type": ["Grass"],
+                "category": "Spiny Nut",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 651.0,
+                                "level": 16,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 56,
+                        "atk": 61,
+                        "def": 65,
+                        "sp.atk": 48,
+                        "sp.def": 45,
+                        "speed": 38
+                    }
+                ],
+                "height": 40,
+                "weight": 9,
+                "entry": "Such a thick shell of wood covers its head and back that even a direct hit from a truck wouldn't faze it.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 63,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 7,
+        "flee rate": 10
+    },
+    {
+        "dex number": 651,
+        "forms": [
+            {
+                "key": 651.0,
+                "name": "Quilladin",
+                "type": ["Grass"],
+                "category": "Spiny Armor",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 652.0,
+                                "level": 36,
+                                "item": []
+                            }
+                        ],
+                        "prev": 650.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 61,
+                        "atk": 78,
+                        "def": 95,
+                        "sp.atk": 56,
+                        "sp.def": 58,
+                        "speed": 57
+                    }
+                ],
+                "height": 70,
+                "weight": 29,
+                "entry": "They strengthen their lower bodies by running into one another. They are very kind and won't start fights.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 142,
+        "minimum spawn level": 16,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 652,
+        "forms": [
+            {
+                "key": 652.0,
+                "name": "Chesnaught",
+                "type": ["Grass", "Fighting"],
+                "category": "Spiny Armor",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 651.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 88,
+                        "atk": 107,
+                        "def": 122,
+                        "sp.atk": 74,
+                        "sp.def": 75,
+                        "speed": 64
+                    }
+                ],
+                "height": 160,
+                "weight": 90,
+                "entry": "When it takes a defensive posture with its fists guarding its face, it could withstand a bomb blast.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 265,
+        "minimum spawn level": 36,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 653,
+        "forms": [
+            {
+                "key": 653.0,
+                "name": "Fennekin",
+                "type": ["Fire"],
+                "category": "Fox",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 654.0,
+                                "level": 16,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 40,
+                        "atk": 45,
+                        "def": 40,
+                        "sp.atk": 62,
+                        "sp.def": 60,
+                        "speed": 60
+                    }
+                ],
+                "height": 40,
+                "weight": 9.4,
+                "entry": "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 654,
+        "forms": [
+            {
+                "key": 654.0,
+                "name": "Braixen",
+                "type": ["Fire"],
+                "category": "Fox",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 655.0,
+                                "level": 36,
+                                "item": []
+                            }
+                        ],
+                        "prev": 653.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 59,
+                        "atk": 59,
+                        "def": 58,
+                        "sp.atk": 90,
+                        "sp.def": 70,
+                        "speed": 73
+                    }
+                ],
+                "height": 100,
+                "weight": 14.5,
+                "entry": "It has a twig stuck in its tail. With friction from its tail fur, it sets the twig on fire and launches into battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 143,
+        "minimum spawn level": 16,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 655,
+        "forms": [
+            {
+                "key": 655.0,
+                "name": "Delphox",
+                "type": ["Fire", "Psychic"],
+                "category": "Fox",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 654.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 69,
+                        "def": 72,
+                        "sp.atk": 114,
+                        "sp.def": 100,
+                        "speed": 104
+                    }
+                ],
+                "height": 150,
+                "weight": 39,
+                "entry": "It gazes into the flame at the tip of its branch to achieve a focused state, which allows it to see into the future.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 267,
+        "minimum spawn level": 36,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 656,
+        "forms": [
+            {
+                "key": 656.0,
+                "name": "Froakie",
+                "type": ["Water"],
+                "category": "Bubble Frog",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 657.0,
+                                "level": 16,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 41,
+                        "atk": 56,
+                        "def": 40,
+                        "sp.atk": 62,
+                        "sp.def": 44,
+                        "speed": 71
+                    }
+                ],
+                "height": 30,
+                "weight": 7,
+                "entry": "It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 63,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 657,
+        "forms": [
+            {
+                "key": 657.0,
+                "name": "Frogadier",
+                "type": ["Water"],
+                "category": "Bubble Frog",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 658.0,
+                                "level": 36,
+                                "item": []
+                            }
+                        ],
+                        "prev": 656.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 63,
+                        "def": 52,
+                        "sp.atk": 83,
+                        "sp.def": 56,
+                        "speed": 97
+                    }
+                ],
+                "height": 60,
+                "weight": 10.9,
+                "entry": "It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 142,
+        "minimum spawn level": 16,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 658,
+        "forms": [
+            {
+                "key": 658.0,
+                "name": "Greninja",
+                "type": ["Water", "Dark"],
+                "category": "Ninja",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 658.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 72,
+                        "atk": 95,
+                        "def": 67,
+                        "sp.atk": 103,
+                        "sp.def": 71,
+                        "speed": 122
+                    }
+                ],
+                "height": 150,
+                "weight": 40,
+                "entry": "It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 265,
+        "minimum spawn level": 36,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 659,
+        "forms": [
+            {
+                "key": 659.0,
+                "name": "Bunnelby",
+                "type": ["Normal"],
+                "category": "Digging",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 660.0,
+                                "level": 20,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 38,
+                        "atk": 36,
+                        "def": 38,
+                        "sp.atk": 32,
+                        "sp.def": 37,
+                        "speed": 57
+                    }
+                ],
+                "height": 40,
+                "weight": 5,
+                "entry": "It has ears like shovels. Digging holes strengthens its ears so much that they can sever thick roots effortlessly.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 47,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 10
+    },
+    {
+        "dex number": 660,
+        "forms": [
+            {
+                "key": 660.0,
+                "name": "Diggersby",
+                "type": ["Normal", "Ground"],
+                "category": "Digging",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 659.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 85,
+                        "atk": 56,
+                        "def": 77,
+                        "sp.atk": 50,
+                        "sp.def": 77,
+                        "speed": 78
+                    }
+                ],
+                "height": 100,
+                "weight": 42.4,
+                "entry": "As powerful as an excavator, its ears can reduce dense bedrock to rubble. When it's finished digging, it lounges lazily.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 148,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 127,
+        "flee rate": 10
+    },
+    {
+        "dex number": 661,
+        "forms": [
+            {
+                "key": 661.0,
+                "name": "Fletchling",
+                "type": ["Normal", "Flying"],
+                "category": "Tiny Robin",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 662.0,
+                                "level": 17,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 50,
+                        "def": 43,
+                        "sp.atk": 40,
+                        "sp.def": 38,
+                        "speed": 62
+                    }
+                ],
+                "height": 30,
+                "weight": 1.7,
+                "entry": "These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements.",
+                "image asset m": "fletchling.png",
+                "image asset f": "fletchling.png",
+                "image asset m shiny": "fletchling_shiny.png",
+                "image asset f shiny": "fletchling_shiny.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 56,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 20
+    },
+    {
+        "dex number": 662,
+        "forms": [
+            {
+                "key": 662.0,
+                "name": "Fletchinder",
+                "type": ["Fire", "Flying"],
+                "category": "Ember",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 663.0,
+                                "level": 35,
+                                "item": []
+                            }
+                        ],
+                        "prev": 661.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 62,
+                        "atk": 73,
+                        "def": 55,
+                        "sp.atk": 56,
+                        "sp.def": 52,
+                        "speed": 84
+                    }
+                ],
+                "height": 70,
+                "weight": 16,
+                "entry": "From its beak, it expels embers that set the tall grass on fire. Then it pounces on the bewildered prey that pop out of the grass.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 134,
+        "minimum spawn level": 17,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 9
+    },
+    {
+        "dex number": 663,
+        "forms": [
+            {
+                "key": 663.0,
+                "name": "Talonflame",
+                "type": ["Fire", "Flying"],
+                "category": "Scorching",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 662.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 81,
+                        "def": 71,
+                        "sp.atk": 74,
+                        "sp.def": 69,
+                        "speed": 126
+                    }
+                ],
+                "height": 120,
+                "weight": 24.5,
+                "entry": "Its favorite foods are Wingull and Pikipek. It attacks with a powerful kick and grasps them firmly in its talons.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 175,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 664,
+        "forms": [
+            {
+                "key": 664.0,
+                "name": "Scatterbug",
+                "type": ["Bug"],
+                "category": "Scatterdust",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 665.0,
+                                "level": 9,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 38,
+                        "atk": 35,
+                        "def": 40,
+                        "sp.atk": 27,
+                        "sp.def": 25,
+                        "speed": 35
+                    }
+                ],
+                "height": 30,
+                "weight": 2.5,
+                "entry": "When under attack from bird Pokémon, it spews a poisonous black powder that causes paralysis on contact.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 40,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 20
+    },
+    {
+        "dex number": 665,
+        "forms": [
+            {
+                "key": 665.0,
+                "name": "Spewpa",
+                "type": ["Bug"],
+                "category": "Scatterdust",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 666.0,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.01,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.02,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.03,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.04,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.05,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.06,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.07,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.08,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.09,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.10,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.11,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.12,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.13,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.14,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.15,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.16,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.17,
+                                "level": 12,
+                                "item": ["Random"]
+                            },
+                            {
+                                "key": 666.18,
+                                "level": 12,
+                                "item": ["Paldea Slate"]
+                            },
+                            {
+                                "key": 666.19,
+                                "level": 12,
+                                "item": ["Invalid"]
+                            }
+                        ],
+                        "prev": 664.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 22,
+                        "def": 60,
+                        "sp.atk": 27,
+                        "sp.def": 30,
+                        "speed": 29
+                    }
+                ],
+                "height": 30,
+                "weight": 8.4,
+                "entry": "The beaks of bird Pokémon can't begin to scratch its stalwart body. To defend itself, it spews powder.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 75,
+        "minimum spawn level": 9,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 9
+    },
+    {
+        "dex number": 666,
+        "forms": [
+            {
+                "key": 666.0,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Icy Snow Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in frigid lands. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.01,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Polar Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a snowy land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.02,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Tundra Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land of severe cold. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.03,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Continental Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land of vast space. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.04,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Garden Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a verdant land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.05,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Elegant Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land with distinct seasons. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.06,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Meadow Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land where flowers bloom. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.07,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a sun-drenched land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.08,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Marine Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land with ocean breezes. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.09,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Archipelago Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a place with many islands. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.10,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (High Plains Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land with little rain. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.11,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Sandstorm Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a parched land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.12,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (River Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land where large rivers flow. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.13,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Monsoon Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land with intense rainfall. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.14,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Savanna Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land with a tropical climate. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.15,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Sun Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land bathed in light. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.16,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Ocean Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land of perpetual summer. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.17,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Jungle Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a land of tropical rain forests. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.18,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Fancy Pattern)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a mysterious land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 666.19,
+                "name": "Vivillon",
+                "type": ["Bug", "Flying"],
+                "category": "Scale",
+                "region": "Kalos",
+                "special form": "Vivillon (Poké Ball)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 665.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 52,
+                        "def": 50,
+                        "sp.atk": 90,
+                        "sp.def": 50,
+                        "speed": 89
+                    }
+                ],
+                "height": 120,
+                "weight": 17,
+                "entry": "This Pokémon was born in a special land. It scatters colorful, toxic scales from its wings during battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 206,
+        "minimum spawn level": 12,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 6
+    },
+    {
+        "dex number": 667,
+        "forms": [
+            {
+                "key": 667.0,
+                "name": "Litleo",
+                "type": ["Fire", "Normal"],
+                "category": "Lion Cub",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 668.0,
+                                "level": 35,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 62,
+                        "atk": 50,
+                        "def": 58,
+                        "sp.atk": 73,
+                        "sp.def": 54,
+                        "speed": 72
+                    }
+                ],
+                "height": 60,
+                "weight": 13.5,
+                "entry": "The stronger the opponent it faces, the more heat surges from its mane and the more power flows through its body.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 74,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 0.14,
+        "catch rate": 220,
+        "flee rate": 20
+    },
+    {
+        "dex number": 668,
+        "forms": [
+            {
+                "key": 668.0,
+                "name": "Pyroar",
+                "type": ["Fire", "Normal"],
+                "category": "Royal",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 667.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 86,
+                        "atk": 68,
+                        "def": 72,
+                        "sp.atk": 109,
+                        "sp.def": 66,
+                        "speed": 106
+                    }
+                ],
+                "height": 150,
+                "weight": 81.5,
+                "entry": "The male with the largest mane of fire is the leader of the pride. The females of a pride work together to bring down prey. It's thanks to them that their pride doesn't starve.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 177,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 0.14,
+        "catch rate": 65,
+        "flee rate": 7
+    },
+    {
+        "dex number": 669,
+        "forms": [
+            {
+                "key": 669.0,
+                "name": "Flabébé",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Flabébé (Red Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 670.0,
+                                "level": 19,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 39,
+                        "sp.atk": 61,
+                        "sp.def": 79,
+                        "speed": 42
+                    }
+                ],
+                "height": 10,
+                "weight": 0.1,
+                "entry": "This Flabébé rides a red flower. Immediately after birth, this Pokémon begins flying around in search of a flower it likes.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 669.01,
+                "name": "Flabébé",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Flabébé (Yellow Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 670.01,
+                                "level": 19,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 39,
+                        "sp.atk": 61,
+                        "sp.def": 79,
+                        "speed": 42
+                    }
+                ],
+                "height": 10,
+                "weight": 0.1,
+                "entry": "It unleashes a variety of moves by drawing forth the power hidden within flowers. This Pokémon is particularly fond of yellow flowers.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 669.02,
+                "name": "Flabébé",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Flabébé (Orange Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 670.02,
+                                "level": 19,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 39,
+                        "sp.atk": 61,
+                        "sp.def": 79,
+                        "speed": 42
+                    }
+                ],
+                "height": 10,
+                "weight": 0.1,
+                "entry": "It receives strength from flowers and gives them some of its energy in return. This Pokémon likes orange flowers best of all.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 669.03,
+                "name": "Flabébé",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Flabébé (Blue Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 670.03,
+                                "level": 19,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 39,
+                        "sp.atk": 61,
+                        "sp.def": 79,
+                        "speed": 42
+                    }
+                ],
+                "height": 10,
+                "weight": 0.1,
+                "entry": "This Pokémon likes blue flowers best of all. It floats upward using the power emanating from its flower and bobs along lightly through the air.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 669.04,
+                "name": "Flabébé",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Flabébé (White Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 670.04,
+                                "level": 19,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 39,
+                        "sp.atk": 61,
+                        "sp.def": 79,
+                        "speed": 42
+                    }
+                ],
+                "height": 10,
+                "weight": 0.1,
+                "entry": "When evening falls, it searches out a place blooming with flowers of the same white color as itself, and then it goes to sleep.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 225,
+        "flee rate": 15
+    },
+    {
+        "dex number": 670,
+        "forms": [
+            {
+                "key": 670.0,
+                "name": "Floette",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Floette (Red Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 671.0,
+                                "level": null,
+                                "item": ["Shiny Stone"]
+                            }
+                        ],
+                        "prev": 669.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 45,
+                        "def": 47,
+                        "sp.atk": 75,
+                        "sp.def": 98,
+                        "speed": 52
+                    }
+                ],
+                "height": 20,
+                "weight": 0.9,
+                "entry": "This Pokémon uses red wavelengths of light to pour its own energy into flowers and draw forth their latent potential.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 670.01,
+                "name": "Floette",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Floette (Yellow Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 671.01,
+                                "level": null,
+                                "item": ["Shiny Stone"]
+                            }
+                        ],
+                        "prev": 669.01
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 45,
+                        "def": 47,
+                        "sp.atk": 75,
+                        "sp.def": 98,
+                        "speed": 52
+                    }
+                ],
+                "height": 20,
+                "weight": 0.9,
+                "entry": "This Pokémon can draw forth the power hidden within yellow flowers. This power then becomes the moves Floette uses to protect itself.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 670.02,
+                "name": "Floette",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Floette (Orange Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 671.02,
+                                "level": null,
+                                "item": ["Shiny Stone"]
+                            }
+                        ],
+                        "prev": 669.02
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 45,
+                        "def": 47,
+                        "sp.atk": 75,
+                        "sp.def": 98,
+                        "speed": 52
+                    }
+                ],
+                "height": 20,
+                "weight": 0.9,
+                "entry": "This Pokémon can draw forth the most power when in sync with orange flowers, compared to flowers of other colors.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 670.03,
+                "name": "Floette",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Floette (Blue Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 671.03,
+                                "level": null,
+                                "item": ["Shiny Stone"]
+                            }
+                        ],
+                        "prev": 669.03
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 45,
+                        "def": 47,
+                        "sp.atk": 75,
+                        "sp.def": 98,
+                        "speed": 52
+                    }
+                ],
+                "height": 20,
+                "weight": 0.9,
+                "entry": "It exchanges power with flowers via wavelengths of visible light. This form of Floette can sync with the wavelength that produces the color blue.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 670.04,
+                "name": "Floette",
+                "type": ["Fairy"],
+                "category": "Single Bloom",
+                "region": "Kalos",
+                "special form": "Floette (White Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 671.04,
+                                "level": null,
+                                "item": ["Shiny Stone"]
+                            }
+                        ],
+                        "prev": 669.04
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 45,
+                        "def": 47,
+                        "sp.atk": 75,
+                        "sp.def": 98,
+                        "speed": 52
+                    }
+                ],
+                "height": 20,
+                "weight": 0.9,
+                "entry": "If it finds someone messing up a flower bed, it will attack them without mercy. This Floette takes particularly good care of white flowers.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 130,
+        "minimum spawn level": 19,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 120,
+        "flee rate": 7
+    },
+    {
+        "dex number": 671,
+        "forms": [
+            {
+                "key": 671.0,
+                "name": "Florges",
+                "type": ["Fairy"],
+                "category": "Garden",
+                "region": "Kalos",
+                "special form": "Florges (Red Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 670.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 65,
+                        "def": 68,
+                        "sp.atk": 112,
+                        "sp.def": 154,
+                        "speed": 75
+                    }
+                ],
+                "height": 110,
+                "weight": 10,
+                "entry": "This Pokémon creates an impressive flower garden in its territory. It draws forth the power of the red flowers around its neck.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 671.01,
+                "name": "Florges",
+                "type": ["Fairy"],
+                "category": "Garden",
+                "region": "Kalos",
+                "special form": "Florges (Yellow Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 670.01
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 65,
+                        "def": 68,
+                        "sp.atk": 112,
+                        "sp.def": 154,
+                        "speed": 75
+                    }
+                ],
+                "height": 110,
+                "weight": 10,
+                "entry": "This Pokémon battles by drawing forth the power of yellow flowers. It ruthlessly punishes anyone who tramples on flowering plants.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 671.02,
+                "name": "Florges",
+                "type": ["Fairy"],
+                "category": "Garden",
+                "region": "Kalos",
+                "special form": "Florges (Orange Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 670.02
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 65,
+                        "def": 68,
+                        "sp.atk": 112,
+                        "sp.def": 154,
+                        "speed": 75
+                    }
+                ],
+                "height": 110,
+                "weight": 10,
+                "entry": "Its orange flowers fire off powerful beams, attacking as if they were a battery of artillery. In times long past, castle governors would lovingly raise Florges to care for their castles' exquisite gardens.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 671.03,
+                "name": "Florges",
+                "type": ["Fairy"],
+                "category": "Garden",
+                "region": "Kalos",
+                "special form": "Florges (Blue Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 670.03
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 65,
+                        "def": 68,
+                        "sp.atk": 112,
+                        "sp.def": 154,
+                        "speed": 75
+                    }
+                ],
+                "height": 110,
+                "weight": 10,
+                "entry": "Blue pigments were tremendously expensive in the past, so paintings of blue Florges are highly valuable.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 671.04,
+                "name": "Florges",
+                "type": ["Fairy"],
+                "category": "Garden",
+                "region": "Kalos",
+                "special form": "Florges (White Flower)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 670.04
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 65,
+                        "def": 68,
+                        "sp.atk": 112,
+                        "sp.def": 154,
+                        "speed": 75
+                    }
+                ],
+                "height": 110,
+                "weight": 10,
+                "entry": "A Florges adorned with white flowers can sync with the wavelengths of various colors to draw forth their power.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 276,
+        "minimum spawn level": 33,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 672,
+        "forms": [
+            {
+                "key": 672.0,
+                "name": "Skiddo",
+                "type": ["Grass"],
+                "category": "Mount",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 673.0,
+                                "level": 32,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 66,
+                        "atk": 65,
+                        "def": 48,
+                        "sp.atk": 62,
+                        "sp.def": 57,
+                        "speed": 52
+                    }
+                ],
+                "height": 90,
+                "weight": 31,
+                "entry": "Thought to be one of the first Pokémon to live in harmony with humans, it has a placid disposition.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 70,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 200,
+        "flee rate": 10
+    },
+    {
+        "dex number": 673,
+        "forms": [
+            {
+                "key": 673.0,
+                "name": "Gogoat",
+                "type": ["Grass"],
+                "category": "Mount",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 672.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 123,
+                        "atk": 100,
+                        "def": 62,
+                        "sp.atk": 97,
+                        "sp.def": 81,
+                        "speed": 68
+                    }
+                ],
+                "height": 170,
+                "weight": 91,
+                "entry": "It can sense the feelings of others by touching them with its horns. This species has assisted people with their work since 5,000 years ago.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 186,
+        "minimum spawn level": 32,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 674,
+        "forms": [
+            {
+                "key": 674.0,
+                "name": "Pancham",
+                "type": ["Fighting"],
+                "category": "Playful",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 675.0,
+                                "level": 32,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 67,
+                        "atk": 82,
+                        "def": 62,
+                        "sp.atk": 46,
+                        "sp.def": 48,
+                        "speed": 43
+                    }
+                ],
+                "height": 60,
+                "weight": 8,
+                "entry": "It does its best to be taken seriously by its enemies, but its glare is not sufficiently intimidating. Chewing on a leaf is its trademark.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 70,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 220,
+        "flee rate": 9
+    },
+    {
+        "dex number": 675,
+        "forms": [
+            {
+                "key": 675.0,
+                "name": "Pangoro",
+                "type": ["Fighting", "Dark"],
+                "category": "Daunting",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 674.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 124,
+                        "def": 78,
+                        "sp.atk": 69,
+                        "sp.def": 71,
+                        "speed": 58
+                    }
+                ],
+                "height": 210,
+                "weight": 136,
+                "entry": "Although it possesses a violent temperament, it won't put up with bullying. It uses the leaf in its mouth to sense the movements of its enemies.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 50,
+        "minimum spawn level": 32,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 65,
+        "flee rate": 7
+    },
+    {
+        "dex number": 676,
+        "forms": [
+            {
+                "key": 676.0,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Natural Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.01,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Heart Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.02,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Star Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.03,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Diamond Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.04,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Debutante Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.05,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Matron Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.06,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Dandy Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.07,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (La Reine Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.08,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Kabuki Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 676.09,
+                "name": "Furfrou",
+                "type": ["Normal"],
+                "category": "Poodle",
+                "region": "Kalos",
+                "special form": "Furfrou (Pharoah Trim)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 80,
+                        "def": 60,
+                        "sp.atk": 65,
+                        "sp.def": 90,
+                        "speed": 102
+                    }
+                ],
+                "height": 120,
+                "weight": 28,
+                "entry": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 165,
+        "minimum spawn level": 16,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 160,
+        "flee rate": 7
+    },
+    {
+        "dex number": 677,
+        "forms": [
+            {
+                "key": 677.0,
+                "name": "Espurr",
+                "type": ["Psychic"],
+                "category": "Restraint",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 678.0,
+                                "level": 25,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 62,
+                        "atk": 48,
+                        "def": 54,
+                        "sp.atk": 63,
+                        "sp.def": 60,
+                        "speed": 68
+                    }
+                ],
+                "height": 30,
+                "weight": 3.5,
+                "entry": "Though Espurr's expression never changes, behind that blank stare is an intense struggle to contain its devastating psychic power.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 71,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 10
+    },
+    {
+        "dex number": 678,
+        "forms": [
+            {
+                "key": 678.0,
+                "name": "Meowstic",
+                "type": ["Psychic"],
+                "category": "Constraint",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 677.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 74,
+                        "atk": 48,
+                        "def": 76,
+                        "sp.atk": 83,
+                        "sp.def": 81,
+                        "speed": 104
+                    }
+                ],
+                "height": 60,
+                "weight": 8.5,
+                "entry": "The eyeball patterns on the interior of its ears emit psychic energy. It keeps the patterns tightly covered because that power is too immense. Females are a bit more selfish and aggressive than males. If they don't get what they want, they will torment you with their psychic abilities.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 163,
+        "minimum spawn level": 25,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 679,
+        "forms": [
+            {
+                "key": 679.0,
+                "name": "Honedge",
+                "type": ["Steel", "Ghost"],
+                "category": "Sword",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 680.0,
+                                "level": 35,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 80,
+                        "def": 100,
+                        "sp.atk": 35,
+                        "sp.def": 37,
+                        "speed": 28
+                    }
+                ],
+                "height": 80,
+                "weight": 2,
+                "entry": "The blue eye on the sword's handguard is the true body of Honedge. With its old cloth, it drains people's lives away.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 65,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 180,
+        "flee rate": 15
+    },
+    {
+        "dex number": 680,
+        "forms": [
+            {
+                "key": 680.0,
+                "name": "Doublade",
+                "type": ["Steel", "Ghost"],
+                "category": "Sword",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 681.0,
+                                "level": null,
+                                "item": ["Dusk Stone"]
+                            }
+                        ],
+                        "prev": 679.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 59,
+                        "atk": 110,
+                        "def": 150,
+                        "sp.atk": 45,
+                        "sp.def": 49,
+                        "speed": 35
+                    }
+                ],
+                "height": 80,
+                "weight": 4.5,
+                "entry": "The complex attack patterns of its two swords are unstoppable, even for an opponent greatly accomplished at swordplay.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 157,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 90,
+        "flee rate": 7
+    },
+    {
+        "dex number": 681,
+        "forms": [
+            {
+                "key": 681.0,
+                "name": "Aegislash",
+                "type": ["Steel", "Ghost"],
+                "category": "Royal Sword",
+                "region": "Kalos",
+                "special form": "Aegislash (Shield Forme)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 680.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 50,
+                        "def": 140,
+                        "sp.atk": 50,
+                        "sp.def": 140,
+                        "speed": 60
+                    }
+                ],
+                "height": 170,
+                "weight": 53,
+                "entry": "Its potent spectral powers allow it to manipulate others. It once used its powers to force people and Pokémon to build a kingdom to its liking. In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 681.01,
+                "name": "Aegislash",
+                "type": ["Steel", "Ghost"],
+                "category": "Royal Sword",
+                "region": "Kalos",
+                "special form": "Aegislash (Blade Forme)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 680.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 140,
+                        "def": 50,
+                        "sp.atk": 140,
+                        "sp.def": 50,
+                        "speed": 60
+                    }
+                ],
+                "height": 170,
+                "weight": 53,
+                "entry": "This stance is dedicated to offense. It can cleave any opponent with the strength and weight of its steel blade. Once upon a time, a king with an Aegislash reigned over the land. His Pokémon eventually drained him of life, and his kingdom fell with him.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 234,
+        "minimum spawn level": 50,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 682,
+        "forms": [
+            {
+                "key": 682.0,
+                "name": "Spritzee",
+                "type": ["Fairy"],
+                "category": "Perfume",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 683.0,
+                                "level": null,
+                                "item": ["Linking Cord", "Sachet"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 52,
+                        "def": 60,
+                        "sp.atk": 63,
+                        "sp.def": 65,
+                        "speed": 23
+                    }
+                ],
+                "height": 20,
+                "weight": 0.5,
+                "entry": "In the past, rather than using perfume, royal ladies carried a Spritzee that would waft a fragrance they liked.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 68,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 200,
+        "flee rate": 15
+    },
+    {
+        "dex number": 683,
+        "forms": [
+            {
+                "key": 683.0,
+                "name": "Aromatisse",
+                "type": ["Fairy"],
+                "category": "Fragrance",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 682.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 101,
+                        "atk": 72,
+                        "def": 72,
+                        "sp.atk": 99,
+                        "sp.def": 89,
+                        "speed": 29
+                    }
+                ],
+                "height": 80,
+                "weight": 15.5,
+                "entry": "It devises various scents, pleasant and unpleasant, and emits scents that its enemies dislike in order to gain an edge in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 162,
+        "minimum spawn level": 32,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 140,
+        "flee rate": 10
+    },
+    {
+        "dex number": 684,
+        "forms": [
+            {
+                "key": 684.0,
+                "name": "Swirlix",
+                "type": ["Fairy"],
+                "category": "Cotton Candy",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 685.0,
+                                "level": null,
+                                "item": ["Linking Cord", "Whipped Dream"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 62,
+                        "atk": 48,
+                        "def": 66,
+                        "sp.atk": 59,
+                        "sp.def": 57,
+                        "speed": 49
+                    }
+                ],
+                "height": 40,
+                "weight": 3.5,
+                "entry": "To entangle its opponents in battle, it extrudes white threads as sweet and sticky as cotton candy.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 68,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 200,
+        "flee rate": 15
+    },
+    {
+        "dex number": 685,
+        "forms": [
+            {
+                "key": 685.0,
+                "name": "Slurpuff",
+                "type": ["Fairy"],
+                "category": "Meringue",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 684.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 82,
+                        "atk": 80,
+                        "def": 86,
+                        "sp.atk": 85,
+                        "sp.def": 75,
+                        "speed": 72
+                    }
+                ],
+                "height": 80,
+                "weight": 5,
+                "entry": "Its sense of smell is 100 million times better than a human's, so even the faintest scent tells it about everything in the area. It's like it can see with its nose!",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 168,
+        "minimum spawn level": 32,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 140,
+        "flee rate": 10
+    },
+    {
+        "dex number": 686,
+        "forms": [
+            {
+                "key": 686.0,
+                "name": "Inkay",
+                "type": ["Dark", "Psychic"],
+                "category": "Revolving",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 687.0,
+                                "level": 30,
+                                "item": ["Upside Down"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 53,
+                        "atk": 54,
+                        "def": 53,
+                        "sp.atk": 37,
+                        "sp.def": 46,
+                        "speed": 45
+                    }
+                ],
+                "height": 40,
+                "weight": 3.5,
+                "entry": "It flashes the light-emitting spots on its body, which drains its opponent's will to fight. It takes the opportunity to scuttle away and hide.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 58,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 687,
+        "forms": [
+            {
+                "key": 687.0,
+                "name": "Malamar",
+                "type": ["Dark", "Psychic"],
+                "category": "Overturning",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 686.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 86,
+                        "atk": 92,
+                        "def": 88,
+                        "sp.atk": 68,
+                        "sp.def": 75,
+                        "speed": 73
+                    }
+                ],
+                "height": 150,
+                "weight": 47,
+                "entry": "When it comes to strong hypnosis, there's an endless number of people who utilize Malamar for their nefarious deeds.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 169,
+        "minimum spawn level": 30,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 80,
+        "flee rate": 7
+    },
+    {
+        "dex number": 688,
+        "forms": [
+            {
+                "key": 688.0,
+                "name": "Binacle",
+                "type": ["Rock", "Water"],
+                "category": "Two-Handed",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 689.0,
+                                "level": 39,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 42,
+                        "atk": 52,
+                        "def": 67,
+                        "sp.atk": 39,
+                        "sp.def": 56,
+                        "speed": 50
+                    }
+                ],
+                "height": 50,
+                "weight": 31,
+                "entry": "Two Binacle live together on one rock. When they fight, one of them will move to a different rock.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 15
+    },
+    {
+        "dex number": 689,
+        "forms": [
+            {
+                "key": 689.0,
+                "name": "Barbaracle",
+                "type": ["Rock", "Water"],
+                "category": "Collective",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 688.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 72,
+                        "atk": 105,
+                        "def": 115,
+                        "sp.atk": 54,
+                        "sp.def": 86,
+                        "speed": 68
+                    }
+                ],
+                "height": 130,
+                "weight": 96,
+                "entry": "When they evolve, two Binacle multiply into seven. They fight with the power of seven Binacle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 175,
+        "minimum spawn level": 39,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 690,
+        "forms": [
+            {
+                "key": 690.0,
+                "name": "Skrelp",
+                "type": ["Poison", "Water"],
+                "category": "Mock Kelp",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 691.0,
+                                "level": 48,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 60,
+                        "def": 60,
+                        "sp.atk": 60,
+                        "sp.def": 60,
+                        "speed": 30
+                    }
+                ],
+                "height": 50,
+                "weight": 7.3,
+                "entry": "Camouflaged as rotten kelp, they spray liquid poison on prey that approaches unawares and then finish it off.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 225,
+        "flee rate": 15
+    },
+    {
+        "dex number": 691,
+        "forms": [
+            {
+                "key": 691.0,
+                "name": "Dragalge",
+                "type": ["Poison", "Dragon"],
+                "category": "Mock Kelp",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 690.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 75,
+                        "def": 90,
+                        "sp.atk": 97,
+                        "sp.def": 123,
+                        "speed": 44
+                    }
+                ],
+                "height": 180,
+                "weight": 81.5,
+                "entry": "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 173,
+        "minimum spawn level": 48,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 55,
+        "flee rate": 7
+    },
+    {
+        "dex number": 692,
+        "forms": [
+            {
+                "key": 692.0,
+                "name": "Clauncher",
+                "type": ["Water"],
+                "category": "Water Gun",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 693.0,
+                                "level": 37,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 53,
+                        "def": 62,
+                        "sp.atk": 58,
+                        "sp.def": 63,
+                        "speed": 44
+                    }
+                ],
+                "height": 50,
+                "weight": 8.3,
+                "entry": "They knock down flying prey by firing compressed water from their massive claws like shooting a pistol.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 66,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 225,
+        "flee rate": 15
+    },
+    {
+        "dex number": 693,
+        "forms": [
+            {
+                "key": 693.0,
+                "name": "Clawitzer",
+                "type": ["Water"],
+                "category": "Howitzer",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 692.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 71,
+                        "atk": 73,
+                        "def": 88,
+                        "sp.atk": 120,
+                        "sp.def": 89,
+                        "speed": 59
+                    }
+                ],
+                "height": 130,
+                "weight": 35.3,
+                "entry": "Their enormous claws launch cannonballs of water powerful enough to pierce tanker hulls.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 100,
+        "minimum spawn level": 37,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 55,
+        "flee rate": 7
+    },
+    {
+        "dex number": 694,
+        "forms": [
+            {
+                "key": 694.0,
+                "name": "Helioptile",
+                "type": ["Electric", "Normal"],
+                "category": "Generator",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 695.0,
+                                "level": null,
+                                "item": ["Sun Stone"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 38,
+                        "def": 33,
+                        "sp.atk": 61,
+                        "sp.def": 43,
+                        "speed": 70
+                    }
+                ],
+                "height": 50,
+                "weight": 6,
+                "entry": "They make their home in deserts. They can generate their energy from basking in the sun, so eating food is not a requirement.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 58,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 695,
+        "forms": [
+            {
+                "key": 695.0,
+                "name": "Heliolisk",
+                "type": ["Electric", "Normal"],
+                "category": "Generator",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 694.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 62,
+                        "atk": 55,
+                        "def": 52,
+                        "sp.atk": 109,
+                        "sp.def": 94,
+                        "speed": 109
+                    }
+                ],
+                "height": 100,
+                "weight": 21,
+                "entry": "They flare their frills and generate energy. A single Heliolisk can generate sufficient electricity to power a skyscraper.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 168,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 696,
+        "forms": [
+            {
+                "key": 696.0,
+                "name": "Tyrunt",
+                "type": ["Rock", "Dragon"],
+                "category": "Royal Heir",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 697.0,
+                                "level": 39,
+                                "item": ["Light Mode"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 58,
+                        "atk": 89,
+                        "def": 77,
+                        "sp.atk": 45,
+                        "sp.def": 45,
+                        "speed": 48
+                    }
+                ],
+                "height": 80,
+                "weight": 26,
+                "entry": "Tyrunt is spoiled and selfish. It may just be trying to frolic, but sometimes the ones it's trying to frolic with are gravely injured.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 72,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 697,
+        "forms": [
+            {
+                "key": 697.0,
+                "name": "Tyrantrum",
+                "type": ["Rock", "Dragon"],
+                "category": "Despot",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 696.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 82,
+                        "atk": 121,
+                        "def": 119,
+                        "sp.atk": 69,
+                        "sp.def": 59,
+                        "speed": 71
+                    }
+                ],
+                "height": 250,
+                "weight": 270,
+                "entry": "Thanks to its gargantuan jaws, which could shred thick metal plates as if they were paper, it was invincible in the ancient world it once inhabited.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 182,
+        "minimum spawn level": 39,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 698,
+        "forms": [
+            {
+                "key": 698.0,
+                "name": "Amaura",
+                "type": ["Rock", "Ice"],
+                "category": "Tundra",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 699.0,
+                                "level": 39,
+                                "item": ["Dark Mode"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 77,
+                        "atk": 59,
+                        "def": 50,
+                        "sp.atk": 67,
+                        "sp.def": 63,
+                        "speed": 46
+                    }
+                ],
+                "height": 130,
+                "weight": 25.2,
+                "entry": "This calm Pokémon lived in a cold land where there were no violent predators like Tyrantrum.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 72,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 699,
+        "forms": [
+            {
+                "key": 699.0,
+                "name": "Aurorus",
+                "type": ["Rock", "Ice"],
+                "category": "Tundra",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 698.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 123,
+                        "atk": 77,
+                        "def": 72,
+                        "sp.atk": 99,
+                        "sp.def": 92,
+                        "speed": 58
+                    }
+                ],
+                "height": 270,
+                "weight": 225,
+                "entry": "Using its diamond-shaped crystals, it can instantly create a wall of ice to block an opponent's attack.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 104,
+        "minimum spawn level": 39,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 700,
+        "forms": [
+            {
+                "key": 700.0,
+                "name": "Sylveon",
+                "type": ["Fairy"],
+                "category": "Intertwining",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 133.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 65,
+                        "def": 65,
+                        "sp.atk": 110,
+                        "sp.def": 130,
+                        "speed": 60
+                    }
+                ],
+                "height": 100,
+                "weight": 23.5,
+                "entry": "Its ribbonlike feelers give off an aura that weakens hostility in its prey, causing them to let down their guard. Then it attacks.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 184,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 6
+    },
+    {
+        "dex number": 701,
+        "forms": [
+            {
+                "key": 701.0,
+                "name": "Hawlucha",
+                "type": ["Fighting", "Flying"],
+                "category": "Wrestling",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 92,
+                        "def": 75,
+                        "sp.atk": 74,
+                        "sp.def": 63,
+                        "speed": 118
+                    }
+                ],
+                "height": 80,
+                "weight": 21.5,
+                "entry": "Although its body is small, its proficient fighting skills enable it to keep up with big bruisers like Machamp and Hariyama.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 175,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 100,
+        "flee rate": 10
+    },
+    {
+        "dex number": 702,
+        "forms": [
+            {
+                "key": 702.0,
+                "name": "Dedenne",
+                "type": ["Electric", "Fairy"],
+                "category": "Antenna",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 67,
+                        "atk": 58,
+                        "def": 57,
+                        "sp.atk": 81,
+                        "sp.def": 67,
+                        "speed": 101
+                    }
+                ],
+                "height": 20,
+                "weight": 2.2,
+                "entry": "Its whiskers serve as antennas. By sending and receiving electrical waves, it can communicate with others over vast distances.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 151,
+        "minimum spawn level": 5,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 180,
+        "flee rate": 10
+    },
+    {
+        "dex number": 703,
+        "forms": [
+            {
+                "key": 703.0,
+                "name": "Carbink",
+                "type": ["Rock", "Fairy"],
+                "category": "Jewel",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 50,
+                        "def": 150,
+                        "sp.atk": 50,
+                        "sp.def": 150,
+                        "speed": 50
+                    }
+                ],
+                "height": 30,
+                "weight": 5.7,
+                "entry": "Born from the temperatures and pressures deep underground, it fires beams from the stone in its head.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 100,
+        "minimum spawn level": 8,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 60,
+        "flee rate": 10
+    },
+    {
+        "dex number": 704,
+        "forms": [
+            {
+                "key": 704.0,
+                "name": "Goomy",
+                "type": ["Dragon"],
+                "category": "Soft Tissue",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 705.0,
+                                "level": 40,
+                                "item": []
+                            },
+                            {
+                                "key": 705.01,
+                                "level": 40,
+                                "item": ["Hisui Slate"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 50,
+                        "def": 35,
+                        "sp.atk": 55,
+                        "sp.def": 75,
+                        "speed": 40
+                    }
+                ],
+                "height": 30,
+                "weight": 2.8,
+                "entry": "The weakest Dragon-type Pokémon, it lives in damp, shady places, so its body doesn't dry out.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 60,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 705,
+        "forms": [
+            {
+                "key": 705.0,
+                "name": "Sliggoo",
+                "type": ["Dragon"],
+                "category": "Soft Tissue",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 706.0,
+                                "level": 50,
+                                "item": ["Rain"]
+                            }
+                        ],
+                        "prev": 704.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 68,
+                        "atk": 75,
+                        "def": 53,
+                        "sp.atk": 83,
+                        "sp.def": 113,
+                        "speed": 60
+                    }
+                ],
+                "height": 80,
+                "weight": 17.5,
+                "entry": "It drives away opponents by excreting a sticky liquid that can dissolve anything. Its eyes devolved, so it can't see anything.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 705.01,
+                "name": "Sliggoo",
+                "type": ["Steel", "Dragon"],
+                "category": "Snail",
+                "region": "Hisui",
+                "special form": "Hisuian Sliggoo",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 706.01,
+                                "level": 50,
+                                "item": ["Rain"]
+                            }
+                        ],
+                        "prev": 704.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 58,
+                        "atk": 75,
+                        "def": 83,
+                        "sp.atk": 83,
+                        "sp.def": 113,
+                        "speed": 40
+                    }
+                ],
+                "height": 70,
+                "weight": 68.5,
+                "entry": "A creature given to melancholy. Its metallic shell developed as a result of the mucus on its skin reacting with the iron in Hisui's water.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 158,
+        "minimum spawn level": 40,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 706,
+        "forms": [
+            {
+                "key": 706.0,
+                "name": "Goodra",
+                "type": ["Dragon"],
+                "category": "Dragon",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 705.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 90,
+                        "atk": 100,
+                        "def": 70,
+                        "sp.atk": 110,
+                        "sp.def": 150,
+                        "speed": 80
+                    }
+                ],
+                "height": 200,
+                "weight": 150.5,
+                "entry": "This very friendly Dragon-type Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 706.01,
+                "name": "Goodra",
+                "type": ["Steel", "Dragon"],
+                "category": "Shell Bunker",
+                "region": "Hisui",
+                "special form": "Hisuian Goodra",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 705.01
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 100,
+                        "def": 100,
+                        "sp.atk": 110,
+                        "sp.def": 150,
+                        "speed": 60
+                    }
+                ],
+                "height": 170,
+                "weight": 334.1,
+                "entry": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy—it will fume and run riot if those dearest to it ever leave its side.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 300,
+        "minimum spawn level": 50,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 707,
+        "forms": [
+            {
+                "key": 707.0,
+                "name": "Klefki",
+                "type": ["Steel", "Fairy"],
+                "category": "Key Ring",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 57,
+                        "atk": 80,
+                        "def": 91,
+                        "sp.atk": 80,
+                        "sp.def": 87,
+                        "speed": 75
+                    }
+                ],
+                "height": 20,
+                "weight": 3,
+                "entry": "These key collectors threaten any attackers by fiercely jingling their keys at them.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Fast",
+        "base experience yield": 165,
+        "minimum spawn level": 8,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 10
+    },
+    {
+        "dex number": 708,
+        "forms": [
+            {
+                "key": 708.0,
+                "name": "Phantump",
+                "type": ["Ghost", "Grass"],
+                "category": "Stump",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 709.0,
+                                "level": null,
+                                "item": ["Linking Cord"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 43,
+                        "atk": 70,
+                        "def": 48,
+                        "sp.atk": 50,
+                        "sp.def": 60,
+                        "speed": 38
+                    }
+                ],
+                "height": 40,
+                "weight": 7,
+                "entry": "These Pokémon are created when spirits possess rotten tree stumps. They prefer to live in abandoned forests.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 62,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 10
+    },
+    {
+        "dex number": 709,
+        "forms": [
+            {
+                "key": 709.0,
+                "name": "Trevenant",
+                "type": ["Ghost", "Grass"],
+                "category": "Elder Tree",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 708.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 85,
+                        "atk": 110,
+                        "def": 76,
+                        "sp.atk": 65,
+                        "sp.def": 82,
+                        "speed": 56
+                    }
+                ],
+                "height": 150,
+                "weight": 71,
+                "entry": "Using its roots as a nervous system, it controls the trees in the forest. It's kind to the Pokémon that reside in its body.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 166,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 5
+    },
+    {
+        "dex number": 710,
+        "forms": [
+            {
+                "key": 710.0,
+                "name": "Pumpkaboo",
+                "type": [],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Pumpkaboo (Average Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 711.0,
+                                "level": null,
+                                "item": ["Linking Cord"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 66,
+                        "def": 70,
+                        "sp.atk": 44,
+                        "sp.def": 55,
+                        "speed": 56
+                    }
+                ],
+                "height": 40,
+                "weight": 5,
+                "entry": "Spirits that wander this world are placed into Pumpkaboo's body. They're then moved on to the afterlife.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 710.01,
+                "name": "Pumpkaboo",
+                "type": [],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Pumpkaboo (Small Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 711.01,
+                                "level": null,
+                                "item": ["Linking Cord"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 66,
+                        "def": 70,
+                        "sp.atk": 44,
+                        "sp.def": 55,
+                        "speed": 56
+                    }
+                ],
+                "height": 30,
+                "weight": 3.5,
+                "entry": "When taking spirits to the afterlife, small Pumpkaboo prefer the spirits of children to those of adults.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 710.02,
+                "name": "Pumpkaboo",
+                "type": [],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Pumpkaboo (Large Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 711.02,
+                                "level": null,
+                                "item": ["Linking Cord"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 66,
+                        "def": 70,
+                        "sp.atk": 44,
+                        "sp.def": 55,
+                        "speed": 56
+                    }
+                ],
+                "height": 50,
+                "weight": 7.5,
+                "entry": "When taking spirits to the afterlife, large Pumpkaboo prefer the spirits of adults to those of children.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 710.03,
+                "name": "Pumpkaboo",
+                "type": [],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Pumpkaboo (Average Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 711.03,
+                                "level": null,
+                                "item": ["Linking Cord"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 44,
+                        "atk": 66,
+                        "def": 70,
+                        "sp.atk": 44,
+                        "sp.def": 55,
+                        "speed": 56
+                    }
+                ],
+                "height": 80,
+                "weight": 15,
+                "entry": "Supersized Pumpkaboo are very partial to the spirits of people who were of similarly superior proportions.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 67,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 10
+    },
+    {
+        "dex number": 711,
+        "forms": [
+            {
+                "key": 711.0,
+                "name": "Gourgeist",
+                "type": ["Ghost", "Grass"],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Gourgeist (Average Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 710.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 90,
+                        "def": 122,
+                        "sp.atk": 58,
+                        "sp.def": 75,
+                        "speed": 84
+                    }
+                ],
+                "height": 90,
+                "weight": 12.5,
+                "entry": "Eerie cries emanate from its body in the dead of night. The sounds are said to be the wails of spirits who are suffering in the afterlife.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 711.01,
+                "name": "Gourgeist",
+                "type": ["Ghost", "Grass"],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Gourgeist (Small Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 710.01
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 90,
+                        "def": 122,
+                        "sp.atk": 58,
+                        "sp.def": 75,
+                        "speed": 84
+                    }
+                ],
+                "height": 70,
+                "weight": 9.5,
+                "entry": "Small Gourgeist pretend to be children to fool adults. Anyone who falls for the act gets carried away to the hereafter.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 711.02,
+                "name": "Gourgeist",
+                "type": ["Ghost", "Grass"],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Gourgeist (Large Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 710.02
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 90,
+                        "def": 122,
+                        "sp.atk": 58,
+                        "sp.def": 75,
+                        "speed": 84
+                    }
+                ],
+                "height": 110,
+                "weight": 14,
+                "entry": "Large Gourgeist put on the guise of adults, taking the hands of children to lead them to the afterlife.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 711.03,
+                "name": "Gourgeist",
+                "type": ["Ghost", "Grass"],
+                "category": "Pumpkin",
+                "region": "Kalos",
+                "special form": "Gourgeist (Super Size)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 710.03
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 90,
+                        "def": 122,
+                        "sp.atk": 58,
+                        "sp.def": 75,
+                        "speed": 84
+                    }
+                ],
+                "height": 170,
+                "weight": 39,
+                "entry": "Supersized Gourgeist aren't picky. They will forcefully drag anyone off to the afterlife.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 173,
+        "minimum spawn level": 38,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 6
+    },
+    {
+        "dex number": 712,
+        "forms": [
+            {
+                "key": 712.0,
+                "name": "Bergmite",
+                "type": ["Ice"],
+                "category": "Ice Chunk",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 713.0,
+                                "level": 37,
+                                "item": []
+                            },
+                            {
+                                "key": 713.01,
+                                "level": 37,
+                                "item": ["Hisui Slate"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 69,
+                        "def": 85,
+                        "sp.atk": 32,
+                        "sp.def": 35,
+                        "speed": 28
+                    }
+                ],
+                "height": 100,
+                "weight": 99.5,
+                "entry": "This Pokémon lives in areas of frigid cold. It secures itself to the back of an Avalugg by freezing its feet in place.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 713,
+        "forms": [
+            {
+                "key": 713.0,
+                "name": "Avalugg",
+                "type": ["Ice"],
+                "category": "Iceberg",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 712.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 117,
+                        "def": 184,
+                        "sp.atk": 44,
+                        "sp.def": 46,
+                        "speed": 28
+                    }
+                ],
+                "height": 200,
+                "weight": 505,
+                "entry": "The way several Bergmite huddle on its back makes it look like an aircraft carrier made of ice.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 713.01,
+                "name": "Avalugg",
+                "type": ["Ice", "Rock"],
+                "category": "Iceberg",
+                "region": "Hisui",
+                "special form": "Hisuian Avalugg",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 712.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 127,
+                        "def": 184,
+                        "sp.atk": 34,
+                        "sp.def": 36,
+                        "speed": 38
+                    }
+                ],
+                "height": 140,
+                "weight": 262.4,
+                "entry": "The armor of ice covering its lower jaw puts steel to shame and can shatter rocks with ease. This Pokémon barrels along steep mountain paths, cleaving through the deep snow.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 180,
+        "minimum spawn level": 37,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 55,
+        "flee rate": 7
+    },
+    {
+        "dex number": 714,
+        "forms": [
+            {
+                "key": 714.0,
+                "name": "Noibat",
+                "type": ["Flying", "Dragon"],
+                "category": "Sound Wave",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 715.0,
+                                "level": 48,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 40,
+                        "atk": 30,
+                        "def": 35,
+                        "sp.atk": 45,
+                        "sp.def": 40,
+                        "speed": 55 
+                    }
+                ],
+                "height": 50,
+                "weight": 8,
+                "entry": "They live in pitch-black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 50,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 9
+    },
+    {
+        "dex number": 715,
+        "forms": [
+            {
+                "key": 715.0,
+                "name": "Noivern",
+                "type": ["Flying", "Dragon"],
+                "category": "Sound Wave",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 714.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 85,
+                        "atk": 70,
+                        "def": 80,
+                        "sp.atk": 97,
+                        "sp.def": 80,
+                        "speed": 123
+                    }
+                ],
+                "height": 150,
+                "weight": 85,
+                "entry": "Although it has a violent disposition, if you give it a nice ripe fruit that it loves, Noivern will suddenly become tame.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 187,
+        "minimum spawn level": 48,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 716,
+        "forms": [
+            {
+                "key": 716.0,
+                "name": "Xerneas",
+                "type": ["Fairy"],
+                "category": "Life",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 126,
+                        "atk": 131,
+                        "def": 95,
+                        "sp.atk": 131,
+                        "sp.def": 98,
+                        "speed": 99
+                    }
+                ],
+                "height": 300,
+                "weight": 215,
+                "entry": "Legends say it can share eternal life. It slept for a thousand years in the form of a tree before its revival.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 306,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 717,
+        "forms": [
+            {
+                "key": 717.0,
+                "name": "Yveltal",
+                "type": ["Dark", "Flying"],
+                "category": "Destruction",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 126,
+                        "atk": 131,
+                        "def": 95,
+                        "sp.atk": 131,
+                        "sp.def": 98,
+                        "speed": 99
+                    }
+                ],
+                "height": 580,
+                "weight": 203,
+                "entry": "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 306,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 718,
+        "forms": [
+            {
+                "key": 718.0,
+                "name": "Zygarde",
+                "type": ["Dragon", "Ground"],
+                "category": "Order",
+                "region": "Kalos",
+                "special form": "Zygarde (50% Forme)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 108,
+                        "atk": 100,
+                        "def": 121,
+                        "sp.atk": 81,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 500,
+                "weight": 305,
+                "entry": "When the Kalos region's ecosystem falls into disarray, it appears and reveals its secret power.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 718.01,
+                "name": "Zygarde",
+                "type": ["Dragon", "Ground"],
+                "category": "Order",
+                "region": "Kalos",
+                "special form": "Zygarde (10% Forme)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 54,
+                        "atk": 100,
+                        "def": 71,
+                        "sp.atk": 61,
+                        "sp.def": 85,
+                        "speed": 115
+                    }
+                ],
+                "height": 120,
+                "weight": 33.5,
+                "entry": "Its sharp fangs make short work of finishing off its enemies, but it’s unable to maintain this body indefinitely. After a period of time, it falls apart.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 718.02,
+                "name": "Zygarde",
+                "type": ["Dragon", "Ground"],
+                "category": "Order",
+                "region": "Kalos",
+                "special form": "Zygarde (Complete Forme)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 216,
+                        "atk": 100,
+                        "def": 121,
+                        "sp.atk": 91,
+                        "sp.def": 95,
+                        "speed": 85
+                    }
+                ],
+                "height": 500,
+                "weight": 305,
+                "entry": "This is Zygarde's 100% form. It has enough power to overwhelm even Xerneas or Yveltal.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 219,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 719,
+        "forms": [
+            {
+                "key": 719.0,
+                "name": "Diancie",
+                "type": ["Rock", "Fairy"],
+                "category": "Jewel",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 100,
+                        "def": 150,
+                        "sp.atk": 100,
+                        "sp.def": 150,
+                        "speed": 50
+                    }
+                ],
+                "height": 70,
+                "weight": 8.8,
+                "entry": "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 300,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 720,
+        "forms": [
+            {
+                "key": 720.0,
+                "name": "Hoopa",
+                "type": ["Psychic", "Ghost"],
+                "category": "Mischief",
+                "region": "Kalos",
+                "special form": "Hoopa Confined",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 110,
+                        "def": 60,
+                        "sp.atk": 150,
+                        "sp.def": 130,
+                        "speed": 70
+                    }
+                ],
+                "height": 50,
+                "weight": 9,
+                "entry": "This troublemaker sends anything and everything to faraway places using its loop, which can warp space. It gathers things it likes and passes them through its loop to teleport them to a secret place.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 720.01,
+                "name": "Hoopa",
+                "type": ["Psychic", "Ghost"],
+                "category": "Djinn",
+                "region": "Kalos",
+                "special form": "Hoopa Unbound",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 160,
+                        "def": 60,
+                        "sp.atk": 170,
+                        "sp.def": 130,
+                        "speed": 80
+                    }
+                ],
+                "height": 650,
+                "weight": 490,
+                "entry": "In its true form, it possess a huge amount of power. Legends of its avarice tell how it once carried off an entire castle to gain the treasure hidden within.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 340,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 721,
+        "forms": [
+            {
+                "key": 721.0,
+                "name": "Volcanion",
+                "type": ["Fire", "Water"],
+                "category": "Steam",
+                "region": "Kalos",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 110,
+                        "def": 120,
+                        "sp.atk": 130,
+                        "sp.def": 90,
+                        "speed": 70
+                    }
+                ],
+                "height": 170,
+                "weight": 195,
+                "entry": "It lets out billows of steam and disappears into the dense fog. It’s said to live in mountains where humans do not tread.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 300,
         "minimum spawn level": 101,
         "gendered": false,
         "male:female ratio": null,
