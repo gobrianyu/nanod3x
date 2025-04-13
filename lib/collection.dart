@@ -46,7 +46,8 @@ class _CollectionState extends State<Collection> {
     Region.johto,
     Region.hoenn,
     Region.sinnoh,
-    Region.unova
+    Region.unova,
+    Region.kalos
   ];
 
   final TextEditingController _searchController = TextEditingController();
