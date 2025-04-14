@@ -27857,10 +27857,10 @@
                 "height": 60,
                 "weight": 11,
                 "entry": "Very intelligent, it roasts berries before eating them. It likes to help people.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "pansear.png",
+                "image asset f": "pansear.png",
+                "image asset m shiny": "pansear_shiny.png",
+                "image asset f shiny": "pansear_shiny.png"
             }
         ],
         "gimmick forms": [],
