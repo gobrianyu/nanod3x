@@ -27091,10 +27091,10 @@
                 "height": 50,
                 "weight": 9.9,
                 "entry": "It blows fire through its nose. When it catches a cold, the fire becomes pitch-black smoke instead. It loves to eat roasted berries, but sometimes it gets too excited and burns them to a crisp.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "tepig.png",
+                "image asset f": "tepig.png",
+                "image asset m shiny": "tepig_shiny.png",
+                "image asset f shiny": "tepig_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -27142,10 +27142,10 @@
                 "height": 100,
                 "weight": 55.5,
                 "entry": "When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "pignite.png",
+                "image asset f": "pignite.png",
+                "image asset m shiny": "pignite_shiny.png",
+                "image asset f shiny": "pignite_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -27187,10 +27187,10 @@
                 "height": 160,
                 "weight": 150,
                 "entry": "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "emboar.png",
+                "image asset f": "emboar.png",
+                "image asset m shiny": "emboar_shiny.png",
+                "image asset f shiny": "emboar_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -29941,10 +29941,10 @@
                 "height": 60,
                 "weight": 37.5,
                 "entry": "Darumaka's droppings are hot, so people used to put them in their clothes to keep themselves warm.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "darumaka.png",
+                "image asset f": "darumaka.png",
+                "image asset m shiny": "darumaka_shiny.png",
+                "image asset f shiny": "darumaka_shiny.png"
             },
             {
                 "key": 554.01,
