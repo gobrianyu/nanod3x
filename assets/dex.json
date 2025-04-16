@@ -18024,10 +18024,10 @@
                 "height": 70,
                 "weight": 24,
                 "entry": "Numel is extremely dull witted - it doesn't notice being hit. However, it can't stand hunger for even a second. This Pokémon's body is a seething cauldron of boiling magma.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "numel.png",
+                "image asset f": "numel.png",
+                "image asset m shiny": "numel_shiny.png",
+                "image asset f shiny": "numel_shiny.png"
             }
         ],
         "gimmick forms": [],
