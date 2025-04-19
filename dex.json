@@ -8284,7 +8284,7 @@
                 ],
                 "height": 160,
                 "weight": 58.2,
-                "entry": "One kick from its powerful legs will pulverize a dump truck. Supposedly, this Pokémon runs through the mountains at over 290 kph.",
+                "entry": "One kick from its powerful legs will pulverise a dump truck. Supposedly, this Pokémon runs through the mountains at over 290 kph.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -18728,7 +18728,7 @@
                 ],
                 "height": 100,
                 "weight": 168,
-                "entry": "Lunatone was discovered at a location where a meteorite fell. As a result, some people theorize that this Pokémon came from space. However, no one has been able to prove this theory so far.",
+                "entry": "Lunatone was discovered at a location where a meteorite fell. As a result, some people theorise that this Pokémon came from space. However, no one has been able to prove this theory so far.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -19061,7 +19061,7 @@
                 ],
                 "height": 150,
                 "weight": 108,
-                "entry": "Claydol is an enigma that appeared from a clay statue made by an ancient civilization dating back 20,000 years. This Pokémon shoots beams from both its hands.",
+                "entry": "Claydol is an enigma that appeared from a clay statue made by an ancient civilisation dating back 20,000 years. This Pokémon shoots beams from both its hands.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -20922,7 +20922,7 @@
                 ],
                 "height": 200,
                 "weight": 60,
-                "entry": "Latios will only open its heart to a trainer with a compassionate spirit. This Pokémon can fly faster than a jet plane by folding its forelegs to minimize air resistance.",
+                "entry": "Latios will only open its heart to a trainer with a compassionate spirit. This Pokémon can fly faster than a jet plane by folding its forelegs to minimise air resistance.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -29302,7 +29302,7 @@
                 ],
                 "height": 40,
                 "weight": 5.3,
-                "entry": "Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it.",
+                "entry": "Its bite injects a potent poison, enough to paralyse large bird Pokémon that try to prey on it.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -32402,7 +32402,7 @@
                 ],
                 "height": 80,
                 "weight": 14.3,
-                "entry": "They employ an electrically charged web to trap their prey. While it is immobilized by shock, they leisurely consume it.",
+                "entry": "They employ an electrically charged web to trap their prey. While it is immobilised by shock, they leisurely consume it.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -32747,7 +32747,7 @@
                 ],
                 "height": 120,
                 "weight": 22,
-                "entry": "It wraps itself around its prey and paralyzes it with electricity from the round spots on its sides. Then it chomps.",
+                "entry": "It wraps itself around its prey and paralyses it with electricity from the round spots on its sides. Then it chomps.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -33301,7 +33301,7 @@
                 "key": 615.0,
                 "name": "Cryogonal",
                 "type": ["Ice"],
-                "category": "Crystallizing",
+                "category": "Crystallising",
                 "region": "Unova",
                 "special form": null,
                 "valid": true,
@@ -33688,7 +33688,7 @@
                 ],
                 "height": 100,
                 "weight": 92,
-                "entry": "The energy that burns inside it enables it to move, but no one has yet been able to identify this energy. These Pokémon are thought to have been created by the science of an ancient and mysterious civilization.",
+                "entry": "The energy that burns inside it enables it to move, but no one has yet been able to identify this energy. These Pokémon are thought to have been created by the science of an ancient and mysterious civilisation.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -34731,7 +34731,7 @@
                 ],
                 "height": 300,
                 "weight": 61,
-                "entry": "Quick as a flash, it materializes out of nowhere. It pulverizes foes into nothingness with showers of devastatingly powerful lightning bolts launched from the string of orbs on its tail.",
+                "entry": "Quick as a flash, it materialises out of nowhere. It pulverises foes into nothingness with showers of devastatingly powerful lightning bolts launched from the string of orbs on its tail.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -35161,7 +35161,7 @@
                 ],
                 "height": 60,
                 "weight": 6.5,
-                "entry": "Its melodies are sung with a special vocalization method that can control the feelings of those who hear it.",
+                "entry": "Its melodies are sung with a special vocalisation method that can control the feelings of those who hear it.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -38631,7 +38631,7 @@
                 ],
                 "height": 150,
                 "weight": 47,
-                "entry": "When it comes to strong hypnosis, there's an endless number of people who utilize Malamar for their nefarious deeds.",
+                "entry": "When it comes to strong hypnosis, there's an endless number of people who utilise Malamar for their nefarious deeds.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
@@ -40652,6 +40652,5298 @@
                 "height": 170,
                 "weight": 195,
                 "entry": "It lets out billows of steam and disappears into the dense fog. It's said to live in mountains where humans do not tread.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 300,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 722,
+        "forms": [
+            {
+                "key": 722.0,
+                "name": "Rowlet",
+                "type": ["Grass", "Flying"],
+                "category": "Grass Quill",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 723.0,
+                                "level": 17,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 68,
+                        "atk": 55,
+                        "def": 55,
+                        "sp.atk": 50,
+                        "sp.def": 50,
+                        "speed": 42
+                    }
+                ],
+                "height": 30,
+                "weight": 1.5,
+                "entry": "This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 723,
+        "forms": [
+            {
+                "key": 723.0,
+                "name": "Dartrix",
+                "type": ["Grass", "Flying"],
+                "category": "Blade Quill",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 724.0,
+                                "level": 34,
+                                "item": []
+                            },
+                            {
+                                "key": 724.01,
+                                "level": 36,
+                                "item": ["Hisui Slate"]
+                            }
+                        ],
+                        "prev": 722.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 75,
+                        "def": 75,
+                        "sp.atk": 75,
+                        "sp.def": 70,
+                        "speed": 52
+                    }
+                ],
+                "height": 70,
+                "weight": 16,
+                "entry": "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 147,
+        "minimum spawn level": 17,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 724,
+        "forms": [
+            {
+                "key": 724.0,
+                "name": "Decidueye",
+                "type": ["Grass", "Ghost"],
+                "category": "Arrow Quill",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 723.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 107,
+                        "def": 75,
+                        "sp.atk": 100,
+                        "sp.def": 100,
+                        "speed": 70
+                    }
+                ],
+                "height": 160,
+                "weight": 36.6,
+                "entry": "Although basically cool and cautious, when it's caught by surprise, it's seized by panic.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 724.01,
+                "name": "Decidueye",
+                "type": ["Grass", "Fighting"],
+                "category": "Arrow Quill",
+                "region": "Hisui",
+                "special form": "Hisuian Decidueye",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 723.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 88,
+                        "atk": 112,
+                        "def": 80,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 60
+                    }
+                ],
+                "height": 160,
+                "weight": 37,
+                "entry": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against Hisui's extreme cold. This is firm proof that evolution can be influenced by environment.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 265,
+        "minimum spawn level": 36,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 725,
+        "forms": [
+            {
+                "key": 725.0,
+                "name": "Litten",
+                "type": [],
+                "category": "Fire Cat",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 726.0,
+                                "level": 17,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 65,
+                        "def": 40,
+                        "sp.atk": 60,
+                        "sp.def": 40,
+                        "speed": 70
+                    }
+                ],
+                "height": 40,
+                "weight": 4.3,
+                "entry": "While grooming itself, it builds up fur inside its stomach. It sets the fur alight and spews fiery attacks, which change based on how it coughs.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 726,
+        "forms": [
+            {
+                "key": 726.0,
+                "name": "Torracat",
+                "type": ["Fire"],
+                "category": "Fire Cat",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 727.0,
+                                "level": 34,
+                                "item": []
+                            }
+                        ],
+                        "prev": 725.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 85,
+                        "def": 50,
+                        "sp.atk": 80,
+                        "sp.def": 50,
+                        "speed": 90
+                    }
+                ],
+                "height": 70,
+                "weight": 25,
+                "entry": "At its throat, it bears a bell of fire. The bell rings brightly whenever this Pokémon spits fire.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 147,
+        "minimum spawn level": 17,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 727,
+        "forms": [
+            {
+                "key": 727.0,
+                "name": "Incineroar",
+                "type": ["Fire", "Dark"],
+                "category": "Heel",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 726.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 115,
+                        "def": 90,
+                        "sp.atk": 80,
+                        "sp.def": 90,
+                        "speed": 60
+                    }
+                ],
+                "height": 180,
+                "weight": 83,
+                "entry": "Although it's rough mannered and egotistical, it finds beating down unworthy opponents boring. It gets motivated for stronger opponents.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 239,
+        "minimum spawn level": 34,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 728,
+        "forms": [
+            {
+                "key": 728.0,
+                "name": "Popplio",
+                "type": ["Water"],
+                "category": "Sea Lion",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 729.0,
+                                "level": 17,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 54,
+                        "def": 54,
+                        "sp.atk": 66,
+                        "sp.def": 56,
+                        "speed": 40
+                    }
+                ],
+                "height": 40,
+                "weight": 7.5,
+                "entry": "This Pokémon snorts body fluids from its nose, blowing balloons to smash into its foes. It's famous for being a hard worker.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 729,
+        "forms": [
+            {
+                "key": 729.0,
+                "name": "Brionne",
+                "type": ["Water"],
+                "category": "Pop Star",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 730.0,
+                                "level": 34,
+                                "item": []
+                            }
+                        ],
+                        "prev": 728.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 69,
+                        "def": 69,
+                        "sp.atk": 91,
+                        "sp.def": 81,
+                        "speed": 50
+                    }
+                ],
+                "height": 60,
+                "weight": 17.5,
+                "entry": "A skillful dancer, it creates a sequence of water balloons as it dances, and briskly bombards its enemies.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 147,
+        "minimum spawn level": 17,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 730,
+        "forms": [
+            {
+                "key": 730.0,
+                "name": "Primarina",
+                "type": ["Water", "Fairy"],
+                "category": "Soloist",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 729.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 74,
+                        "def": 74,
+                        "sp.atk": 126,
+                        "sp.def": 116,
+                        "speed": 60
+                    }
+                ],
+                "height": 180,
+                "weight": 44,
+                "entry": "It controls its water balloons with song. The melody is learned from others of its kind and is passed down from one generation to the next.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 239,
+        "minimum spawn level": 34,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 731,
+        "forms": [
+            {
+                "key": 731.0,
+                "name": "Pikipek",
+                "type": ["Normal", "Flying"],
+                "category": "Woodpecker",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 732.0,
+                                "level": 14,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 35,
+                        "atk": 75,
+                        "def": 30,
+                        "sp.atk": 30,
+                        "sp.def": 30,
+                        "speed": 65
+                    }
+                ],
+                "height": 30,
+                "weight": 1.2,
+                "entry": "This Pokémon feeds on berries, whose leftover seeds become the ammunition for the attacks it fires off from its mouth.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 53,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 20
+    },
+    {
+        "dex number": 732,
+        "forms": [
+            {
+                "key": 732.0,
+                "name": "Trumbeak",
+                "type": ["Normal", "Flying"],
+                "category": "Bugle Beak",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 733.0,
+                                "level": 28,
+                                "item": []
+                            }
+                        ],
+                        "prev": 731.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 85,
+                        "def": 50,
+                        "sp.atk": 40,
+                        "sp.def": 50,
+                        "speed": 75
+                    }
+                ],
+                "height": 60,
+                "weight": 14.8,
+                "entry": "By bending its beak, it can produce a variety of calls and brand itself a noisy nuisance for its neighbors.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 124,
+        "minimum spawn level": 14,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 9
+    },
+    {
+        "dex number": 733,
+        "forms": [
+            {
+                "key": 733.0,
+                "name": "Toucannon",
+                "type": ["Normal", "Flying"],
+                "category": "Cannon",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 732.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 120,
+                        "def": 75,
+                        "sp.atk": 75,
+                        "sp.def": 75,
+                        "speed": 60
+                    }
+                ],
+                "height": 110,
+                "weight": 26,
+                "entry": "Within its beak, its internal gas ignites, explosively launching seeds with enough power to pulverise boulders.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 218,
+        "minimum spawn level": 28,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 734,
+        "forms": [
+            {
+                "key": 734.0,
+                "name": "Yungoos",
+                "type": ["Normal"],
+                "category": "Loitering",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 735.0,
+                                "level": 20,
+                                "item": ["Light Mode"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 48,
+                        "atk": 70,
+                        "def": 30,
+                        "sp.atk": 30,
+                        "sp.def": 30,
+                        "speed": 45
+                    }
+                ],
+                "height": 40,
+                "weight": 6,
+                "entry": "It wanders around in a never-ending search for food. At dusk, it collapses from exhaustion and falls asleep on the spot.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 51,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 20
+    },
+    {
+        "dex number": 735,
+        "forms": [
+            {
+                "key": 735.0,
+                "name": "Gumshoos",
+                "type": ["Normal"],
+                "category": "Stakeout",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 734.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 88,
+                        "atk": 110,
+                        "def": 60,
+                        "sp.atk": 55,
+                        "sp.def": 60,
+                        "speed": 45
+                    }
+                ],
+                "height": 70,
+                "weight": 14.2,
+                "entry": "Gumshoos specialises in relentlessly tracking down prey. The simple-minded Skwovet doesn't seem to provide Gumshoos enough challenge. It adores having Rattata and Raticate for dinner, but as it's diurnal, it never encounters them. This Pokémon boasts incredible patience.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 146,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 127,
+        "flee rate": 7
+    },
+    {
+        "dex number": 736,
+        "forms": [
+            {
+                "key": 736.0,
+                "name": "Grubbin",
+                "type": ["Bug"],
+                "category": "Larva",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 737.0,
+                                "level": 20,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 47,
+                        "atk": 62,
+                        "def": 45,
+                        "sp.atk": 55,
+                        "sp.def": 45,
+                        "speed": 46
+                    }
+                ],
+                "height": 40,
+                "weight": 4.4,
+                "entry": "They often gather near places frequented by electric Pokémon in order to avoid being attacked by bird Pokémon.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 60,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 255,
+        "flee rate": 20
+    },
+    {
+        "dex number": 737,
+        "forms": [
+            {
+                "key": 737.0,
+                "name": "Charjabug",
+                "type": ["Bug", "Electric"],
+                "category": "Battery",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 738.0,
+                                "level": null,
+                                "item": ["Thunder Stone"]
+                            }
+                        ],
+                        "prev": 736.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 57,
+                        "atk": 82,
+                        "def": 95,
+                        "sp.atk": 55,
+                        "sp.def": 75,
+                        "speed": 36
+                    }
+                ],
+                "height": 50,
+                "weight": 10.5,
+                "entry": "It buries itself in fallen leaves and barely moves, munching away on humus. If you accidentally step on one, you'll get a shock!",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 140,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 120,
+        "flee rate": 9
+    },
+    {
+        "dex number": 738,
+        "forms": [
+            {
+                "key": 738.0,
+                "name": "Vikavolt",
+                "type": ["Bug", "Electric"],
+                "category": "Stag Beetle",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 737.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 77,
+                        "atk": 70,
+                        "def": 90,
+                        "sp.atk": 145,
+                        "sp.def": 75,
+                        "speed": 43
+                    }
+                ],
+                "height": 150,
+                "weight": 45,
+                "entry": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 225,
+        "minimum spawn level": 34,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 739,
+        "forms": [
+            {
+                "key": 739.0,
+                "name": "Crabrawler",
+                "type": ["Fighting"],
+                "category": "Boxing",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 740.0,
+                                "level": null,
+                                "item": ["Ice Stone"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 47,
+                        "atk": 82,
+                        "def": 57,
+                        "sp.atk": 42,
+                        "sp.def": 47,
+                        "speed": 63
+                    }
+                ],
+                "height": 60,
+                "weight": 7,
+                "entry": "While guarding its weak points with its pincers, it looks for an opening and unleashes punches. When it loses, it foams at the mouth and faints.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 68,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 225,
+        "flee rate": 15
+    },
+    {
+        "dex number": 740,
+        "forms": [
+            {
+                "key": 740.0,
+                "name": "Crabominable",
+                "type": ["Fighting", "Ice"],
+                "category": "Woolly Crab",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 739.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 132,
+                        "def": 77,
+                        "sp.atk": 62,
+                        "sp.def": 67,
+                        "speed": 43
+                    }
+                ],
+                "height": 170,
+                "weight": 180,
+                "entry": "It aimed for the top but got lost and ended up on a snowy mountain. Being forced to endure the cold, this Pokémon evolved and grew fur.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 167,
+        "minimum spawn level": 36,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 7
+    },
+    {
+        "dex number": 741,
+        "forms": [
+            {
+                "key": 741.0,
+                "name": "Oricorio",
+                "type": ["Fire", "Flying"],
+                "category": "Dancing",
+                "region": "Alola",
+                "special form": "Oricorio (Baile Style)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 70,
+                        "def": 70,
+                        "sp.atk": 98,
+                        "sp.def": 70,
+                        "speed": 93
+                    }
+                ],
+                "height": 60,
+                "weight": 3.4,
+                "entry": "It beats its wings together to create fire. As it moves in the steps of its beautiful dance, it bathes opponents in intense flames.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 741.01,
+                "name": "Oricorio",
+                "type": ["Electric", "Flying"],
+                "category": "Dancing",
+                "region": "Alola",
+                "special form": "Oricorio (Pom-Pom Style)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 70,
+                        "def": 70,
+                        "sp.atk": 98,
+                        "sp.def": 70,
+                        "speed": 93
+                    }
+                ],
+                "height": 60,
+                "weight": 3.4,
+                "entry": "It creates an electric charge by rubbing its feathers together. It dances over to its enemies and delivers shocking electrical punches.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 741.02,
+                "name": "Oricorio",
+                "type": ["Psychic", "Flying"],
+                "category": "Dancing",
+                "region": "Alola",
+                "special form": "Oricorio (Pa'u Style)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 70,
+                        "def": 70,
+                        "sp.atk": 98,
+                        "sp.def": 70,
+                        "speed": 93
+                    }
+                ],
+                "height": 60,
+                "weight": 3.4,
+                "entry": "This form of Oricorio has sipped pink nectar. It elevates its mind with the gentle steps of its dance, then unleashes its psychic energy.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 741.03,
+                "name": "Oricorio",
+                "type": ["Ghost", "Flying"],
+                "category": "Dancing",
+                "region": "Alola",
+                "special form": "Oricorio (Sensu Style)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 70,
+                        "def": 70,
+                        "sp.atk": 98,
+                        "sp.def": 70,
+                        "speed": 93
+                    }
+                ],
+                "height": 60,
+                "weight": 3.4,
+                "entry": "It summons the dead with its dreamy dancing. From their malice, it draws power with which to curse its enemies.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 167,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 0.33,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 742,
+        "forms": [
+            {
+                "key": 742.0,
+                "name": "Cutiefly",
+                "type": ["Bug", "Fairy"],
+                "category": "Bee Fly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 743.0,
+                                "level": 25,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 40,
+                        "atk": 45,
+                        "def": 40,
+                        "sp.atk": 55,
+                        "sp.def": 40,
+                        "speed": 84
+                    }
+                ],
+                "height": 10,
+                "weight": 0.2,
+                "entry": "Myriads of Cutiefly flutter above the heads of people who have auras resembling those of flowers. Nectar and pollen are its favorite fare. In fields of flowers, it gets into skirmishes with Butterfree over food.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 20
+    },
+    {
+        "dex number": 743,
+        "forms": [
+            {
+                "key": 743.0,
+                "name": "Ribombee",
+                "type": ["Bug", "Fairy"],
+                "category": "Bee Fly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 742.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 55,
+                        "def": 60,
+                        "sp.atk": 95,
+                        "sp.def": 70,
+                        "speed": 124
+                    }
+                ],
+                "height": 20,
+                "weight": 0.5,
+                "entry": "It rolls up pollen into puffs. It makes many different varieties, some used as food and others used in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 162,
+        "minimum spawn level": 25,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 744,
+        "forms": [
+            {
+                "key": 744.0,
+                "name": "Rockruff",
+                "type": ["Rock"],
+                "category": "Puppy",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 745.0,
+                                "level": 25,
+                                "item": ["Light Mode"]
+                            },
+                            {
+                                "key": 745.01,
+                                "level": 25,
+                                "item": ["Dark Mode"]
+                            },
+                            {
+                                "key": 745.02,
+                                "level": 25,
+                                "item": ["Random"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 65,
+                        "def": 40,
+                        "sp.atk": 30,
+                        "sp.def": 40,
+                        "speed": 60
+                    }
+                ],
+                "height": 50,
+                "weight": 9.2,
+                "entry": "It's considered to be a good Pokémon for beginners because of its friendliness, but its disposition grows rougher as it grows up.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 56,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 745,
+        "forms": [
+            {
+                "key": 745.0,
+                "name": "Lycanroc",
+                "type": ["Rock"],
+                "category": "Wolf",
+                "region": "Alola",
+                "special form": "Lycanroc (Midday Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 744.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 115,
+                        "def": 65,
+                        "sp.atk": 55,
+                        "sp.def": 65,
+                        "speed": 112
+                    }
+                ],
+                "height": 80,
+                "weight": 25,
+                "entry": "When properly raised from a young age, it will become a trustworthy partner that will absolutely never betray its Trainer.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 745.01,
+                "name": "Lycanroc",
+                "type": ["Rock"],
+                "category": "Wolf",
+                "region": "Alola",
+                "special form": "Lycanroc (Midnight Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 744.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 85,
+                        "atk": 115,
+                        "def": 75,
+                        "sp.atk": 55,
+                        "sp.def": 75,
+                        "speed": 82
+                    }
+                ],
+                "height": 110,
+                "weight": 25,
+                "entry": "The more intimidating the opponent it faces, the more this Pokémon's blood boils. It will attack with no regard for its own safety.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 745.02,
+                "name": "Lycanroc",
+                "type": ["Rock"],
+                "category": "Wolf",
+                "region": "Alola",
+                "special form": "Lycanroc (Dusk Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 744.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 117,
+                        "def": 65,
+                        "sp.atk": 55,
+                        "sp.def": 65,
+                        "speed": 110
+                    }
+                ],
+                "height": 80,
+                "weight": 25,
+                "entry": "Bathed in the setting sun of evening, Lycanroc has undergone a special kind of evolution. An intense fighting spirit underlies its calmness.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 170,
+        "minimum spawn level": 25,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 90,
+        "flee rate": 7
+    },
+    {
+        "dex number": 746,
+        "forms": [
+            {
+                "key": 746.0,
+                "name": "Wishiwashi",
+                "type": ["Water"],
+                "category": "Small Fry",
+                "region": "Alola",
+                "special form": "Wishiwashi (Solo Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 20,
+                        "def": 20,
+                        "sp.atk": 25,
+                        "sp.def": 25,
+                        "speed": 40
+                    }
+                ],
+                "height": 20,
+                "weight": 0.3,
+                "entry": "It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 746.01,
+                "name": "Wishiwashi",
+                "type": ["Water"],
+                "category": "Small Fry",
+                "region": "Alola",
+                "special form": "Wishiwashi (School Form)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 140,
+                        "def": 130,
+                        "sp.atk": 145,
+                        "sp.def": 135,
+                        "speed": 30
+                    }
+                ],
+                "height": 820,
+                "weight": 78.6,
+                "entry": "At their appearance, even Gyarados will flee. When they team up to use Water Gun, its power exceeds that of Hydro Pump.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Fast",
+        "base experience yield": 217,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 7
+    },
+    {
+        "dex number": 747,
+        "forms": [
+            {
+                "key": 747.0,
+                "name": "Mareanie",
+                "type": ["Poison", "Water"],
+                "category": "Brutal Star",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 748.0,
+                                "level": 38,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 53,
+                        "def": 62,
+                        "sp.atk": 43,
+                        "sp.def": 52,
+                        "speed": 45
+                    }
+                ],
+                "height": 40,
+                "weight": 8,
+                "entry": "It's found crawling on beaches and seafloors. The coral that grows on Corsola's head is as good as a five-star banquet to this Pokémon.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 61,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 748,
+        "forms": [
+            {
+                "key": 748.0,
+                "name": "Toxapex",
+                "type": ["Poison", "Water"],
+                "category": "Brutal Star",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 747.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 50,
+                        "atk": 63,
+                        "def": 152,
+                        "sp.atk": 53,
+                        "sp.def": 142,
+                        "speed": 35
+                    }
+                ],
+                "height": 70,
+                "weight": 14.5,
+                "entry": "Toxapex crawls along the ocean floor on its 12 legs. It leaves a trail of Corsola bits scattered in its wake.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 173,
+        "minimum spawn level": 38,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 749,
+        "forms": [
+            {
+                "key": 749.0,
+                "name": "Mudbray",
+                "type": ["Ground"],
+                "category": "Donkey",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 750.0,
+                                "level": 30,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 100,
+                        "def": 70,
+                        "sp.atk": 45,
+                        "sp.def": 55,
+                        "speed": 45
+                    }
+                ],
+                "height": 100,
+                "weight": 110,
+                "entry": "The mud stuck to Mudbray's hooves enhances its grip and its powerful running gait.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 77,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 750,
+        "forms": [
+            {
+                "key": 750.0,
+                "name": "Mudsdale",
+                "type": ["Ground"],
+                "category": "Draft Horse",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 749.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 100,
+                        "atk": 125,
+                        "def": 100,
+                        "sp.atk": 55,
+                        "sp.def": 85,
+                        "speed": 35
+                    }
+                ],
+                "height": 250,
+                "weight": 920,
+                "entry": "It spits a mud that provides resistance to both wind and rain, so the walls of old houses were often coated with it.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 175,
+        "minimum spawn level": 30,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 7
+    },
+    {
+        "dex number": 751,
+        "forms": [
+            {
+                "key": 751.0,
+                "name": "Dewpider",
+                "type": ["Water", "Bug"],
+                "category": "Water Bubble",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 752.0,
+                                "level": 22,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 38,
+                        "atk": 40,
+                        "def": 52,
+                        "sp.atk": 40,
+                        "sp.def": 72,
+                        "speed": 27
+                    }
+                ],
+                "height": 30,
+                "weight": 4,
+                "entry": "When two Dewpider meet, they display their water bubbles to each other. Then the one with the smaller bubble gets out of the other’s way.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 54,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 200,
+        "flee rate": 20
+    },
+    {
+        "dex number": 752,
+        "forms": [
+            {
+                "key": 752.0,
+                "name": "Araquanid",
+                "type": ["Water", "Bug"],
+                "category": "Water Bubble",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 751.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 68,
+                        "atk": 70,
+                        "def": 92,
+                        "sp.atk": 50,
+                        "sp.def": 132,
+                        "speed": 42
+                    }
+                ],
+                "height": 180,
+                "weight": 82,
+                "entry": "Despite what its appearance suggests, it cares for others. If it finds vulnerable, weak Pokémon, it protectively brings them into its water bubble.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 159,
+        "minimum spawn level": 22,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 100,
+        "flee rate": 9
+    },
+    {
+        "dex number": 753,
+        "forms": [
+            {
+                "key": 753.0,
+                "name": "Fomantis",
+                "type": ["Grass"],
+                "category": "Sickle Grass",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 754.0,
+                                "level": 34,
+                                "item": ["Light Mode"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 40,
+                        "atk": 55,
+                        "def": 35,
+                        "sp.atk": 50,
+                        "sp.def": 35,
+                        "speed": 35
+                    }
+                ],
+                "height": 30,
+                "weight": 1.5,
+                "entry": "They give off a sweet and refreshing scent. Cutiefly often gather near the tall grass where Fomantis are hiding.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 50,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 15
+    },
+    {
+        "dex number": 754,
+        "forms": [
+            {
+                "key": 754.0,
+                "name": "Lurantis",
+                "type": ["Grass"],
+                "category": "Bloom Sickle",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 753.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 105,
+                        "def": 90,
+                        "sp.atk": 80,
+                        "sp.def": 90,
+                        "speed": 45
+                    }
+                ],
+                "height": 90,
+                "weight": 18.5,
+                "entry": "For self-protection, it pretends to be a bug Pokémon. Both of its arms bear keen-edged petals.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 168,
+        "minimum spawn level": 34,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 755,
+        "forms": [
+            {
+                "key": 755.0,
+                "name": "Morelull",
+                "type": ["Grass", "Fairy"],
+                "category": "Illuminating",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 756.0,
+                                "level": 24,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 40,
+                        "atk": 35,
+                        "def": 55,
+                        "sp.atk": 65,
+                        "sp.def": 75,
+                        "speed": 15
+                    }
+                ],
+                "height": 20,
+                "weight": 1.5,
+                "entry": "It scatters its shining spores around itself. Even though they're dangerous, nighttime tours of forests where Morelull live are popular.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 57,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 190,
+        "flee rate": 20
+    },
+    {
+        "dex number": 756,
+        "forms": [
+            {
+                "key": 756.0,
+                "name": "Shiinotic",
+                "type": ["Grass", "Fairy"],
+                "category": "Illuminating",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 755.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 45,
+                        "def": 80,
+                        "sp.atk": 90,
+                        "sp.def": 100,
+                        "speed": 30
+                    }
+                ],
+                "height": 100,
+                "weight": 11.5,
+                "entry": "Forests where Shiinotic live are treacherous to enter at night. People confused by its strange lights can never find their way home again.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 142,
+        "minimum spawn level": 24,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 75,
+        "flee rate": 7
+    },
+    {
+        "dex number": 757,
+        "forms": [
+            {
+                "key": 757.0,
+                "name": "Salandit",
+                "type": ["Poison", "Fire"],
+                "category": "Toxic Lizard",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 758.0,
+                                "level": 33,
+                                "item": ["Female"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 48,
+                        "atk": 44,
+                        "def": 40,
+                        "sp.atk": 71,
+                        "sp.def": 40,
+                        "speed": 77
+                    }
+                ],
+                "height": 60,
+                "weight": 4.8,
+                "entry": "Volcanoes or dry, craggy places are its home. It emanates a sweet-smelling poisonous gas that attracts bug Pokémon, then attacks them.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 7,
+        "catch rate": 120,
+        "flee rate": 15
+    },
+    {
+        "dex number": 758,
+        "forms": [
+            {
+                "key": 758.0,
+                "name": "Salazzle",
+                "type": ["Poison", "Fire"],
+                "category": "Toxic Lizard",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 757.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 68,
+                        "atk": 64,
+                        "def": 60,
+                        "sp.atk": 111,
+                        "sp.def": 60,
+                        "speed": 117
+                    }
+                ],
+                "height": 120,
+                "weight": 22.2,
+                "entry": "For some reason, only females have been found. It creates a reverse harem of male Salandit that it lives with.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 168,
+        "minimum spawn level": 33,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 759,
+        "forms": [
+            {
+                "key": 759.0,
+                "name": "Stufful",
+                "type": ["Normal", "Fighting"],
+                "category": "Flailing",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 760.0,
+                                "level": 27,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 75,
+                        "def": 50,
+                        "sp.atk": 45,
+                        "sp.def": 50,
+                        "speed": 50
+                    }
+                ],
+                "height": 50,
+                "weight": 6.8,
+                "entry": "Despite its adorable appearance, when it gets angry and flails about, its arms and legs could knock a pro wrestler sprawling.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 68,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 140,
+        "flee rate": 15
+    },
+    {
+        "dex number": 760,
+        "forms": [
+            {
+                "key": 760.0,
+                "name": "Bewear",
+                "type": ["Normal", "Fighting"],
+                "category": "Strong Arm",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 759.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 120,
+                        "atk": 125,
+                        "def": 80,
+                        "sp.atk": 55,
+                        "sp.def": 60,
+                        "speed": 60
+                    }
+                ],
+                "height": 210,
+                "weight": 135,
+                "entry": "This Pokémon has the habit of hugging its companions. Many Trainers have left this world after their spines were squashed by its hug.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 175,
+        "minimum spawn level": 27,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 70,
+        "flee rate": 7
+    },
+    {
+        "dex number": 761,
+        "forms": [
+            {
+                "key": 761.0,
+                "name": "Bounsweet",
+                "type": ["Grass"],
+                "category": "Fruit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 762.0,
+                                "level": 18,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 42,
+                        "atk": 30,
+                        "def": 38,
+                        "sp.atk": 30,
+                        "sp.def": 38,
+                        "speed": 32
+                    }
+                ],
+                "height": 30,
+                "weight": 3.2,
+                "entry": "A delectable aroma pours from its body. They are often swallowed whole by Toucannon lured by that wafting deliciousness.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 42,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 235,
+        "flee rate": 20
+    },
+    {
+        "dex number": 762,
+        "forms": [
+            {
+                "key": 762.0,
+                "name": "Steenee",
+                "type": ["Grass"],
+                "category": "Fruit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 763.0,
+                                "level": null,
+                                "item": ["Move Tutor"]
+                            }
+                        ],
+                        "prev": 761.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 52,
+                        "atk": 40,
+                        "def": 48,
+                        "sp.atk": 40,
+                        "sp.def": 48,
+                        "speed": 62
+                    }
+                ],
+                "height": 70,
+                "weight": 8.2,
+                "entry": "The sepals on its head developed to protect its body. These are quite hard, so even if pecked by bird Pokémon, this Pokémon is totally fine.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 102,
+        "minimum spawn level": 18,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 120,
+        "flee rate": 9
+    },
+    {
+        "dex number": 763,
+        "forms": [
+            {
+                "key": 763.0,
+                "name": "Tsareena",
+                "type": ["Grass"],
+                "category": "Fruit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 762.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 72,
+                        "atk": 120,
+                        "def": 98,
+                        "sp.atk": 50,
+                        "sp.def": 98,
+                        "speed": 72
+                    }
+                ],
+                "height": 120,
+                "weight": 21.4,
+                "entry": "Its long, striking legs aren't just for show but to be used to kick with skill. In victory, it shows off by kicking the defeated, laughing boisterously.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 255,
+        "minimum spawn level": 34,
+        "gendered": true,
+        "male:female ratio": 0,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 764,
+        "forms": [
+            {
+                "key": 764.0,
+                "name": "Comfey",
+                "type": ["Fairy"],
+                "category": "Posy Picker",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 51,
+                        "atk": 52,
+                        "def": 90,
+                        "sp.atk": 82,
+                        "sp.def": 110,
+                        "speed": 100
+                    }
+                ],
+                "height": 10,
+                "weight": 0.3,
+                "entry": "Baths prepared with the flowers from its vine have a relaxing effect, so this Pokémon is a hit with many people.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Fast",
+        "base experience yield": 170,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 10
+    },
+    {
+        "dex number": 765,
+        "forms": [
+            {
+                "key": 765.0,
+                "name": "Oranguru",
+                "type": ["Normal", "Psychic"],
+                "category": "Sage",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 90,
+                        "atk": 60,
+                        "def": 80,
+                        "sp.atk": 90,
+                        "sp.def": 110,
+                        "speed": 60
+                    }
+                ],
+                "height": 150,
+                "weight": 76,
+                "entry": "Deep in the jungle, high in the lofty canopy, this Pokémon abides. On rare occasions, it shows up at the beach to match wits with Slowking.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 172,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 766,
+        "forms": [
+            {
+                "key": 766.0,
+                "name": "Passimian",
+                "type": ["Fighting"],
+                "category": "Teamwork",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 100,
+                        "atk": 120,
+                        "def": 90,
+                        "sp.atk": 40,
+                        "sp.def": 60,
+                        "speed": 80
+                    }
+                ],
+                "height": 200,
+                "weight": 82.8,
+                "entry": "They battle with hard berries for weapons. Their techniques are passed from the boss to the group, generation upon generation.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 172,
+        "minimum spawn level": 20,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 767,
+        "forms": [
+            {
+                "key": 767.0,
+                "name": "Wimpod",
+                "type": ["Bug", "Water"],
+                "category": "Turn Tail",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 768.0,
+                                "level": 30,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 25,
+                        "atk": 35,
+                        "def": 40,
+                        "sp.atk": 20,
+                        "sp.def": 30,
+                        "speed": 80
+                    }
+                ],
+                "height": 50,
+                "weight": 12,
+                "entry": "This Pokémon is a coward. As it desperately dashes off, the flailing of its many legs leaves a sparkling clean path in its wake.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 46,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 90,
+        "flee rate": 70
+    },
+    {
+        "dex number": 768,
+        "forms": [
+            {
+                "key": 768.0,
+                "name": "Golisopod",
+                "type": ["Bug", "Water"],
+                "category": "Hard Scale",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 767.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 125,
+                        "def": 140,
+                        "sp.atk": 60,
+                        "sp.def": 90,
+                        "speed": 40
+                    }
+                ],
+                "height": 200,
+                "weight": 108,
+                "entry": "With a flashing slash of its giant sharp claws, it cleaves seawater—or even air—right in two.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 186,
+        "minimum spawn level": 30,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 70
+    },
+    {
+        "dex number": 769,
+        "forms": [
+            {
+                "key": 769.0,
+                "name": "Sandygast",
+                "type": ["Ghost", "Ground"],
+                "category": "Sand Heap",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 770.0,
+                                "level": 42,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 55,
+                        "def": 80,
+                        "sp.atk": 70,
+                        "sp.def": 45,
+                        "speed": 15
+                    }
+                ],
+                "height": 50,
+                "weight": 70,
+                "entry": "Born from a sand mound playfully built by a child, this Pokémon embodies the grudges of the departed.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 64,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 140,
+        "flee rate": 15
+    },
+    {
+        "dex number": 770,
+        "forms": [
+            {
+                "key": 770.0,
+                "name": "Palossand",
+                "type": ["Ghost", "Ground"],
+                "category": "Sand Castle",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 769.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 85,
+                        "atk": 75,
+                        "def": 110,
+                        "sp.atk": 100,
+                        "sp.def": 100,
+                        "speed": 75
+                    }
+                ],
+                "height": 130,
+                "weight": 250,
+                "entry": "Possessed people controlled by this Pokémon transformed its sand mound into a castle. As it evolved, its power to curse grew ever stronger.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 168,
+        "minimum spawn level": 42,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 7
+    },
+    {
+        "dex number": 771,
+        "forms": [
+            {
+                "key": 771.0,
+                "name": "Pyukumuku",
+                "type": ["Water"],
+                "category": "Sea Cucumber",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 60,
+                        "def": 130,
+                        "sp.atk": 30,
+                        "sp.def": 130,
+                        "speed": 5
+                    }
+                ],
+                "height": 30,
+                "weight": 1.2,
+                "entry": "It lives in shallow seas, such as areas near a beach. It can eject its internal organs, which it uses to engulf its prey or battle enemies.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Fast",
+        "base experience yield": 144,
+        "minimum spawn level": 5,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 60,
+        "flee rate": 7
+    },
+    {
+        "dex number": 772,
+        "forms": [
+            {
+                "key": 772.0,
+                "name": "Type: Null",
+                "type": ["Normal"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 773.0,
+                                "level": null,
+                                "item": ["Friendship"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 59
+                    }
+                ],
+                "height": 190,
+                "weight": 120.5,
+                "entry": "The heavy control mask it wears suppresses its intrinsic capabilities. This Pokémon has some hidden special power.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 107,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 773,
+        "forms": [
+            {
+                "key": 773.0,
+                "name": "Silvally",
+                "type": ["Normal"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Normal)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.01,
+                "name": "Silvally",
+                "type": ["Fighting"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Fighting)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.02,
+                "name": "Silvally",
+                "type": ["Flying"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Flying)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.03,
+                "name": "Silvally",
+                "type": ["Poison"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Poison)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.04,
+                "name": "Silvally",
+                "type": ["Ground"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Ground)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.05,
+                "name": "Silvally",
+                "type": ["Rock"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Rock)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.06,
+                "name": "Silvally",
+                "type": ["Bug"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Bug)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.07,
+                "name": "Silvally",
+                "type": ["Ghost"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Ghost)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.08,
+                "name": "Silvally",
+                "type": ["Steel"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Steel)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.09,
+                "name": "Silvally",
+                "type": ["Fire"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Fire)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.10,
+                "name": "Silvally",
+                "type": ["Water"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Water)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.11,
+                "name": "Silvally",
+                "type": ["Grass"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Grass)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.12,
+                "name": "Silvally",
+                "type": ["Electric"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Electric)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.13,
+                "name": "Silvally",
+                "type": ["Psychic"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Psychic)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.14,
+                "name": "Silvally",
+                "type": ["Ice"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Ice)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.15,
+                "name": "Silvally",
+                "type": ["Dragon"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Dragon)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.16,
+                "name": "Silvally",
+                "type": ["Dark"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Dark)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 773.17,
+                "name": "Silvally",
+                "type": ["Fairy"],
+                "category": "Synthetic",
+                "region": "Alola",
+                "special form": "Silvally (Type: Fairy)",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 772.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 95,
+                        "atk": 95,
+                        "def": 95,
+                        "sp.atk": 95,
+                        "sp.def": 95,
+                        "speed": 95
+                    }
+                ],
+                "height": 230,
+                "weight": 100.5,
+                "entry": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 774,
+        "forms": [
+            {
+                "key": 774.0,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Meteor Form)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "Originally making its home in the ozone layer, it hurtles to the ground when the shell enclosing its body grows too heavy.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.01,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Red Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.02,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Orange Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.03,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Yellow Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.04,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Green Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.05,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Blue Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.06,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Indigo Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 774.07,
+                "name": "Minior",
+                "type": ["Rock", "Flying"],
+                "category": "Meteor",
+                "region": "Alola",
+                "special form": "Minior (Violet Core)",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 100,
+                        "def": 60,
+                        "sp.atk": 100,
+                        "sp.def": 60,
+                        "speed": 120
+                    }
+                ],
+                "height": 30,
+                "weight": 0.3,
+                "entry": "It eats dust in the atmosphere. The composition of the dust determines the colour of its core.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Slow",
+        "base experience yield": 175,
+        "minimum spawn level": 15,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 30,
+        "flee rate": 10
+    },
+    {
+        "dex number": 775,
+        "forms": [
+            {
+                "key": 775.0,
+                "name": "Komala",
+                "type": ["Normal"],
+                "category": "Drowsing",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 115,
+                        "def": 65,
+                        "sp.atk": 75,
+                        "sp.def": 95,
+                        "speed": 65
+                    }
+                ],
+                "height": 40,
+                "weight": 19.9,
+                "entry": "It is born asleep, and it dies asleep. All its movements are apparently no more than the results of it tossing and turning in its dreams.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 168,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 776,
+        "forms": [
+            {
+                "key": 776.0,
+                "name": "Turtonator",
+                "type": ["Fire", "Dragon"],
+                "category": "Blast Turtle",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 60,
+                        "atk": 78,
+                        "def": 135,
+                        "sp.atk": 91,
+                        "sp.def": 85,
+                        "speed": 36
+                    }
+                ],
+                "height": 200,
+                "weight": 212,
+                "entry": "The shell on its back is chemically unstable and explodes violently if struck. The hole in its stomach is its weak point.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 170,
+        "minimum spawn level": 15,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 70,
+        "flee rate": 7
+    },
+    {
+        "dex number": 777,
+        "forms": [
+            {
+                "key": 777.0,
+                "name": "Togedemaru",
+                "type": ["Electric", "Steel"],
+                "category": "Roly-Poly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 65,
+                        "atk": 98,
+                        "def": 63,
+                        "sp.atk": 40,
+                        "sp.def": 73,
+                        "speed": 96
+                    }
+                ],
+                "height": 30,
+                "weight": 3.3,
+                "entry": "When it's surprised or agitated, the 14 fur spikes on its back will stand up involuntarily.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 152,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 5,
+        "catch rate": 180,
+        "flee rate": 10
+    },
+    {
+        "dex number": 778,
+        "forms": [
+            {
+                "key": 778.0,
+                "name": "Mimikyu",
+                "type": ["Ghost", "Fairy"],
+                "category": "Disguise",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 90,
+                        "def": 80,
+                        "sp.atk": 50,
+                        "sp.def": 105,
+                        "speed": 96
+                    }
+                ],
+                "height": 20,
+                "weight": 0.7,
+                "entry": "There will be no forgiveness for any who reveal that it was pretending to be Pikachu. It will bring the culprit down, even at the cost of its own life.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 167,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 779,
+        "forms": [
+            {
+                "key": 779.0,
+                "name": "Bruxish",
+                "type": ["Water", "Psychic"],
+                "category": "Gnash Teeth",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 68,
+                        "atk": 105,
+                        "def": 70,
+                        "sp.atk": 70,
+                        "sp.def": 70,
+                        "speed": 92
+                    }
+                ],
+                "height": 90,
+                "weight": 19,
+                "entry": "It stuns its prey with psychokinesis and then grinds them to mush with its strong teeth. Even Shellder’s shell is no match for it.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 166,
+        "minimum spawn level": 10,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 80,
+        "flee rate": 7
+    },
+    {
+        "dex number": 780,
+        "forms": [
+            {
+                "key": 780.0,
+                "name": "Drampa",
+                "type": ["Normal", "Dragon"],
+                "category": "Placid",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 78,
+                        "atk": 60,
+                        "def": 85,
+                        "sp.atk": 135,
+                        "sp.def": 91,
+                        "speed": 36
+                    }
+                ],
+                "height": 300,
+                "weight": 185,
+                "entry": "This Pokémon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 170,
+        "minimum spawn level": 15,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 70,
+        "flee rate": 7
+    },
+    {
+        "dex number": 781,
+        "forms": [
+            {
+                "key": 781.0,
+                "name": "Dhelmise",
+                "type": ["Ghost", "Grass"],
+                "category": "Sea Creeper",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 131,
+                        "def": 100,
+                        "sp.atk": 86,
+                        "sp.def": 90,
+                        "speed": 40
+                    }
+                ],
+                "height": 390,
+                "weight": 210,
+                "entry": "Swinging its massive anchor, it can KO Wailord in a single blow. What appears to be green seaweed is actually its body.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Medium Fast",
+        "base experience yield": 181,
+        "minimum spawn level": 17,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 25,
+        "flee rate": 7
+    },
+    {
+        "dex number": 782,
+        "forms": [
+            {
+                "key": 782.0,
+                "name": "Jangmo-o",
+                "type": ["Dragon"],
+                "category": "Scaly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 783.0,
+                                "level": 35,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 45,
+                        "atk": 55,
+                        "def": 65,
+                        "sp.atk": 45,
+                        "sp.def": 45,
+                        "speed": 45
+                    }
+                ],
+                "height": 60,
+                "weight": 29.7,
+                "entry": "It expresses its feelings by smacking its scales. Metallic sounds echo through the tall mountains where Jangmo-o lives.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 60,
+        "minimum spawn level": 1,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 9
+    },
+    {
+        "dex number": 783,
+        "forms": [
+            {
+                "key": 783.0,
+                "name": "Hakamo-o",
+                "type": ["Dragon", "Fighting"],
+                "category": "Scaly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 784.0,
+                                "level": 45,
+                                "item": []
+                            }
+                        ],
+                        "prev": 782.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 55,
+                        "atk": 75,
+                        "def": 90,
+                        "sp.atk": 65,
+                        "sp.def": 70,
+                        "speed": 65
+                    }
+                ],
+                "height": 120,
+                "weight": 47,
+                "entry": "The scaleless, scarred parts of its body are signs of its strength. It shows them off to defeated opponents.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 147,
+        "minimum spawn level": 35,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 7
+    },
+    {
+        "dex number": 784,
+        "forms": [
+            {
+                "key": 784.0,
+                "name": "Kommo-o",
+                "type": ["Dragon", "Fighting"],
+                "category": "Scaly",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 783.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 75,
+                        "atk": 110,
+                        "def": 125,
+                        "sp.atk": 100,
+                        "sp.def": 105,
+                        "speed": 85
+                    }
+                ],
+                "height": 160,
+                "weight": 78.2,
+                "entry": "When it spots enemies, it threatens them by jingling the scales on its tail. Weak opponents will crack and flee in panic.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 270,
+        "minimum spawn level": 45,
+        "gendered": true,
+        "male:female ratio": 1,
+        "catch rate": 45,
+        "flee rate": 5
+    },
+    {
+        "dex number": 785,
+        "forms": [
+            {
+                "key": 785.0,
+                "name": "Tapu Koko",
+                "type": ["Electric", "Fairy"],
+                "category": "Land Spirit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 115,
+                        "def": 85,
+                        "sp.atk": 95,
+                        "sp.def": 75,
+                        "speed": 130
+                    }
+                ],
+                "height": 180,
+                "weight": 20.5,
+                "entry": "This guardian deity of Melemele is brimming with curiosity. It summons thunderclouds and stores their lightning inside its body.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 786,
+        "forms": [
+            {
+                "key": 786.0,
+                "name": "Tapu Lele",
+                "type": ["Psychic", "Fairy"],
+                "category": "Land Spirit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 85,
+                        "def": 75,
+                        "sp.atk": 130,
+                        "sp.def": 115,
+                        "speed": 95
+                    }
+                ],
+                "height": 120,
+                "weight": 18.6,
+                "entry": "This guardian deity of Akala is guilelessly cruel. The fragrant aroma of flowers is the source of its energy.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 787,
+        "forms": [
+            {
+                "key": 787.0,
+                "name": "Tapu Bulu",
+                "type": ["Grass", "Fairy"],
+                "category": "Land Spirit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 130,
+                        "def": 115,
+                        "sp.atk": 85,
+                        "sp.def": 95,
+                        "speed": 75
+                    }
+                ],
+                "height": 190,
+                "weight": 45.5,
+                "entry": "The guardian deity of Ula'ula is a lazy Pokémon. It commands plants to immobilise its foes and then deals them a savage blow with its horns.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 788,
+        "forms": [
+            {
+                "key": 788.0,
+                "name": "Tapu Fini",
+                "type": ["Water", "Fairy"],
+                "category": "Land Spirit",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 70,
+                        "atk": 75,
+                        "def": 115,
+                        "sp.atk": 95,
+                        "sp.def": 130,
+                        "speed": 85
+                    }
+                ],
+                "height": 130,
+                "weight": 21.2,
+                "entry": "The guardian deity of Poni, it can control water. People say it can create pure water that will wash away any uncleanness.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 789,
+        "forms": [
+            {
+                "key": 789.0,
+                "name": "Cosmog",
+                "type": ["Psychic"],
+                "category": "Nebula",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 790.0,
+                                "level": 43,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 43,
+                        "atk": 29,
+                        "def": 31,
+                        "sp.atk": 29,
+                        "sp.def": 31,
+                        "speed": 37
+                    }
+                ],
+                "height": 20,
+                "weight": 0.1,
+                "entry": "In ages past, it was called the child of the stars. It's said to be a Pokémon from another world, but no specific details are known.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 40,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 790,
+        "forms": [
+            {
+                "key": 790.0,
+                "name": "Cosmoem",
+                "type": ["Psychic"],
+                "category": "Protostar",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 791.0,
+                                "level": 53,
+                                "item": ["Light Mode"]
+                            },
+                            {
+                                "key": 792.0,
+                                "level": 53,
+                                "item": ["Dark Mode"]
+                            }
+                        ],
+                        "prev": 789.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 43,
+                        "atk": 29,
+                        "def": 131,
+                        "sp.atk": 29,
+                        "sp.def": 131,
+                        "speed": 37
+                    }
+                ],
+                "height": 10,
+                "weight": 999.9,
+                "entry": "Motionless as if dead, its body is faintly warm to the touch. In the distant past, it was called the cocoon of the stars.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 140,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 791,
+        "forms": [
+            {
+                "key": 791.0,
+                "name": "Solgaleo",
+                "type": ["Psychic", "Steel"],
+                "category": "Sunne",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 790.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 137,
+                        "atk": 137,
+                        "def": 107,
+                        "sp.atk": 113,
+                        "sp.def": 89,
+                        "speed": 97
+                    }
+                ],
+                "height": 340,
+                "weight": 230,
+                "entry": "It is said to live in another world. The intense light it radiates from the surface of its body can make the darkest of nights light up like midday.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 306,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 792,
+        "forms": [
+            {
+                "key": 792.0,
+                "name": "Lunala",
+                "type": ["Psychic", "Ghost"],
+                "category": "Moone",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 790.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 137,
+                        "atk": 113,
+                        "def": 89,
+                        "sp.atk": 137,
+                        "sp.def": 107,
+                        "speed": 97
+                    }
+                ],
+                "height": 400,
+                "weight": 120,
+                "entry": "Said to live in another world, this Pokémon devours light, drawing the moonless dark veil of night over the brightness of day.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 306,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 793,
+        "forms": [
+            {
+                "key": 793.0,
+                "name": "Nihilego",
+                "type": ["Rock", "Poison"],
+                "category": "Parasite",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 109,
+                        "atk": 53,
+                        "def": 47,
+                        "sp.atk": 127,
+                        "sp.def": 131,
+                        "speed": 103
+                    }
+                ],
+                "height": 120,
+                "weight": 55.5,
+                "entry": "One of the Ultra Beasts. It's unclear whether or not this Pokémon is sentient, but sometimes it can be observed behaving like a young girl.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 794,
+        "forms": [
+            {
+                "key": 794.0,
+                "name": "Buzzwole",
+                "type": ["Bug", "Fighting"],
+                "category": "Swollen",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 107,
+                        "atk": 139,
+                        "def": 139,
+                        "sp.atk": 53,
+                        "sp.def": 53,
+                        "speed": 79
+                    }
+                ],
+                "height": 240,
+                "weight": 333.6,
+                "entry": "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 795,
+        "forms": [
+            {
+                "key": 795.0,
+                "name": "Pheromosa",
+                "type": ["Bug", "Fighting"],
+                "category": "Lissome",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 71,
+                        "atk": 137,
+                        "def": 37,
+                        "sp.atk": 137,
+                        "sp.def": 37,
+                        "speed": 151
+                    }
+                ],
+                "height": 180,
+                "weight": 25,
+                "entry": "One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 796,
+        "forms": [
+            {
+                "key": 796.0,
+                "name": "Xurkitree",
+                "type": ["Electric"],
+                "category": "Glowing",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 83,
+                        "atk": 89,
+                        "def": 71,
+                        "sp.atk": 173,
+                        "sp.def": 71,
+                        "speed": 83
+                    }
+                ],
+                "height": 380,
+                "weight": 100,
+                "entry": "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 797,
+        "forms": [
+            {
+                "key": 797.0,
+                "name": "Celesteela",
+                "type": ["Steel", "Flying"],
+                "category": "Launch",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 101,
+                        "def": 103,
+                        "sp.atk": 107,
+                        "sp.def": 101,
+                        "speed": 61
+                    }
+                ],
+                "height": 920,
+                "weight": 999.9,
+                "entry": "One kind of Ultra Beast. Witnesses have seen it burn down a forest by expelling gas from its two arms.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 798,
+        "forms": [
+            {
+                "key": 798.0,
+                "name": "Kartana",
+                "type": ["Grass", "Steel"],
+                "category": "Drawn Sword",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 59,
+                        "atk": 181,
+                        "def": 131,
+                        "sp.atk": 59,
+                        "sp.def": 31,
+                        "speed": 109
+                    }
+                ],
+                "height": 30,
+                "weight": 0.1,
+                "entry": "One of the Ultra Beast life-forms, it was observed cutting down a gigantic steel tower with one stroke of its blade.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 799,
+        "forms": [
+            {
+                "key": 799.0,
+                "name": "Guzzlord",
+                "type": ["Dark", "Dragon"],
+                "category": "Junkivore",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 223,
+                        "atk": 101,
+                        "def": 53,
+                        "sp.atk": 97,
+                        "sp.def": 53,
+                        "speed": 43
+                    }
+                ],
+                "height": 550,
+                "weight": 888,
+                "entry": "It has gobbled mountains and swallowed whole buildings, according to reports. It's one of the Ultra Beasts.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 60,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 10
+    },
+    {
+        "dex number": 800,
+        "forms": [
+            {
+                "key": 800.0,
+                "name": "Necrozma",
+                "type": ["Psychic"],
+                "category": "Prism",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 107,
+                        "def": 101,
+                        "sp.atk": 127,
+                        "sp.def": 89,
+                        "speed": 79
+                    }
+                ],
+                "height": 240,
+                "weight": 230,
+                "entry": "Reminiscent of the Ultra Beasts, this life-form, apparently asleep underground, is thought to have come from another world in ancient times.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 800.01,
+                "name": "Necrozma",
+                "type": ["Psychic", "Steel"],
+                "category": "Prism",
+                "region": "Alola",
+                "special form": "Dusk Mane Necrozma",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 157,
+                        "def": 127,
+                        "sp.atk": 113,
+                        "sp.def": 109,
+                        "speed": 77
+                    }
+                ],
+                "height": 380,
+                "weight": 460,
+                "entry": "This is its form while it is devouring the light of Solgaleo. It pounces on foes and then slashes them with the claws on its four limbs and back.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 800.02,
+                "name": "Necrozma",
+                "type": ["Psychic", "Ghost"],
+                "category": "Prism",
+                "region": "Alola",
+                "special form": "Dawn Wings Necrozma",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 113,
+                        "def": 109,
+                        "sp.atk": 157,
+                        "sp.def": 127,
+                        "speed": 77
+                    }
+                ],
+                "height": 420,
+                "weight": 350,
+                "entry": "Lunala no longer has a will of its own. Now under the control of Necrozma, it continuously expels all of its energy.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 800.03,
+                "name": "Necrozma",
+                "type": ["Psychic", "Dragon"],
+                "category": "Prism",
+                "region": "Alola",
+                "special form": "Ultra Necrozma",
+                "valid": false,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 97,
+                        "atk": 167,
+                        "def": 97,
+                        "sp.atk": 167,
+                        "sp.def": 97,
+                        "speed": 129
+                    }
+                ],
+                "height": 750,
+                "weight": 230,
+                "entry": "This is its form when it has absorbed overwhelming light energy. It fires laser beams from all over its body.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 270,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 255,
+        "flee rate": 0
+    },
+    {
+        "dex number": 801,
+        "forms": [
+            {
+                "key": 801.0,
+                "name": "Magearna",
+                "type": ["Steel", "Fairy"],
+                "category": "Artificial",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 95,
+                        "def": 115,
+                        "sp.atk": 130,
+                        "sp.def": 115,
+                        "speed": 65
+                    }
+                ],
+                "height": 100,
+                "weight": 80.5,
+                "entry": "This artificial Pokémon, constructed more than 500 years ago, can understand human speech but cannot itself speak.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            },
+            {
+                "key": 801.01,
+                "name": "Magearna",
+                "type": ["Steel", "Fairy"],
+                "category": "Artificial",
+                "region": "Alola",
+                "special form": "Original Colour Magearna",
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 80,
+                        "atk": 95,
+                        "def": 115,
+                        "sp.atk": 130,
+                        "sp.def": 115,
+                        "speed": 65
+                    }
+                ],
+                "height": 100,
+                "weight": 80.5,
+                "entry": "This beautiful form reflects Magearna's appearance when first presented to a king’s daughter 500 years ago.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 300,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 802,
+        "forms": [
+            {
+                "key": 802.0,
+                "name": "Marshadow",
+                "type": ["Fighting", "Ghost"],
+                "category": "Gloomdweller",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 90,
+                        "atk": 125,
+                        "def": 80,
+                        "sp.atk": 90,
+                        "sp.def": 90,
+                        "speed": 125
+                    }
+                ],
+                "height": 70,
+                "weight": 22.2,
+                "entry": "Able to conceal itself in shadows, it never appears before humans, so its very existence was the stuff of myth.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 270,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 803,
+        "forms": [
+            {
+                "key": 803.0,
+                "name": "Poipole",
+                "type": ["Poison"],
+                "category": "Poison Pin",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 804.0,
+                                "level": null,
+                                "item": ["Move Tutor"]
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 67,
+                        "atk": 73,
+                        "def": 67,
+                        "sp.atk": 73,
+                        "sp.def": 67,
+                        "speed": 73
+                    }
+                ],
+                "height": 60,
+                "weight": 1.8,
+                "entry": "An Ultra Beast that lives in a different world, it cackles wildly as it sprays its opponents with poison from the needles on its head.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 189,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 804,
+        "forms": [
+            {
+                "key": 804.0,
+                "name": "Naganadel",
+                "type": ["Poison", "Dragon"],
+                "category": "Poison Pin",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 803.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 73,
+                        "atk": 73,
+                        "def": 73,
+                        "sp.atk": 127,
+                        "sp.def": 73,
+                        "speed": 121
+                    }
+                ],
+                "height": 360,
+                "weight": 150,
+                "entry": "One kind of Ultra Beast, it fires a glowing, venomous liquid from its needles. This liquid is also immensely adhesive.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 243,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 45,
+        "flee rate": 0
+    },
+    {
+        "dex number": 805,
+        "forms": [
+            {
+                "key": 805.0,
+                "name": "Stakataka",
+                "type": ["Rock", "Steel"],
+                "category": "Rampart",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 61,
+                        "atk": 131,
+                        "def": 211,
+                        "sp.atk": 53,
+                        "sp.def": 101,
+                        "speed": 13
+                    }
+                ],
+                "height": 550,
+                "weight": 820,
+                "entry": "It appeared from an Ultra Wormhole. Each one appears to be made up of many life-forms stacked one on top of each other.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 30,
+        "flee rate": 0
+    },
+    {
+        "dex number": 806,
+        "forms": [
+            {
+                "key": 806.0,
+                "name": "Blacephalon",
+                "type": ["Fire", "Ghost"],
+                "category": "Fireworks",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 53,
+                        "atk": 127,
+                        "def": 53,
+                        "sp.atk": 151,
+                        "sp.def": 79,
+                        "speed": 107
+                    }
+                ],
+                "height": 180,
+                "weight": 13,
+                "entry": "It slithers toward people. Then, without warning, it triggers the explosion of its own head. It's apparently one kind of Ultra Beast.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 257,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 30,
+        "flee rate": 0
+    },
+    {
+        "dex number": 807,
+        "forms": [
+            {
+                "key": 807.0,
+                "name": "Zeraora",
+                "type": ["Electric"],
+                "category": "Thunderclap",
+                "region": "Alola",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 88,
+                        "atk": 112,
+                        "def": 75,
+                        "sp.atk": 102,
+                        "sp.def": 80,
+                        "speed": 143
+                    }
+                ],
+                "height": 150,
+                "weight": 44.5,
+                "entry": "It electrifies its claws and tears its opponents apart with them. Even if they dodge its attack, they'll be electrocuted by the flying sparks.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 270,
+        "minimum spawn level": 101,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 808,
+        "forms": [
+            {
+                "key": 808.0,
+                "name": "Meltan",
+                "type": ["Steel"],
+                "category": "Hex Nut",
+                "region": "Unknown",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [
+                            {
+                                "key": 809.0,
+                                "level": null,
+                                "item": []
+                            }
+                        ],
+                        "prev": null
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 46,
+                        "atk": 65,
+                        "def": 65,
+                        "sp.atk": 55,
+                        "sp.def": 35,
+                        "speed": 34
+                    }
+                ],
+                "height": 20,
+                "weight": 8,
+                "entry": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve.",
+                "image asset m": "unknown.png",
+                "image asset f": "unknown.png",
+                "image asset m shiny": "unknown.png",
+                "image asset f shiny": "unknown.png"
+            }
+        ],
+        "gimmick forms": [],
+        "experience group": "Slow",
+        "base experience yield": 150,
+        "minimum spawn level": 1,
+        "gendered": false,
+        "male:female ratio": null,
+        "catch rate": 3,
+        "flee rate": 0
+    },
+    {
+        "dex number": 809,
+        "forms": [
+            {
+                "key": 809.0,
+                "name": "Melmetal",
+                "type": [],
+                "category": "Hex Nut",
+                "region": "Unknown",
+                "special form": null,
+                "valid": true,
+                "evolution": [
+                    {
+                        "next": [],
+                        "prev": 808.0
+                    }
+                ],
+                "base stats": [
+                    {
+                        "hp": 135,
+                        "atk": 143,
+                        "def": 143,
+                        "sp.atk": 80,
+                        "sp.def": 65,
+                        "speed": 34
+                    }
+                ],
+                "height": 250,
+                "weight": 800,
+                "entry": "At the end of its life-span, Melmetal will rust and fall apart. The small shards left behind will eventually be reborn as Meltan.",
                 "image asset m": "unknown.png",
                 "image asset f": "unknown.png",
                 "image asset m shiny": "unknown.png",
