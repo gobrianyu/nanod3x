@@ -9432,10 +9432,10 @@
         "flee rate": 20
     },
     {
-        "dex number": 166,
+        "dex number": 168,
         "forms": [
             {
-                "key": 166.0,
+                "key": 168.0,
                 "name": "Ariados",
                 "type": ["Bug", "Poison"],
                 "category": "Long Leg",
@@ -45899,10 +45899,10 @@
                 "height": 20,
                 "weight": 8,
                 "entry": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "meltan.png",
+                "image asset f": "meltan.png",
+                "image asset m shiny": "meltan_shiny.png",
+                "image asset f shiny": "meltan_shiny.png"
             }
         ],
         "gimmick forms": [],
