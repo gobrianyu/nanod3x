@@ -662,6 +662,9 @@ class _CollectionState extends State<Collection> {
                         border: OutlineInputBorder(
                           borderSide: BorderSide()
                         ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide()
+                        ),
                         suffixIcon: Icon(Icons.search)
                       )
                     ),
@@ -732,25 +735,17 @@ class _CollectionState extends State<Collection> {
             setState(() => shinyToggle = !shinyToggle);
           },
           child: Container(
-            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            alignment: Alignment.center,
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
-              border: Border.all(color: invertColour),
-              borderRadius: BorderRadius.circular(100),
-              color: _isShinyButtonHovered ? accentColourLight : Colors.transparent,
+              border: Border.all(color: shinyToggle ? const Color.fromARGB(255, 122, 218, 175) : invertColour),
+              shape: BoxShape.circle,
+              color: shinyToggle ? const Color.fromARGB(255, 122, 218, 175) : _isShinyButtonHovered ? accentColourLight : Colors.transparent,
             ),
-            child: Row(
-              children: [
-                Icon(
-                  shinyToggle ? Icons.draw : Icons.auto_awesome,
-                  size: 15,
-                  color: invertColour,
-                ),
-                const SizedBox(width: 5),
-                Text(
-                  shinyToggle ? 'Classic' : 'Shiny',
-                  style: TextStyle(color: invertColour),
-                ),
-              ],
+            child: Icon(
+              Icons.auto_awesome,
+              size: 20,
+              color: shinyToggle ? Colors.white : invertColour,
             ),
           ),
         ),
@@ -770,28 +765,18 @@ class _CollectionState extends State<Collection> {
             setState(() => darkMode = !darkMode);
           },
           child: Container(
+            alignment: Alignment.center,
             margin: const EdgeInsets.only(left: 10),
-            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 15),
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
               border: Border.all(color: invertColour),
-              borderRadius: BorderRadius.circular(100),
+              shape: BoxShape.circle,
               color: _isDarkModeButtonHovered ? accentColourLight : Colors.transparent,
             ),
-            child: Row(
-              children: [
-                Icon(
-                  darkMode ? Icons.light_mode : Icons.dark_mode,
-                  size: 15,
-                  color: invertColour
-                ),
-                const SizedBox(width: 5),
-                Text(
-                  darkMode ? 'Light' : 'Dark',
-                  style: TextStyle(
-                    color: invertColour,
-                  ),
-                ),
-              ],
+            child: Icon(
+              darkMode ? Icons.light_mode : Icons.dark_mode,
+              size: 20,
+              color: invertColour
             ),
           ),
         ),
