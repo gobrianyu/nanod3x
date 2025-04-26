@@ -35,6 +35,11 @@ class _CollectionState extends State<Collection> {
 
   Map<String, String?> imageCache = {};
   Map<String, String?> shinyCache = {};
+  Future<Widget>? _cachedPaneImageFuture;
+  int? _cachedDexNum;
+  String? _cachedImageKey;
+
+  int formIndex = 0;
 
   Map<Region, int> completed = {};
   List<int> loaded = [];
@@ -69,6 +74,7 @@ class _CollectionState extends State<Collection> {
     _searchController.addListener(_onSearchChanged);
     _focusNode.requestFocus();
     super.initState();
+    _updatePaneImageFuture();
   }
 
   void _onSearchChanged() {
@@ -97,8 +103,41 @@ class _CollectionState extends State<Collection> {
     });
   }
 
+  void _updatePaneImageFuture() {
+    formIndex = 0;
+    if (selectedEntry == null) {
+      _cachedPaneImageFuture = null;
+      _cachedDexNum = null;
+      _cachedImageKey = null;
+      return;
+    }
+    dex.Form initForm = selectedEntry!.forms[formIndex];
+    String imageUrl = shinyToggle
+        ? (_displayMale ? initForm.imageAssetMShiny : initForm.imageAssetFShiny)
+        : (_displayMale ? initForm.imageAssetM : initForm.imageAssetF);
+
+    // Only update the future if the parameters changed
+    if (_cachedDexNum != selectedEntry!.dexNum || _cachedImageKey != imageUrl) {
+      _cachedPaneImageFuture = _paneImage(selectedEntry!.dexNum, imageUrl);
+      _cachedDexNum = selectedEntry!.dexNum;
+      _cachedImageKey = imageUrl;
+    }
+  }
+
   void initCompletionMap() {
     completed = { for (var region in regions) region : 0 };
+  }
+
+  @override
+  void didUpdateWidget(Collection oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    _updatePaneImageFuture();
+  }
+
+  @override
+  void setState(VoidCallback fn) {
+    super.setState(fn);
+    _updatePaneImageFuture();
   }
 
   @override
@@ -520,12 +559,9 @@ class _CollectionState extends State<Collection> {
 
   Widget _paneContent() {
     if (selectedEntry == null) return _paneFallback();
-    int index = 0; // TODO: change
-    dex.Form initForm = selectedEntry!.forms[index];
+    dex.Form initForm = selectedEntry!.forms[formIndex];
 
-    String imageUrl = shinyToggle
-        ? (_displayMale ? initForm.imageAssetMShiny : initForm.imageAssetFShiny)
-        : (_displayMale ? initForm.imageAssetM : initForm.imageAssetF);
+    _updatePaneImageFuture();
 
     return ListView(
       children: [
@@ -537,7 +573,7 @@ class _CollectionState extends State<Collection> {
               borderRadius: BorderRadius.circular(15)
             ),
             child: FutureBuilder<Widget>(
-              future: _paneImage(selectedEntry!.dexNum, imageUrl), // Fetch image asynchronously
+              future: _cachedPaneImageFuture, // Fetch image asynchronously
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
