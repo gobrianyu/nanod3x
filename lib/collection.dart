@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pokellection/models/type.dart';
 import 'models/dex_entry.dart' as dex;
 import 'models/region.dart';
@@ -18,6 +19,7 @@ class Collection extends StatefulWidget{
 
 class _CollectionState extends State<Collection> {
   final ScrollController _scrollController = ScrollController();
+  final FocusNode _focusNode = FocusNode();
 
   bool darkMode = false;
   bool shinyToggle = false;
@@ -65,6 +67,7 @@ class _CollectionState extends State<Collection> {
       initCompletionMap();
     }
     _searchController.addListener(_onSearchChanged);
+    _focusNode.requestFocus();
     super.initState();
   }
 
@@ -75,7 +78,23 @@ class _CollectionState extends State<Collection> {
   @override
   void dispose() {
     _searchController.removeListener(_onSearchChanged);
+    _focusNode.dispose();
     super.dispose();
+  }
+
+  void _handleKey(KeyEvent event) {
+    if (event is KeyDownEvent && event.logicalKey == LogicalKeyboardKey.escape && isPaneOpen) {
+      _closePane();
+    }
+  }
+
+  void _closePane() {
+    isPaneOpen = false;
+    Future.delayed(Duration(milliseconds: _paneAnimationTime), () {
+      setState(() {
+        selectedEntry = null;
+      });
+    });
   }
 
   void initCompletionMap() {
@@ -85,45 +104,49 @@ class _CollectionState extends State<Collection> {
   @override
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: mainColour,
-      body: SizedBox(
-        height: MediaQuery.of(context).size.height,
-        child: Stack(
-          children: [
-            Scrollbar(
-              controller: _scrollController,
-              child: ListView(
+    return KeyboardListener(
+      focusNode: _focusNode,
+      onKeyEvent: _handleKey,
+      child: Scaffold(
+        backgroundColor: mainColour,
+        body: SizedBox(
+          height: MediaQuery.of(context).size.height,
+          child: Stack(
+            children: [
+              Scrollbar(
                 controller: _scrollController,
-                shrinkWrap: true,
-                primary: false,
-                children: <Widget>[
-                  SizedBox(height: appBarHeight + 10),
-                  ...regions.map((region) => Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _regionHeader(region),
-                      _regionGrid(region)
-                    ],
-                  )),
-                  Padding(
-                    padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: isPaneOpen ? screenWidth * 0.42 + 24.2 : screenWidth / 10 + 20, bottom: 5),
-                    child: Text(
-                      copyrightText,
-                      textAlign: TextAlign.center,
-                      softWrap: true,
-                      style: TextStyle(
-                        color: solidAccentColourDark,
-                        fontSize: 10,
-                      )
+                child: ListView(
+                  controller: _scrollController,
+                  shrinkWrap: true,
+                  primary: false,
+                  children: <Widget>[
+                    SizedBox(height: appBarHeight + 10),
+                    ...regions.map((region) => Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _regionHeader(region),
+                        _regionGrid(region)
+                      ],
+                    )),
+                    Padding(
+                      padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: isPaneOpen ? screenWidth * 0.42 + 24.2 : screenWidth / 10 + 20, bottom: 5),
+                      child: Text(
+                        copyrightText,
+                        textAlign: TextAlign.center,
+                        softWrap: true,
+                        style: TextStyle(
+                          color: solidAccentColourDark,
+                          fontSize: 10,
+                        )
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            _appBar(),
-            _slidingPane(),
-          ],
+              _appBar(),
+              _slidingPane(),
+            ],
+          ),
         ),
       ),
     );
@@ -846,12 +869,7 @@ class _CollectionState extends State<Collection> {
               onTap: () {
                 setState(() {
                   if (selectedEntry == entry) {
-                    isPaneOpen = false;
-                    Future.delayed(Duration(milliseconds: _paneAnimationTime), () {
-                      setState(() {
-                        selectedEntry = null;
-                      });
-                    });
+                    _closePane();
                   } else {
                     selectedEntry = widget.fullDex[dexIndex];
                     isPaneOpen = true;
