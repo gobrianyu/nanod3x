@@ -85,7 +85,7 @@ class _CollectionState extends State<Collection> {
   }
 
   void _loadBg() {
-    final image = Image.asset('bg_trans.png');
+    final image = Image.asset('assets/bg_trans.png');
 
     final ImageStream stream = image.image.resolve(const ImageConfiguration());
     stream.addListener(
@@ -178,7 +178,7 @@ class _CollectionState extends State<Collection> {
         body: _isBgLoaded ? Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('bg_trans.png'),
+              image: AssetImage('assets/bg_trans.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -873,7 +873,7 @@ class _CollectionState extends State<Collection> {
                 _launchUrl(_instaUrl);
               },
               child: Image(
-                image: AssetImage('insta_icon.png'),
+                image: AssetImage('assets/insta_icon.png'),
                 height: 20
               ),
             ),
@@ -885,7 +885,7 @@ class _CollectionState extends State<Collection> {
                 _launchUrl(_twitterUrl);
               },
               child: Image(
-                image: AssetImage('twitter_icon.png'),
+                image: AssetImage('assets/twitter_icon.png'),
                 height: 20
               ),
             ),
