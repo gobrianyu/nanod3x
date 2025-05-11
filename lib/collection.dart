@@ -3,8 +3,10 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pokellection/models/type.dart';
+import 'package:pokellection/styles.dart';
 import 'models/dex_entry.dart' as dex;
 import 'models/region.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 const copyrightText = 'This website is a fan-made project and is not affiliated with or endorsed by The Pokémon Company, Nintendo, or any related entities. All Pokémon names, logos, and trademarks are the property of their respective owners. The artwork featured on this site is fan-created and is presented solely as a portfolio, with no intention of profit. All rights to the fan art are held by the respective artists. No copyright infringement is intended.';
 
@@ -21,10 +23,12 @@ class _CollectionState extends State<Collection> {
   final ScrollController _scrollController = ScrollController();
   final FocusNode _focusNode = FocusNode();
 
+  final Uri _instaUrl = Uri.parse('https://www.instagram.com/nano.m0n/');
+  final Uri _twitterUrl = Uri.parse('https://x.com/nano_n0m/');
+
   bool darkMode = false;
   bool shinyToggle = false;
   Color get mainColour => darkMode ? Colors.black : Colors.white;
-  Color get invertColour => darkMode ? const Color.fromARGB(255, 225, 229, 240) : Colors.black;
   Color get accentColourLight => darkMode ? Colors.black12 : Colors.black12;
   Color get accentColourDark => darkMode ? Colors.black45 : Colors.black45;
   Color get solidAccentColourLight => darkMode ? const Color.fromARGB(255, 20, 20, 20) : const Color.fromARGB(255, 240, 240, 240);
@@ -59,6 +63,8 @@ class _CollectionState extends State<Collection> {
     Region.unknown
   ];
 
+  bool _isBgLoaded = false;
+
   final TextEditingController _searchController = TextEditingController();
 
   dex.DexEntry? selectedEntry; // Track selected entry
@@ -71,10 +77,31 @@ class _CollectionState extends State<Collection> {
     if (completed.isEmpty) {
       initCompletionMap();
     }
+    _loadBg();
     _searchController.addListener(_onSearchChanged);
     _focusNode.requestFocus();
     super.initState();
     _updatePaneImageFuture();
+  }
+
+  void _loadBg() {
+    final image = Image.asset('bg_trans.png');
+
+    final ImageStream stream = image.image.resolve(const ImageConfiguration());
+    stream.addListener(
+      ImageStreamListener(
+        (ImageInfo imageInfo, bool synchronousCall) {
+          setState(() {
+            _isBgLoaded = true;
+          });
+        },
+        onError: (dynamic exception, StackTrace? stackTrace) {
+          setState(() {
+            _isBgLoaded = true;
+          });
+        },
+      ),
+    );
   }
 
   void _onSearchChanged() {
@@ -147,46 +174,54 @@ class _CollectionState extends State<Collection> {
       focusNode: _focusNode,
       onKeyEvent: _handleKey,
       child: Scaffold(
-        backgroundColor: mainColour,
-        body: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          child: Stack(
-            children: [
-              Scrollbar(
-                controller: _scrollController,
-                child: ListView(
-                  controller: _scrollController,
-                  shrinkWrap: true,
-                  primary: false,
-                  children: <Widget>[
-                    SizedBox(height: appBarHeight + 10),
-                    ...regions.map((region) => Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _regionHeader(region),
-                        _regionGrid(region)
-                      ],
-                    )),
-                    Padding(
-                      padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: isPaneOpen ? screenWidth * 0.42 + 24.2 : screenWidth / 10 + 20, bottom: 5),
-                      child: Text(
-                        copyrightText,
-                        textAlign: TextAlign.center,
-                        softWrap: true,
-                        style: TextStyle(
-                          color: solidAccentColourDark,
-                          fontSize: 10,
-                        )
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              _appBar(),
-              _slidingPane(),
-            ],
+        backgroundColor: bgColour(darkMode),
+        body: _isBgLoaded ? Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('bg_trans.png'),
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height,
+            child: Stack(
+              children: [
+                ScrollConfiguration(
+                  behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+                  child: ListView(
+                    controller: _scrollController,
+                    shrinkWrap: true,
+                    primary: false,
+                    children: <Widget>[
+                      SizedBox(height: appBarHeight + 10),
+                      ...regions.map((region) => Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _regionHeader(region),
+                          _regionGrid(region)
+                        ],
+                      )),
+                      Padding(
+                        padding: EdgeInsets.only(left: screenWidth / 10 + 20, right: isPaneOpen ? screenWidth * 0.42 + 24.2 : screenWidth / 10 + 20, bottom: 5),
+                        child: Text(
+                          copyrightText,
+                          textAlign: TextAlign.center,
+                          softWrap: true,
+                          style: TextStyle(
+                            color: solidAccentColourDark,
+                            fontSize: 10,
+                          )
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                _appBar(),
+                _slidingPane(),
+              ],
+            ),
+          ),
+        ) : Center(child: CircularProgressIndicator())
       ),
     );
   }
@@ -205,7 +240,7 @@ class _CollectionState extends State<Collection> {
           alignment: Alignment.topCenter,
           padding: const EdgeInsets.only(top: 15),
           decoration: BoxDecoration(
-            color: solidAccentColourLight,
+            color: paneColour(darkMode),
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(10), 
               topRight: Radius.circular(10)
@@ -243,25 +278,32 @@ class _CollectionState extends State<Collection> {
     return Container(
       margin: const EdgeInsets.only(right: 10),
       padding: const EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
-      decoration: const BoxDecoration(
-        color: Colors.black,
+      decoration: BoxDecoration(
+        color: paneHeaderColour(darkMode),
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(200), 
           bottomRight: Radius.circular(200)
         ),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            spreadRadius: -5,
+            offset: Offset(0, 3)
+          )
+        ]
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.only(right: 5),
             child: Stack(
               alignment: Alignment.center,
               children: [
                 Icon(Icons.circle, color: Colors.white, size: 40),
                 Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
-                Icon(Icons.circle_outlined, color: Colors.black, size: 40),
-                Icon(Icons.circle_outlined, color: Colors.black, size: 42),
+                Icon(Icons.circle_outlined, color: paneHeaderColour(darkMode), size: 40),
+                Icon(Icons.circle_outlined, color: paneHeaderColour(darkMode), size: 42),
               ],
             ),
           ),
@@ -392,7 +434,7 @@ class _CollectionState extends State<Collection> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16,
-              color: invertColour
+              color: invertTextColour(darkMode)
             )
           ),
           const SizedBox(height: 8),
@@ -414,7 +456,7 @@ class _CollectionState extends State<Collection> {
           width: 45,
           child: Text(
             statName,
-            style: TextStyle(color: invertColour)
+            style: TextStyle(color: invertTextColour(darkMode))
           )
         ),
         SizedBox(
@@ -423,7 +465,7 @@ class _CollectionState extends State<Collection> {
             '$amount',
             style: TextStyle(
               fontWeight: FontWeight.w700,
-              color: invertColour
+              color: invertTextColour(darkMode)
             ),
           )
         ),
@@ -433,7 +475,7 @@ class _CollectionState extends State<Collection> {
             child: Container(
               height: 12,
               decoration: BoxDecoration(
-                border: Border.all(color: invertColour),
+                border: Border.all(color: invertTextColour(darkMode)),
                 borderRadius: BorderRadius.circular(6)
               ),
               child: Row(
@@ -443,8 +485,8 @@ class _CollectionState extends State<Collection> {
                     child: Container(
                       height: 12,
                       decoration: BoxDecoration(
-                        color: invertColour,
-                        border: const Border(bottom: BorderSide(), top: BorderSide())
+                        color: invertTextColour(darkMode),
+                        border: Border(bottom: BorderSide(color: invertTextColour(darkMode)), top: BorderSide(color: invertTextColour(darkMode)))
                       ),
                     ),
                   ),
@@ -485,29 +527,29 @@ class _CollectionState extends State<Collection> {
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(color: invertColour),
-          bottom: BorderSide(color: invertColour)
+          top: BorderSide(color: invertTextColour(darkMode)),
+          bottom: BorderSide(color: invertTextColour(darkMode))
         )
       ),
       child: Row(
         children: [
           const Spacer(),
-          Icon(Icons.scale, color: invertColour),
+          Icon(Icons.scale, color: invertTextColour(darkMode)),
           const SizedBox(width: 7),
           Text(
             '$weight kg',
             style: TextStyle(
-              color: invertColour
+              color: invertTextColour(darkMode)
             )
           ),
           const Spacer(),
           const Spacer(),
-          Icon(Icons.straighten, color: invertColour),
+          Icon(Icons.straighten, color: invertTextColour(darkMode)),
           const SizedBox(width: 7),
           Text(
             '${height/100} m',
             style: TextStyle(
-              color: invertColour
+              color: invertTextColour(darkMode)
             )
           ),
           const Spacer()
@@ -530,7 +572,7 @@ class _CollectionState extends State<Collection> {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w900,
-                color: invertColour
+                color: invertTextColour(darkMode)
               )
             ),
           ),
@@ -539,14 +581,14 @@ class _CollectionState extends State<Collection> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.search, color: invertColour),
+              Icon(Icons.search, color: invertTextColour(darkMode)),
               const SizedBox(width: 5),
               Flexible(
                 child: Text(
                   entryText,
                   softWrap: true,
                   style: TextStyle(
-                    color: invertColour
+                    color: invertTextColour(darkMode)
                   )
                 ),
               ),
@@ -563,35 +605,39 @@ class _CollectionState extends State<Collection> {
 
     _updatePaneImageFuture();
 
-    return ListView(
-      children: [
-        AspectRatio(
-          aspectRatio: 1,
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15)
-            ),
-            child: FutureBuilder<Widget>(
-              future: _cachedPaneImageFuture, // Fetch image asynchronously
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
-                } else if (snapshot.hasError) {
-                  return _paneFallback(); // Show fallback if there's an error
-                } else {
-                  return snapshot.data ?? _paneFallback(); // Display the loaded image
-                }
-              },
+    return ScrollConfiguration(
+      behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+      child: ListView(
+        children: [
+          SizedBox(height: 5),
+          AspectRatio(
+            aspectRatio: 1,
+            child: Container(
+              decoration: BoxDecoration(
+                color: imageColour(darkMode),
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: FutureBuilder<Widget>(
+                future: _cachedPaneImageFuture, // Fetch image asynchronously
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Center(child: CircularProgressIndicator(color: accentColourLight)); // Show loading indicator
+                  } else if (snapshot.hasError) {
+                    return _paneFallback(); // Show fallback if there's an error
+                  } else {
+                    return snapshot.data ?? _paneFallback(); // Display the loaded image
+                  }
+                },
+              ),
             ),
           ),
-        ),
-        _paneTypes(initForm.type),
-        _flavourText(initForm.category, initForm.entry),
-        _measurements(initForm.height, initForm.weight),
-        _stats(initForm.stats[0]),
-        const SizedBox(height: 40)
-      ],
+          _paneTypes(initForm.type),
+          _flavourText(initForm.category, initForm.entry),
+          _measurements(initForm.height, initForm.weight),
+          _stats(initForm.stats[0]),
+          const SizedBox(height: 40)
+        ],
+      ),
     );
   }
 
@@ -633,8 +679,15 @@ class _CollectionState extends State<Collection> {
         width: double.infinity,
         height: appBarHeight,
         decoration: BoxDecoration(
-          color: solidAccentColourLight,
-          borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15))
+          color: headerBgColour(darkMode),
+          borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15)),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 10,
+              spreadRadius: -5,
+              offset: Offset(0, 3)
+            )
+          ]
         ),
         child: Column(
           children: [
@@ -643,29 +696,49 @@ class _CollectionState extends State<Collection> {
               child: Row(
                 children: [
                   Text(
-                    'NANO.D3X PROGRESS',
+                    '  Poké.D3X',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: invertColour
+                      color: lightText()
                     )
                   ),
+                  const SizedBox(width: 10),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      'by nano.m0n',
+                      style: TextStyle(
+                        color: lightText()
+                      )
+                    ),
+                  ),
+                  _socialsButtons(),
                   const Spacer(),
                   Expanded(
                     child: TextField(
                       controller: _searchController,
-                      decoration: const InputDecoration(
+                      cursorColor: lightText(),
+                      onSubmitted: (_) {},
+                      style: TextStyle(
+                        color: lightText()
+                      ),
+                      decoration: InputDecoration(
                         hintText: 'Search...',
                         hintStyle: TextStyle(
                           fontSize: 15,
+                          color: lightText()
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: lightText())
                         ),
                         border: OutlineInputBorder(
-                          borderSide: BorderSide()
+                          borderSide: BorderSide(color: lightText())
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide()
+                          borderSide: BorderSide(color: lightText())
                         ),
-                        suffixIcon: Icon(Icons.search)
+                        suffixIcon: Icon(Icons.search, color: lightText())
                       )
                     ),
                   )
@@ -674,53 +747,197 @@ class _CollectionState extends State<Collection> {
             ),
             Expanded(
               flex: 3,
-              child: SizedBox(
-                width: double.infinity,
-                child: Container(
-                  padding: const EdgeInsets.only(left: 15, right: 15),
-                  margin: const EdgeInsets.only(top: 10, bottom: 10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: accentColourLight
-                  ),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Row(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 50,
+                      margin: const EdgeInsets.only(top: 10, bottom: 10, right: 12),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border(right: BorderSide(color: accColour(darkMode), width: 2), bottom: BorderSide(color: accColour(darkMode)), top: BorderSide(color: accColour(darkMode))),
+                        color: accColour(darkMode)
+                      ),
+                      child: Row(
                         children: [
-                          Text(
-                            'COMPLETE COLLECTION',
-                            style: TextStyle(
-                              color: invertColour
-                            )
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
+                                  child: Container(
+                                    height: 50,
+                                    width: 311,
+                                    decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          offset: Offset(-10, 0),
+                                          blurRadius: 5,
+                                          spreadRadius: 0
+                                        )
+                                      ]
+                                    ),
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      height: 50,
+                                      width: 303,
+                                      padding: const EdgeInsets.only(left: 15, right: 15),
+                                      decoration: BoxDecoration(
+                                        color: accColour(darkMode),
+                                        borderRadius: BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
+                                        border: Border.all(color: accColour(darkMode))
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            'COLLECTION PROGRESS',
+                                            style: TextStyle(
+                                              color: lightText()
+                                            )
+                                          ),
+                                          Container(
+                                            margin: EdgeInsets.only(left: 10),
+                                            padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
+                                            decoration: BoxDecoration(
+                                              color: tagColour(darkMode),
+                                              borderRadius: BorderRadius.circular(100),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  blurRadius: 8,
+                                                  spreadRadius: -4
+                                                )
+                                              ]
+                                            ),
+                                            child: Text(
+                                              '$totalComplete/$totalFinale',
+                                              style: TextStyle(
+                                                color: lightText()
+                                              ),
+                                            )
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        child: ListView(
+                                          scrollDirection: Axis.horizontal,
+                                          children: _headerProgressTags()
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                          const Spacer(),
-                          _shinyToggleButton(),
-                          _darkModeButton()
                         ],
                       ),
-                      Container(
-                        padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
-                        decoration: BoxDecoration(
-                          color: accentColourDark,
-                          borderRadius: BorderRadius.circular(100)
-                        ),
-                        child: Text(
-                          '$totalComplete/$totalFinale',
-                          style: const TextStyle(
-                            color: Colors.white
-                          ),
-                        )
-                      )
-                    ],
-                  )
-                )
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 15, right: 15),
+                    margin: const EdgeInsets.only(top: 10, bottom: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: accColour(darkMode)
+                    ),
+                    child: Row(
+                      children: [
+                        _shinyToggleButton(),
+                        _darkModeButton()
+                      ],
+                    ),
+                  ),
+                ],
               ),
             )
           ],
         ),
       )
     );
+  }
+
+  Widget _socialsButtons() {
+    return SizedBox(
+      child: Row(
+        children: [
+          SizedBox(width: 20),
+          Padding(
+            padding: EdgeInsets.all(3),
+            child: InkWell(
+              onTap: () {
+                _launchUrl(_instaUrl);
+              },
+              child: Image(
+                image: AssetImage('insta_icon.png'),
+                height: 20
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(3),
+            child: InkWell(
+              onTap: () {
+                _launchUrl(_twitterUrl);
+              },
+              child: Image(
+                image: AssetImage('twitter_icon.png'),
+                height: 20
+              ),
+            ),
+          ),
+        ],
+      )
+    );
+  }
+
+  Future<void> _launchUrl(Uri url) async {
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  List<Widget> _headerProgressTags() {
+    List<Widget> tags = [SizedBox(width: 10)];
+    for (Region region in regions) {
+      String regionCaps = '${region.name[0].toUpperCase()}${region.name.substring(1, region.name.length)}';
+      tags.add(
+        Container(
+          alignment: Alignment.center,
+          margin: const EdgeInsets.only(top: 7, bottom: 7, right: 6),
+          padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
+          decoration: BoxDecoration(
+            color: tagColour(darkMode),
+            borderRadius: BorderRadius.circular(100)
+          ),
+          child: RichText(
+            text: TextSpan(
+              text: '$regionCaps ',
+              style: TextStyle(
+                fontWeight: FontWeight.w100,  // Lighter weight for regionCaps
+                color: lightText(),
+                fontStyle: FontStyle.italic
+              ),
+              children: [
+                TextSpan(
+                  text: '${completed[region]}/${region.dexSize}',
+                  style: TextStyle(
+                    color: lightText(),
+                    fontStyle: FontStyle.normal
+                  ),
+                ),
+              ],
+            ),
+          )
+
+        )
+      );
+    }
+    return tags;
   }
 
   bool _isShinyButtonHovered = false;
@@ -738,14 +955,14 @@ class _CollectionState extends State<Collection> {
             alignment: Alignment.center,
             padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
-              border: Border.all(color: shinyToggle ? const Color.fromARGB(255, 122, 218, 175) : invertColour),
+              border: Border.all(color: shinyToggle ? const Color.fromARGB(255, 122, 218, 175) : lightText()),
               shape: BoxShape.circle,
               color: shinyToggle ? const Color.fromARGB(255, 122, 218, 175) : _isShinyButtonHovered ? accentColourLight : Colors.transparent,
             ),
             child: Icon(
               Icons.auto_awesome,
               size: 20,
-              color: shinyToggle ? Colors.white : invertColour,
+              color: lightText()
             ),
           ),
         ),
@@ -769,14 +986,14 @@ class _CollectionState extends State<Collection> {
             margin: const EdgeInsets.only(left: 10),
             padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
-              border: Border.all(color: invertColour),
+              border: Border.all(color: lightText()),
               shape: BoxShape.circle,
               color: _isDarkModeButtonHovered ? accentColourLight : Colors.transparent,
             ),
             child: Icon(
               darkMode ? Icons.light_mode : Icons.dark_mode,
               size: 20,
-              color: invertColour
+              color: lightText()
             ),
           ),
         ),
@@ -818,7 +1035,14 @@ class _CollectionState extends State<Collection> {
       margin: EdgeInsets.only(top: 10, bottom: 10, left: screenWidth / 10, right: isPaneOpen ? screenWidth * 0.42 + 4.2 : screenWidth / 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: solidAccentColourLight
+        color: regionHeaderColour(darkMode),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            spreadRadius: -5,
+            offset: Offset(0, 3)
+          )
+        ]
       ),
       child: Stack(
         alignment: Alignment.center,
@@ -828,7 +1052,7 @@ class _CollectionState extends State<Collection> {
               Text(
                 region.name.toUpperCase(),
                 style: TextStyle(
-                  color: invertColour
+                  color: lightText()
                 )
               ),
             ],
@@ -836,7 +1060,7 @@ class _CollectionState extends State<Collection> {
           Container(
             padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
             decoration: BoxDecoration(
-              color: accentColourDark,
+              color: tagColour(darkMode),
               borderRadius: BorderRadius.circular(100)
             ),
             child: Text(
@@ -921,13 +1145,13 @@ class _CollectionState extends State<Collection> {
   Widget _fallbackTile(int index) {
     return Container(
       decoration: BoxDecoration(
-        color: solidAccentColourLight,
+        color: fallbackPane(darkMode),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
         child: Text(
           '${index + 1}',
-          style: TextStyle(fontSize: screenWidth / 50, color: Colors.white),
+          style: TextStyle(fontSize: screenWidth / 50, color: lightText()),
         ),
       ),
     );
@@ -988,7 +1212,7 @@ class HoverImageTileState extends State<HoverImageTile> {
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 100),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: imageColour(widget.isDarkMode),
             border: Border.all(
               color: widget.isSelected ? Colors.black : _isHovered ? Colors.black45 : Colors.black12,
               width: widget.isSelected ? 2 : _isHovered ? 2 : 1,
@@ -996,9 +1220,11 @@ class HoverImageTileState extends State<HoverImageTile> {
             borderRadius: BorderRadius.circular(10),
             boxShadow: _isHovered
                 ? widget.isDarkMode
-                  ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1)]
-                  : [const BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1)]
-                : [],
+                  ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1),
+                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))]
+                  : [const BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1),
+                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))]
+                : [BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))],
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
