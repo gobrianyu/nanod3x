@@ -29,4 +29,5 @@ flutter:
   uses-material-design: true
   assets:
     - dex.json
+    - assets/
     - assets/dex.json
