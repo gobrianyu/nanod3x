@@ -3903,10 +3903,10 @@
                 "height": 100,
                 "weight": 6.4,
                 "entry": "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "weepinbell.png",
+                "image asset f": "weepinbell.png",
+                "image asset m shiny": "weepinbell_shiny.png",
+                "image asset f shiny": "weepinbell_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -3948,10 +3948,10 @@
                 "height": 170,
                 "weight": 15.5,
                 "entry": "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "victreebel.png",
+                "image asset f": "victreebel.png",
+                "image asset m shiny": "victreebel_shiny.png",
+                "image asset f shiny": "victreebel_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -4044,10 +4044,10 @@
                 "height": 160,
                 "weight": 55,
                 "entry": "Its 80 tentacles can stretch and contract freely. They wrap around prey and weaken it with poison.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "tentacruel.png",
+                "image asset f": "tentacruel.png",
+                "image asset m shiny": "tentacruel_shiny.png",
+                "image asset f shiny": "tentacruel_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -4095,10 +4095,10 @@
                 "height": 40,
                 "weight": 20,
                 "entry": "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "geodude.png",
+                "image asset f": "geodude.png",
+                "image asset m shiny": "geodude_shiny.png",
+                "image asset f shiny": "geodude_shiny.png"
             },
             {
                 "key": 74.01,
@@ -4184,10 +4184,10 @@
                 "height": 100,
                 "weight": 105,
                 "entry": "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "graveler.png",
+                "image asset f": "graveler.png",
+                "image asset m shiny": "graveler_shiny.png",
+                "image asset f shiny": "graveler_shiny.png"
             },
             {
                 "key": 75.01,
@@ -4433,10 +4433,10 @@
                 "height": 170,
                 "weight": 95,
                 "entry": "Just loves to run. If it sees something faster than itself, it will give chase at top speed.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "rapidash.png",
+                "image asset f": "rapidash.png",
+                "image asset m shiny": "rapidash_shiny.png",
+                "image asset f shiny": "rapidash_shiny.png"
             },
             {
                 "key": 78.01,
@@ -4609,10 +4609,10 @@
                 "height": 160,
                 "weight": 78.5,
                 "entry": "Lives lazily by the sea. If the Shellder on its tail comes off, it becomes a Slowpoke again.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "slowbro.png",
+                "image asset f": "slowbro.png",
+                "image asset m shiny": "slowbro_shiny.png",
+                "image asset f shiny": "slowbro_shiny.png"
             },
             {
                 "key": 80.01,
@@ -4743,10 +4743,10 @@
                 "height": 100,
                 "weight": 60,
                 "entry": "When three Magnemite link together, their brains also become one. They do not become three times more intelligent.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "magneton.png",
+                "image asset f": "magneton.png",
+                "image asset m shiny": "magneton_shiny.png",
+                "image asset f shiny": "magneton_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -4922,10 +4922,10 @@
                 "height": 180,
                 "weight": 85.2,
                 "entry": "The three heads express joy, sorrow and anger as they plan strategy together. When it sleeps, one head remains awake.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "dodrio_m.png",
+                "image asset f": "dodrio_f.png",
+                "image asset m shiny": "dodrio_m_shiny.png",
+                "image asset f shiny": "dodrio_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5382,10 +5382,10 @@
                 "height": 160,
                 "weight": 0.1,
                 "entry": "By licking, it saps the victim's life. It causes shaking that won't stop until the victim's demise.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "haunter.png",
+                "image asset f": "haunter.png",
+                "image asset m shiny": "haunter_shiny.png",
+                "image asset f shiny": "haunter_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5478,10 +5478,10 @@
                 "height": 880,
                 "weight": 210,
                 "entry": "Burrows at high speed in search of food. The tunnels it leaves are used as homes by Diglett.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "onix.png",
+                "image asset f": "onix.png",
+                "image asset m shiny": "onix_shiny.png",
+                "image asset f shiny": "onix_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5574,10 +5574,10 @@
                 "height": 160,
                 "weight": 75.6,
                 "entry": "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "hypno.png",
+                "image asset f": "hypno.png",
+                "image asset m shiny": "hypno_shiny.png",
+                "image asset f shiny": "hypno_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5625,10 +5625,10 @@
                 "height": 40,
                 "weight": 6.5,
                 "entry": "Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "krabby.png",
+                "image asset f": "krabby.png",
+                "image asset m shiny": "krabby_shiny.png",
+                "image asset f shiny": "krabby_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5670,10 +5670,10 @@
                 "height": 130,
                 "weight": 60,
                 "entry": "One claw grew massively and is as hard as steel. It has 10,000-horsepower strength. However, it is too heavy.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "kingler.png",
+                "image asset f": "kingler.png",
+                "image asset m shiny": "kingler_shiny.png",
+                "image asset f shiny": "kingler_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6070,10 +6070,10 @@
                 "height": 100,
                 "weight": 45,
                 "entry": "Originally, it was weak and timid. After evolution, its temperament becomes violent, and it begins to wield bones as weapons.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "marowak.png",
+                "image asset f": "marowak.png",
+                "image asset m shiny": "marowak_shiny.png",
+                "image asset f shiny": "marowak_shiny.png"
             },
             {
                 "key": 105.01,
@@ -6964,10 +6964,10 @@
                 "height": 130,
                 "weight": 54.5,
                 "entry": "Always practices its pantomime act. It makes enemies believe something exists that really doesn't.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "mrmime.png",
+                "image asset f": "mrmime.png",
+                "image asset m shiny": "mrmime_shiny.png",
+                "image asset f shiny": "mrmime_shiny.png"
             },
             {
                 "key": 122.01,
@@ -7154,10 +7154,10 @@
                 "height": 110,
                 "weight": 30,
                 "entry": "If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "electabuzz.png",
+                "image asset f": "electabuzz.png",
+                "image asset m shiny": "electabuzz_shiny.png",
+                "image asset f shiny": "electabuzz_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7205,10 +7205,10 @@
                 "height": 130,
                 "weight": 44.5,
                 "entry": "Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "magmar.png",
+                "image asset f": "magmar.png",
+                "image asset m shiny": "magmar_shiny.png",
+                "image asset f shiny": "magmar_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7295,10 +7295,10 @@
                 "height": 140,
                 "weight": 88.4,
                 "entry": "A rowdy Pokémon with a lot of stamina. Once running, it won't stop until it hits something.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "tauros.png",
+                "image asset f": "tauros.png",
+                "image asset m shiny": "tauros_shiny.png",
+                "image asset f shiny": "tauros_shiny.png"
             },
             {
                 "key": 128.01,
@@ -7663,10 +7663,10 @@
                 "height": 30,
                 "weight": 6.5,
                 "entry": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "eevee_m.png",
+                "image asset f": "eevee_f.png",
+                "image asset m shiny": "eevee_m_shiny.png",
+                "image asset f shiny": "eevee_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7708,10 +7708,10 @@
                 "height": 100,
                 "weight": 29,
                 "entry": "Its cell structure is similar to water molecules. It melts into the water and becomes invisible.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "vaporeon.png",
+                "image asset f": "vaporeon.png",
+                "image asset m shiny": "vaporeon_shiny.png",
+                "image asset f shiny": "vaporeon_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7753,10 +7753,10 @@
                 "height": 80,
                 "weight": 24.5,
                 "entry": "A sensitive Pokémon that easily becomes sad or angry. Every time its mood changes, it charges power.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "jolteon.png",
+                "image asset f": "jolteon.png",
+                "image asset m shiny": "jolteon_shiny.png",
+                "image asset f shiny": "jolteon_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7798,10 +7798,10 @@
                 "height": 90,
                 "weight": 25,
                 "entry": "When it catches prey or finds berries, it breathes fire on them until they're well done, and then it gobbles them up.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "flareon.png",
+                "image asset f": "flareon.png",
+                "image asset m shiny": "flareon_shiny.png",
+                "image asset f shiny": "flareon_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7900,10 +7900,10 @@
                 "height": 40,
                 "weight": 7.5,
                 "entry": "An ancient Pokémon that was recovered from a fossil. It swam by cleverly twisting its 10 tentacles about.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "omanyte.png",
+                "image asset f": "omanyte.png",
+                "image asset m shiny": "omanyte_shiny.png",
+                "image asset f shiny": "omanyte_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7945,10 +7945,10 @@
                 "height": 100,
                 "weight": 35,
                 "entry": "Its sharp beak rings its mouth. Its shell was too big for it to move freely, so it became extinct.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "omastar.png",
+                "image asset f": "omastar.png",
+                "image asset m shiny": "omastar_shiny.png",
+                "image asset f shiny": "omastar_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -8041,10 +8041,10 @@
                 "height": 130,
                 "weight": 40.5,
                 "entry": "A slim and fast swimmer. It sliced its prey with its sharp sickles and drank the body fluids.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "kabutops.png",
+                "image asset f": "kabutops.png",
+                "image asset m shiny": "kabutops_shiny.png",
+                "image asset f shiny": "kabutops_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -8086,10 +8086,10 @@
                 "height": 180,
                 "weight": 59,
                 "entry": "It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "aerodactyl.png",
+                "image asset f": "aerodactyl.png",
+                "image asset m shiny": "aerodactyl_shiny.png",
+                "image asset f shiny": "aerodactyl_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -8176,10 +8176,10 @@
                 "height": 170,
                 "weight": 55.4,
                 "entry": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "articuno.png",
+                "image asset f": "articuno.png",
+                "image asset m shiny": "articuno_shiny.png",
+                "image asset f shiny": "articuno_shiny.png"
             },
             {
                 "key": 144.01,
@@ -8253,10 +8253,10 @@
                 "height": 160,
                 "weight": 52.6,
                 "entry": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "zapdos.png",
+                "image asset f": "zapdos.png",
+                "image asset m shiny": "zapdos_shiny.png",
+                "image asset f shiny": "zapdos_shiny.png"
             },
             {
                 "key": 145.01,
@@ -8330,10 +8330,10 @@
                 "height": 200,
                 "weight": 60,
                 "entry": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "moltres.png",
+                "image asset f": "moltres.png",
+                "image asset m shiny": "moltres_shiny.png",
+                "image asset f shiny": "moltres_shiny.png"
             },
             {
                 "key": 146.01,
@@ -8413,10 +8413,10 @@
                 "height": 180,
                 "weight": 3.3,
                 "entry": "Long thought to be a myth, this Pokémon's existence was only recently confirmed by a fisherman who caught one.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "dratini.png",
+                "image asset f": "dratini.png",
+                "image asset m shiny": "dratini_shiny.png",
+                "image asset f shiny": "dratini_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -8554,10 +8554,10 @@
                 "height": 200,
                 "weight": 122,
                 "entry": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments. Its DNA is almost the same as Mew's. However, its size and disposition are vastly different.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "mewtwo.png",
+                "image asset f": "mewtwo.png",
+                "image asset m shiny": "mewtwo_shiny.png",
+                "image asset f shiny": "mewtwo_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -17115,10 +17115,10 @@
                 "height": 60,
                 "weight": 11.5,
                 "entry": "Its giant jaws are actually steel horns that transformed. It fools foes into complacency with its adorable gestures, then chomps them with its huge jaws.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "mawile.png",
+                "image asset f": "mawile.png",
+                "image asset m shiny": "mawile_shiny.png",
+                "image asset f shiny": "mawile_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -26135,10 +26135,10 @@
                 "height": 30,
                 "weight": 0.3,
                 "entry": "Known as \"The Being of Knowledge.\" It is said that it can wipe out the memory of those who see its eyes.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "uxie.png",
+                "image asset f": "uxie.png",
+                "image asset m shiny": "uxie_shiny.png",
+                "image asset f shiny": "uxie_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -26180,10 +26180,10 @@
                 "height": 30,
                 "weight": 0.3,
                 "entry": "Known as \"The Being of Emotion.\" It taught humans the nobility of sorrow, pain, and joy.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "mesprit.png",
+                "image asset f": "mesprit.png",
+                "image asset m shiny": "mesprit_shiny.png",
+                "image asset f shiny": "mesprit_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -26225,10 +26225,10 @@
                 "height": 30,
                 "weight": 0.3,
                 "entry": "Known as \"The Being of Willpower.\" It sleeps at the bottom of a lake to keep the world in balance.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "azelf.png",
+                "image asset f": "azelf.png",
+                "image asset m shiny": "azelf_shiny.png",
+                "image asset f shiny": "azelf_shiny.png"
             }
         ],
         "gimmick forms": [],
