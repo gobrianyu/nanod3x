@@ -15659,10 +15659,10 @@
                 "height": 50,
                 "weight": 4,
                 "entry": "If it remains still, it becomes impossible to distinguish from real nuts. It delights in surprising foraging Pidgey.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "seedot.png",
+                "image asset f": "seedot.png",
+                "image asset m shiny": "seedot_shiny.png",
+                "image asset f shiny": "seedot_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -23048,10 +23048,10 @@
                 "height": 40,
                 "weight": 3.3,
                 "entry": "The small ball holds the nutrients needed for evolution. Apparently, it is very sweet and tasty.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "cherubi.png",
+                "image asset f": "cherubi.png",
+                "image asset m shiny": "cherubi_shiny.png",
+                "image asset f shiny": "cherubi_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -23957,10 +23957,10 @@
                 "height": 130,
                 "weight": 187,
                 "entry": "It brought rains by opening portals to another world. It was revered as a bringer of plentiful harvests.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "bronzong.png",
+                "image asset f": "bronzong.png",
+                "image asset m shiny": "bronzong_shiny.png",
+                "image asset f shiny": "bronzong_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -25705,10 +25705,10 @@
                 "height": 90,
                 "weight": 34,
                 "entry": "Its programming was modified to enable it to travel through alien dimensions. Seems there might have been an error...",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "porygon-z.png",
+                "image asset f": "porygon-z.png",
+                "image asset m shiny": "porygon-z_shiny.png",
+                "image asset f shiny": "porygon-z_shiny.png"
             }
         ],
         "gimmick forms": [],
