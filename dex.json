@@ -11124,10 +11124,10 @@
                 "height": 50,
                 "weight": 5,
                 "entry": "Their shapes look like hieroglyphs on ancient tablets. It is said that the two are somehow related.",
-                "image asset m": "unknown.png",
-                "image asset f": "unknown.png",
-                "image asset m shiny": "unknown.png",
-                "image asset f shiny": "unknown.png"
+                "image asset m": "unown_a.png",
+                "image asset f": "unown_a.png",
+                "image asset m shiny": "unown_a_shiny.png",
+                "image asset f shiny": "unown_a_shiny.png"
             },
             {
                 "key": 201.01,
