@@ -60,7 +60,10 @@ class _CollectionState extends State<Collection> {
     Region.unova,
     Region.kalos,
     Region.alola,
-    Region.unknown
+    Region.unknown,
+    Region.galar,
+    Region.hisui,
+    Region.paldea,
   ];
 
   bool _isBgLoaded = false;
@@ -221,7 +224,7 @@ class _CollectionState extends State<Collection> {
               ],
             ),
           ),
-        ) : Center(child: CircularProgressIndicator())
+        ) : const Center(child: CircularProgressIndicator())
       ),
     );
   }
@@ -280,12 +283,12 @@ class _CollectionState extends State<Collection> {
       padding: const EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
       decoration: BoxDecoration(
         color: paneHeaderColour(darkMode),
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topRight: Radius.circular(200), 
           bottomRight: Radius.circular(200)
         ),
         boxShadow: [
-          BoxShadow(
+          const BoxShadow(
             blurRadius: 10,
             spreadRadius: -5,
             offset: Offset(0, 3)
@@ -296,12 +299,12 @@ class _CollectionState extends State<Collection> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 5),
+            padding: const EdgeInsets.only(right: 5),
             child: Stack(
               alignment: Alignment.center,
               children: [
-                Icon(Icons.circle, color: Colors.white, size: 40),
-                Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
+                const Icon(Icons.circle, color: Colors.white, size: 40),
+                const Icon(Icons.catching_pokemon, color: Colors.red, size: 40),
                 Icon(Icons.circle_outlined, color: paneHeaderColour(darkMode), size: 40),
                 Icon(Icons.circle_outlined, color: paneHeaderColour(darkMode), size: 42),
               ],
@@ -609,7 +612,7 @@ class _CollectionState extends State<Collection> {
       behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
       child: ListView(
         children: [
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           AspectRatio(
             aspectRatio: 1,
             child: Container(
@@ -682,7 +685,7 @@ class _CollectionState extends State<Collection> {
           color: headerBgColour(darkMode),
           borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15)),
           boxShadow: [
-            BoxShadow(
+            const BoxShadow(
               blurRadius: 10,
               spreadRadius: -5,
               offset: Offset(0, 3)
@@ -764,11 +767,11 @@ class _CollectionState extends State<Collection> {
                             child: Stack(
                               children: [
                                 ClipRRect(
-                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
+                                  borderRadius: const BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
                                   child: Container(
                                     height: 50,
                                     width: 311,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       boxShadow: [
                                         BoxShadow(
                                           offset: Offset(-10, 0),
@@ -787,7 +790,7 @@ class _CollectionState extends State<Collection> {
                                       padding: const EdgeInsets.only(left: 15, right: 15),
                                       decoration: BoxDecoration(
                                         color: accColour(darkMode),
-                                        borderRadius: BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
+                                        borderRadius: const BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
                                         border: Border.all(color: accColour(darkMode))
                                       ),
                                       child: Row(
@@ -799,13 +802,13 @@ class _CollectionState extends State<Collection> {
                                             )
                                           ),
                                           Container(
-                                            margin: EdgeInsets.only(left: 10),
+                                            margin: const EdgeInsets.only(left: 10),
                                             padding: const EdgeInsets.only(top: 5, bottom: 5, left: 15, right: 15),
                                             decoration: BoxDecoration(
                                               color: tagColour(darkMode),
                                               borderRadius: BorderRadius.circular(100),
                                               boxShadow: [
-                                                BoxShadow(
+                                                const BoxShadow(
                                                   blurRadius: 8,
                                                   spreadRadius: -4
                                                 )
@@ -865,14 +868,14 @@ class _CollectionState extends State<Collection> {
     return SizedBox(
       child: Row(
         children: [
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Padding(
-            padding: EdgeInsets.all(3),
+            padding: const EdgeInsets.all(3),
             child: InkWell(
               onTap: () {
                 _launchUrl(_instaUrl);
               },
-              child: Image(
+              child: const Image(
                 image: AssetImage('assets/insta_icon.png'),
                 height: 20
               ),
@@ -884,7 +887,7 @@ class _CollectionState extends State<Collection> {
               onTap: () {
                 _launchUrl(_twitterUrl);
               },
-              child: Image(
+              child: const Image(
                 image: AssetImage('assets/twitter_icon.png'),
                 height: 20
               ),
@@ -902,7 +905,7 @@ class _CollectionState extends State<Collection> {
   }
 
   List<Widget> _headerProgressTags() {
-    List<Widget> tags = [SizedBox(width: 10)];
+    List<Widget> tags = [const SizedBox(width: 10)];
     for (Region region in regions) {
       String regionCaps = '${region.name[0].toUpperCase()}${region.name.substring(1, region.name.length)}';
       tags.add(
@@ -1037,7 +1040,7 @@ class _CollectionState extends State<Collection> {
         borderRadius: BorderRadius.circular(10),
         color: regionHeaderColour(darkMode),
         boxShadow: [
-          BoxShadow(
+          const BoxShadow(
             blurRadius: 10,
             spreadRadius: -5,
             offset: Offset(0, 3)
@@ -1221,10 +1224,10 @@ class HoverImageTileState extends State<HoverImageTile> {
             boxShadow: _isHovered
                 ? widget.isDarkMode
                   ? [const BoxShadow(color: Colors.black26, blurRadius: 3, spreadRadius: 1),
-                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))]
+                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: const Offset(0, 3))]
                   : [const BoxShadow(color: Color.fromARGB(26, 255, 255, 255), blurRadius: 3, spreadRadius: 1),
-                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))]
-                : [BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: Offset(0, 3))],
+                     BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: const Offset(0, 3))]
+                : [BoxShadow(color: tileShadowColour(widget.isDarkMode), blurRadius: 5, spreadRadius: -5, offset: const Offset(0, 3))],
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
