@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
@@ -58,6 +60,9 @@ class MainAppState extends State<MainApp> {
       );
     }
     return MaterialApp(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {PointerDeviceKind.mouse},
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Collection(_dexDB.all),
