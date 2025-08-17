@@ -3654,10 +3654,10 @@
                 "height": 150,
                 "weight": 48,
                 "entry": "If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious.",
-                "image asset m": "alakazam.png",
-                "image asset f": "alakazam.png",
-                "image asset m shiny": "alakazam_shiny.png",
-                "image asset f shiny": "alakazam_shiny.png"
+                "image asset m": "alakazam_m.png",
+                "image asset f": "alakazam_f.png",
+                "image asset m shiny": "alakazam_m_shiny.png",
+                "image asset f shiny": "alakazam_f_shiny.png"
             }
         ],
         "gimmick forms": [],
