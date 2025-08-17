@@ -3609,10 +3609,10 @@
                 "height": 130,
                 "weight": 56.5,
                 "entry": "Many odd things happen if this Pokémon is close by. For example, it makes clocks run backward.",
-                "image asset m": "kadabra.png",
-                "image asset f": "kadabra.png",
-                "image asset m shiny": "kadabra_shiny.png",
-                "image asset f shiny": "kadabra_shiny.png"
+                "image asset m": "kadabra_m.png",
+                "image asset f": "kadabra_f.png",
+                "image asset m shiny": "kadabra_m_shiny.png",
+                "image asset f shiny": "kadabra_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -5574,10 +5574,10 @@
                 "height": 160,
                 "weight": 75.6,
                 "entry": "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.",
-                "image asset m": "hypno.png",
-                "image asset f": "hypno.png",
-                "image asset m shiny": "hypno_shiny.png",
-                "image asset f shiny": "hypno_shiny.png"
+                "image asset m": "hypno_m.png",
+                "image asset f": "hypno_f.png",
+                "image asset m shiny": "hypno_m_shiny.png",
+                "image asset f shiny": "hypno_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6427,10 +6427,10 @@
                 "height": 100,
                 "weight": 115,
                 "entry": "A Pokémon with a one-track mind. Once it charges, it won't stop running until it falls asleep.",
-                "image asset m": "rhyhorn.png",
-                "image asset f": "rhyhorn.png",
-                "image asset m shiny": "rhyhorn_shiny.png",
-                "image asset f shiny": "rhyhorn_shiny.png"
+                "image asset m": "rhyhorn_m.png",
+                "image asset f": "rhyhorn_f.png",
+                "image asset m shiny": "rhyhorn_m_shiny.png",
+                "image asset f shiny": "rhyhorn_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -6478,10 +6478,10 @@
                 "height": 190,
                 "weight": 120,
                 "entry": "Its brain developed when it began walking on its hind legs. Its armour-like hide even repels molten lava.",
-                "image asset m": "rhydon.png",
-                "image asset f": "rhydon.png",
-                "image asset m shiny": "rhydon_shiny.png",
-                "image asset f shiny": "rhydon_shiny.png"
+                "image asset m": "rhydon_m.png",
+                "image asset f": "rhydon_f.png",
+                "image asset m shiny": "rhydon_m_shiny.png",
+                "image asset f shiny": "rhydon_f_shiny.png"
             }
         ],
         "gimmick forms": [],
@@ -7058,10 +7058,10 @@
                 "height": 150,
                 "weight": 56,
                 "entry": "Leaps out of tall grass and slices prey with its scythes. The movement looks like that of a ninja.",
-                "image asset m": "scyther.png",
-                "image asset f": "scyther.png",
-                "image asset m shiny": "scyther_shiny.png",
-                "image asset f shiny": "scyther_shiny.png"
+                "image asset m": "scyther_m.png",
+                "image asset f": "scyther_f.png",
+                "image asset m shiny": "scyther_m_shiny.png",
+                "image asset f shiny": "scyther_f_shiny.png"
             }
         ],
         "gimmick forms": [],
