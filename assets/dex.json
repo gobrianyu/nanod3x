@@ -3656,8 +3656,8 @@
                 "entry": "If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious.",
                 "image asset m": "alakazam_m.png",
                 "image asset f": "alakazam_f.png",
-                "image asset m shiny": "alakazam_shiny_m.png",
-                "image asset f shiny": "alakazam_shiny_f.png"
+                "image asset m shiny": "alakazam_m_shiny.png",
+                "image asset f shiny": "alakazam_f_shiny.png"
             }
         ],
         "gimmick forms": [],
